@@ -1,0 +1,8 @@
+{
+  "name": "RATISS Labs",
+  "description": "Architectures cognitives ancrées dans la réalité topologique et thermodynamique.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
