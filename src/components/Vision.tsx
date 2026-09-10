@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { staggerContainer, fadeInUp, fadeInScale } from '../lib/animations';
+import topologyVisualUrl from '../assets/images/quantum_topology_visual.webp';
 
 export function Vision() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -83,7 +84,7 @@ export function Vision() {
           >
             <div className="absolute inset-0 bg-cyan-500/15 blur-[100px] rounded-full" />
             <img 
-              src="/src/assets/images/quantum_topology_visual.webp" 
+              src={topologyVisualUrl}
               alt="Visualisation topologique" 
               className="w-full h-full object-cover rounded-3xl relative z-10 border border-white/15 shadow-[0_0_50px_rgba(0,0,0,0.8)]"
               referrerPolicy="no-referrer"

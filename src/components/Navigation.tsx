@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Github, Linkedin, Mail, ExternalLink, Menu, Terminal } from 'lucide-react';
+import logoUrl from '../assets/images/ratiss_labs_logo.webp';
 
 interface HeaderProps {
   onOpenSidebar?: () => void;
@@ -12,7 +13,7 @@ export function Header({ onOpenSidebar, onOpenTestConsole }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img 
-            src="/src/assets/images/ratiss_labs_logo.webp" 
+            src={logoUrl}
             alt="RATISS Labs Logo" 
             className="w-10 h-10 rounded-full border border-white/10"
             referrerPolicy="no-referrer"
@@ -76,7 +77,7 @@ export function Footer() {
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <img 
-                src="/src/assets/images/ratiss_labs_logo.webp" 
+                src={logoUrl}
                 alt="RATISS Labs" 
                 className="w-10 h-10 rounded-full grayscale hover:grayscale-0 transition-all"
                 referrerPolicy="no-referrer"
