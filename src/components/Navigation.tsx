@@ -1,66 +1,57 @@
-import { motion } from 'motion/react';
-import { Github, Linkedin, Mail, ExternalLink, Menu, Terminal } from 'lucide-react';
-import logoUrl from '../assets/images/ratiss_labs_logo.webp';
+import { Github, ExternalLink, Menu, FileText, Globe } from 'lucide-react';
 
 interface HeaderProps {
   onOpenSidebar?: () => void;
-  onOpenTestConsole?: () => void;
 }
 
-export function Header({ onOpenSidebar, onOpenTestConsole }: HeaderProps) {
+export function Header({ onOpenSidebar }: HeaderProps) {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/65 backdrop-blur-xl border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <img 
-            src={logoUrl}
-            alt="RATISS Labs Logo" 
-            className="w-10 h-10 rounded-full border border-white/10"
-            referrerPolicy="no-referrer"
-          />
-          <span className="text-xl font-bold tracking-tight text-white font-mono">RATISS Labs</span>
-        </div>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/85 backdrop-blur-md border-b border-white/15 transition-all duration-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 h-18 flex items-center justify-between">
+        <a href="#hero" className="flex items-center gap-3.5 group">
+          <div className="relative">
+            <div className="absolute -inset-1 rounded-full bg-cyan-500/30 blur-sm opacity-0 group-hover:opacity-100 transition-opacity" />
+            <img 
+              src="/src/assets/images/ratiss_labs_logo.webp" 
+              alt="RATISS Labs Logo" 
+              className="relative w-9 h-9 rounded-full border border-white/20 object-cover"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-base font-bold tracking-tight text-white font-sans group-hover:text-cyan-300 transition-colors">
+              RATISS Labs
+            </span>
+            <span className="text-[10px] font-mono text-zinc-300 tracking-wider">
+              audit scientifique exécutable
+            </span>
+          </div>
+        </a>
 
-        <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-zinc-300 font-sans">
-          <a href="#vision" className="hover:text-cyan-300 transition-colors">Vision</a>
-          <a href="#expertise" className="hover:text-cyan-300 transition-colors">Expertise</a>
-          <a href="#offres" className="hover:text-cyan-300 transition-colors">Offres</a>
-          <a href="#validation" className="hover:text-cyan-300 transition-colors">Validation</a>
-          <a href="#depots" className="hover:text-cyan-300 transition-colors">Dépôts</a>
-          <a href="#partenariat" className="hover:text-amber-300 text-amber-400 font-medium transition-colors flex items-center gap-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
-            <span>Partenariat 70/30</span>
-          </a>
+        <nav className="hidden lg:flex items-center gap-7 text-xs font-semibold text-zinc-100 font-sans tracking-wide">
+          <a href="#ce-que-nous-faisons" className="hover:text-cyan-300 transition-colors">Ce que nous faisons</a>
+          <a href="#protocole" className="hover:text-cyan-300 transition-colors">Le protocole</a>
+          <a href="#registre" className="hover:text-cyan-300 transition-colors">Registre public</a>
+          <a href="#travailler-avec-le-labo" className="hover:text-cyan-300 transition-colors">Travailler avec le labo</a>
+          <a href="#en-cours" className="hover:text-cyan-300 transition-colors">En cours</a>
           <a 
             href="#contact"
-            className="px-4 py-2 rounded-full border border-cyan-500/30 hover:border-cyan-400 bg-cyan-950/30 hover:bg-cyan-900/40 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] transition-all text-white font-mono text-xs"
+            className="px-4 py-1.5 rounded-full border border-white/25 bg-white/10 hover:bg-white text-white hover:text-black transition-all duration-200 font-mono text-[11px] font-bold shadow-sm active:scale-95"
           >
-            Protocole & Contact
+            Contact
           </a>
         </nav>
 
-        {/* Action Controls & Sidebar Toggle */}
+        {/* Sidebar Toggle for smaller screens / drawer */}
         <div className="flex items-center gap-2.5">
-          {onOpenTestConsole && (
-            <button
-              onClick={onOpenTestConsole}
-              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-cyan-950/40 hover:bg-cyan-900/60 border border-cyan-500/30 text-cyan-300 hover:text-white font-mono text-xs transition-all cursor-pointer shadow-sm"
-              title="Ouvrir la console d'audit et tests unitaires (Ctrl+K)"
-            >
-              <Terminal size={14} className="text-cyan-400" />
-              <span>Test CLI</span>
-              <kbd className="text-[10px] bg-cyan-500/20 px-1 rounded text-cyan-300">⌘K</kbd>
-            </button>
-          )}
-
           {onOpenSidebar && (
             <button
               onClick={onOpenSidebar}
-              className="flex items-center gap-2 px-3 py-2 rounded-xl bg-zinc-900/80 hover:bg-zinc-800 border border-white/15 text-zinc-200 hover:text-white text-xs font-mono transition-all cursor-pointer shadow-sm"
-              title="Ouvrir la barre latérale de navigation et télémétrie (Ctrl+B)"
+              className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-white hover:bg-white/20 text-xs font-mono font-semibold transition-all cursor-pointer active:scale-95"
+              title="Ouvrir le menu de navigation"
             >
-              <Menu size={16} className="text-cyan-400" />
-              <span className="hidden sm:inline font-semibold">Sidebar</span>
+              <Menu size={15} className="text-cyan-400" />
+              <span className="hidden sm:inline font-semibold">Menu</span>
             </button>
           )}
         </div>
@@ -71,52 +62,114 @@ export function Header({ onOpenSidebar, onOpenTestConsole }: HeaderProps) {
 
 export function Footer() {
   return (
-    <footer className="bg-transparent border-t border-white/10 py-20 relative z-10 backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="space-y-6">
-            <div className="flex items-center gap-3">
+    <footer className="border-t border-white/15 py-16 sm:py-20 relative z-10 bg-black">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8">
+        <div className="grid md:grid-cols-2 gap-10 sm:gap-12 items-start">
+          <div className="space-y-4 text-center md:text-left">
+            <div className="flex items-center justify-center md:justify-start gap-3">
               <img 
-                src={logoUrl}
-                alt="RATISS Labs" 
-                className="w-10 h-10 rounded-full grayscale hover:grayscale-0 transition-all"
+                src="/src/assets/images/ratiss_labs_logo.webp" 
+                alt="RATISS Labs Logo" 
+                className="w-10 h-10 rounded-full border border-white/20 object-cover"
                 referrerPolicy="no-referrer"
               />
-              <span className="text-xl font-bold text-white">RATISS Labs</span>
+              <span className="text-xl font-bold text-white font-mono">RATISS Labs</span>
             </div>
-            <p className="text-zinc-300 max-w-sm text-sm leading-relaxed text-readable-body">
-              Concevoir des architectures cognitives ancrées dans la réalité topologique et thermodynamique.
+            <p className="text-zinc-200 max-w-md mx-auto md:mx-0 text-sm leading-relaxed font-sans font-normal">
+              Labo indépendant (Yaoundé, Cameroun). Audit d'artefacts de recherche : hashes, identifiants, plausibilité physique, reproductibilité. Rapports publiés avec annexe de reproduction.
             </p>
-            <div className="flex items-center gap-6">
-              <a href="https://github.com/jonathansearch" target="_blank" className="text-zinc-400 hover:text-white transition-colors">
-                <Github size={20} />
+            <div className="flex items-center justify-center md:justify-start gap-4 pt-2">
+              <a
+                href="https://github.com/jonathansearch"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-zinc-200 hover:text-white transition-colors flex items-center gap-1.5 text-xs font-mono font-semibold"
+              >
+                <Github size={16} />
+                <span>GitHub</span>
               </a>
-              <a href="https://www.linkedin.com/in/jonathan-evina-quantum" target="_blank" className="text-zinc-400 hover:text-white transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="mailto:jonathan.ratisslabs@zohomail.com" className="text-zinc-400 hover:text-white transition-colors">
-                <Mail size={20} />
+              <a
+                href="https://orcid.org/0009-0000-4092-5313"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-zinc-200 hover:text-white transition-colors flex items-center gap-1.5 text-xs font-mono font-semibold"
+              >
+                <Globe size={16} className="text-cyan-400" />
+                <span>ORCID</span>
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-8">
-            <div className="space-y-4">
-              <h4 className="text-white font-medium">Recherche</h4>
-              <ul className="space-y-2 text-sm text-zinc-500">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 font-sans text-center sm:text-left">
+            <div className="space-y-3">
+              <h4 className="text-white font-bold text-sm font-mono uppercase tracking-wider">
+                Ressources publiques
+              </h4>
+              <ul className="space-y-2 text-sm text-zinc-200">
                 <li>
-                  <a href="https://orcid.org/0009-0000-4092-5313" target="_blank" className="hover:text-white flex items-center gap-1">
-                    ORCID <ExternalLink size={12} />
+                  <a
+                    href="https://github.com/jonathansearch/ratiss-audit-public"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-cyan-300 inline-flex items-center gap-1 font-medium"
+                  >
+                    <FileText size={13} />
+                    <span>Rapport d'audit public</span>
+                    <ExternalLink size={11} className="opacity-70" />
                   </a>
                 </li>
-                <li><a href="#" className="hover:text-white">Publications</a></li>
-                <li><a href="#" className="hover:text-white">Livre Blanc</a></li>
+                <li>
+                  <a
+                    href="https://github.com/jonathansearch/ratiss-audit-public/blob/main/JOURNAL-DEVIATIONS.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-cyan-300 inline-flex items-center gap-1 font-medium"
+                  >
+                    <span>Journal des déviations</span>
+                    <ExternalLink size={11} className="opacity-70" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://orcid.org/0009-0000-4092-5313"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-cyan-300 inline-flex items-center gap-1 font-medium"
+                  >
+                    <span>Registre ORCID</span>
+                    <ExternalLink size={11} className="opacity-70" />
+                  </a>
+                </li>
               </ul>
             </div>
-            <div className="space-y-4">
-              <h4 className="text-white font-medium">Légal</h4>
-              <ul className="space-y-2 text-sm text-zinc-500">
-                <li>© 2026 RATISS Labs</li>
-                <li><a href="#" className="hover:text-white">Confidentialité</a></li>
+
+            <div className="space-y-3">
+              <h4 className="text-white font-bold text-sm font-mono uppercase tracking-wider">
+                Contact & Mentions
+              </h4>
+              <ul className="space-y-2 text-sm text-zinc-200">
+                <li className="font-medium text-white">Yaoundé, Cameroun</li>
+                <li>
+                  <a
+                    href="mailto:jonathan.ratisslabs@zohomail.com"
+                    className="text-cyan-300 hover:text-white font-mono text-xs font-semibold break-all underline underline-offset-2"
+                  >
+                    jonathan.ratisslabs@zohomail.com
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/jonathansearch/ratiss-audit-public"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white underline underline-offset-4 decoration-zinc-500 font-medium"
+                  >
+                    Via issues / discussions GitHub
+                  </a>
+                </li>
+                <li className="pt-2 text-xs font-mono text-zinc-400">
+                  © 2026 RATISS Labs — Jonathan Evina
+                </li>
               </ul>
             </div>
           </div>

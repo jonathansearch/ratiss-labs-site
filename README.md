@@ -1,34 +1,20 @@
-# RATISS Labs
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-Site vitrine de RATISS Labs : laboratoire de recherche et consulting deep-tech consacré aux architectures cognitives, à la topologie appliquée et au hardware quantique vérifiable.
+# Run and deploy your AI Studio app
 
-## Développement local
+This contains everything you need to run your app locally.
 
-Pré-requis : Node.js 20+ et npm.
+View your app in AI Studio: https://ai.studio/apps/2482c523-8534-4fc8-aee7-ad398f7c951b
 
-```bash
-npm install
-npm run dev
-```
+## Run Locally
 
-Le serveur Vite démarre sur `http://localhost:3000`.
+**Prerequisites:**  Node.js
 
-## Validation
 
-```bash
-npm run lint
-npm run build
-```
-
-## Déploiement
-
-Le projet est une SPA Vite compatible avec **Vercel** et **Netlify**. Utiliser `npm run build` comme commande de build et `dist` comme répertoire de sortie.
-
-Pour Vercel, aucun réglage supplémentaire n’est requis. Pour Netlify, le fichier `netlify.toml` documente le build et le fallback SPA.
-
-## Coordonnées publiques
-
-- GitHub : <https://github.com/jonathansearch>
-- LinkedIn : <https://www.linkedin.com/in/jonathan-evina-quantum>
-- ORCID : <https://orcid.org/0009-0000-4092-5313>
-- Email : <mailto:jonathan.ratisslabs@zohomail.com>
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

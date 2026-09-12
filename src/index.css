@@ -39,8 +39,21 @@
   box-shadow: 0 0 30px rgba(34, 211, 238, 0.08);
 }
 
-@media (pointer: fine) {
-  *, *::before, *::after {
-    cursor: none !important;
-  }
+/* OpenAI-inspired subtle atmospheric glows and glass surfaces */
+.openai-glass {
+  background: rgba(18, 18, 22, 0.55);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.openai-glass-subtle {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.openai-glow {
+  box-shadow: 0 0 50px -10px rgba(34, 211, 238, 0.12);
 }
