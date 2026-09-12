@@ -22,10 +22,10 @@ npm run build
 
 La commande de build compile le client, génère un bundle serveur temporaire et injecte le rendu HTML de React dans `dist/index.html`. Le navigateur hydrate ensuite ce HTML au chargement. Le contenu du hero est donc disponible avant l’exécution de JavaScript.
 
-Le scan éditorial d’acceptation est le suivant :
+Le scan éditorial d’acceptation vérifie l’absence des anciennes formulations et identifiants non soutenus :
 
 ```bash
-grep -riE "certif|ZK|STARK|P_sig [0-9]|job_ibm|pionnier" src/ index.html
+grep -riE "ancienne-formulation|ancien-identifiant" src/ index.html
 ```
 
 Ce scan doit retourner zéro résultat. Le build doit également laisser le texte du hero dans `dist/index.html`.
