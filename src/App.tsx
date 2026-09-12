@@ -41,11 +41,11 @@ export default function App() {
         {/* 4. Registre public (Registry) */}
         <PublicRegistrySection />
 
+        {/* 4. En cours */}
+        <OngoingSection />
+
         {/* 5. Travailler avec le labo */}
         <WorkWithUsSection />
-
-        {/* 6. En cours */}
-        <OngoingSection />
 
         {/* 7. Contact */}
         <ContactSection />
@@ -56,5 +56,4 @@ export default function App() {
     </div>
   );
 }
-
 
