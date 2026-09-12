@@ -36,7 +36,7 @@ Le projet est un site statique Vite déployé par GitHub Pages via `.github/work
 
 ## Animations
 
-Le fond conserve une présence visuelle très légère avec un canvas de faible densité. Il n’utilise plus de morphing automatique, de HUD, de contrôle flottant ou de suivi du pointeur. Le canvas s’arrête lorsque l’onglet est démonté et est désactivé avec `prefers-reduced-motion: reduce`.
+Le fond conserve le décor animé de RATISS Labs avec un réseau de particules, des filaments lumineux, un mouvement orbital lent et un halo radial. Il n’utilise pas de morphing automatique, de HUD, de contrôle flottant ou de suivi du pointeur. La densité est réduite sur mobile, l’animation s’arrête lorsque l’onglet est masqué et elle est désactivée avec `prefers-reduced-motion: reduce`.
 
 ## Coordonnées publiques
 
