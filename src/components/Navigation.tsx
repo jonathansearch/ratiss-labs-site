@@ -12,7 +12,7 @@ export function Header({ onOpenSidebar }: HeaderProps) {
           <div className="relative">
             <div className="absolute -inset-1 rounded-full bg-cyan-500/30 blur-sm opacity-0 group-hover:opacity-100 transition-opacity" />
             <img 
-              src="/src/assets/images/ratiss_labs_logo.webp" 
+              src="/ratiss-labs-site/ratiss_labs_logo.webp"
               alt="RATISS Labs Logo" 
               className="relative w-9 h-9 rounded-full border border-white/20 object-cover"
               referrerPolicy="no-referrer"
@@ -68,7 +68,7 @@ export function Footer() {
           <div className="space-y-4 text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-3">
               <img 
-                src="/src/assets/images/ratiss_labs_logo.webp" 
+                src="/ratiss-labs-site/ratiss_labs_logo.webp"
                 alt="RATISS Labs Logo" 
                 className="w-10 h-10 rounded-full border border-white/20 object-cover"
                 referrerPolicy="no-referrer"
