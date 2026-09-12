@@ -1,123 +1,57 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
-import { useState } from 'react';
-import { Header, Footer } from './components/Navigation';
-import { Hero } from './components/Hero';
-import { Vision } from './components/Vision';
-import { Expertise } from './components/Expertise';
-import { CommercialOffers } from './components/CommercialOffers';
-import { ValidationSection } from './components/ValidationSection';
-import { RepositoriesExplorer } from './components/RepositoriesExplorer';
-import { ProtocolSection } from './components/ProtocolSection';
-import { IntegritySection } from './components/IntegritySection';
-import { ScientificParametersSimulator } from './components/ScientificParametersSimulator';
-import { ContactProtocolSection } from './components/ContactProtocolSection';
-import { CustomCursor } from './components/CustomCursor';
-import { ParallaxBackground } from './components/ParallaxBackground';
+import { claims, hero, protocol, registry, roadmap } from './data/content';
 import { GlobalThreeBackground } from './components/GlobalThreeBackground';
-import { TestExecutionConsole } from './components/TestExecutionConsole';
-import { SidebarNavigation } from './components/SidebarNavigation';
-import { KeyboardShortcutsModal } from './components/KeyboardShortcutsModal';
-import { FloatingShortcutsBar } from './components/FloatingShortcutsBar';
-import { PhysicalPartnershipSection } from './components/PhysicalPartnershipSection';
+import type { ReactNode } from 'react';
+
+function Link({ href, children }: { href: string; children: ReactNode; key?: string }) {
+  return <a href={href} target="_blank" rel="noreferrer">{children}</a>;
+}
+
+function SectionTitle({ eyebrow, title }: { eyebrow: string; title: string }) {
+  return <div className="section-heading"><span>{eyebrow}</span><h2>{title}</h2></div>;
+}
 
 export default function App() {
-  const [isTestConsoleOpen, setIsTestConsoleOpen] = useState(false);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [isShortcutsOpen, setIsShortcutsOpen] = useState(false);
-  const [selectedTestRepo, setSelectedTestRepo] = useState<string>('ratiss-lewm-integration');
+  return <div className="site-shell">
+    <GlobalThreeBackground />
+    <header className="site-header">
+      <a className="brand" href="#top" aria-label="RATISS Labs"><img src="/ratiss-labs-site/assets/ratiss_labs_logo.webp" alt="RATISS Labs" /><span>RATISS LABS</span></a>
+      <nav aria-label="Navigation principale"><a href="#audit">Audit</a><a href="#protocole">Protocole</a><a href="#registre">Registre</a><a href="#contact">Contact</a></nav>
+    </header>
+    <main id="top">
+      <section className="hero section-wrap">
+        <p className="kicker">LABORATOIRE INDÉPENDANT · YAOUNDÉ, CAMEROUN</p>
+        <h1>{hero.title}</h1>
+        <p className="hero-copy">{hero.subtitle}</p>
+        <div className="link-row">{hero.links.map((link) => <Link key={link.label} href={link.url}>{link.label}</Link>)}</div>
+      </section>
 
-  const handleOpenTest = (repoName: string = 'ratiss-lewm-integration') => {
-    setSelectedTestRepo(repoName);
-    setIsTestConsoleOpen(true);
-  };
+      <section id="audit" className="section-wrap">
+        <SectionTitle eyebrow="01 / MÉTHODE" title="Ce que nous faisons" />
+        <div className="claim-grid">{claims.map((claim, index) => <article className="claim-card" key={claim.proofUrl}><span className="card-index">0{index + 1}</span><h3>{['Audit d’artefacts publics', 'Audit de reproductibilité logicielle', 'Pilotes d’audit scellés'][index]}</h3><p>{claim.text}</p><Link href={claim.proofUrl}>Voir le dossier associé →</Link></article>)}</div>
+      </section>
 
-  return (
-    <div className="min-h-screen bg-black text-zinc-100 font-sans selection:bg-cyan-500/25 selection:text-cyan-200 relative overflow-x-hidden w-full">
-      {/* Persistent Full-Page 3D Three.js Background with Fast-Scroll Damping */}
-      <GlobalThreeBackground />
+      <section id="protocole" className="section-wrap">
+        <SectionTitle eyebrow="02 / GARDE-FOUS" title="Le protocole" />
+        <div className="protocol-list">{protocol.map((rule) => <Link key={rule.text} href={rule.proofUrl}><span>{rule.text}</span><b>↗</b></Link>)}</div>
+        <p className="section-note"><Link href="https://github.com/jonathansearch/ratiss-audit-public/blob/main/JOURNAL-DEVIATIONS.md">Journal des déviations du labo →</Link></p>
+      </section>
 
-      {/* Subtle depth layered background parallax */}
-      <ParallaxBackground />
+      <section id="registre" className="section-wrap">
+        <SectionTitle eyebrow="03 / TRANSPARENCE" title="Registre public" />
+        <div className="registry">{registry.map((item) => <Link key={item.title} href={item.url}><span>{item.title}</span><small>{item.status}</small><b>↗</b></Link>)}</div>
+      </section>
 
-      {/* Custom Stylized Reactive Cursor */}
-      <CustomCursor />
+      <section id="encours" className="section-wrap">
+        <SectionTitle eyebrow="04 / PLAN OUVERT" title="En cours" />
+        <div className="roadmap">{roadmap.map((item) => <div key={item}><span>PLANIFIÉ</span><p>{item}</p></div>)}</div>
+      </section>
 
-      {/* Live Interactive Benchmark & Unit Test Runner Modal with Recalibration & Exit */}
-      <TestExecutionConsole
-        isOpen={isTestConsoleOpen}
-        onClose={() => setIsTestConsoleOpen(false)}
-        targetRepoName={selectedTestRepo}
-      />
-
-      {/* Sovereign Sidebar Navigation & Hardware Telemetry (Toggleable via Header, Floating Bar, or Ctrl+B) */}
-      <SidebarNavigation
-        isOpen={isSidebarOpen}
-        onClose={() => setIsSidebarOpen(false)}
-        onOpenTestConsole={() => handleOpenTest()}
-        onOpenShortcutsModal={() => setIsShortcutsOpen(true)}
-      />
-
-      {/* Keyboard Shortcuts Cheatsheet & Global Key Handler (Ctrl+K, Ctrl+P, Ctrl+B, Esc) */}
-      <KeyboardShortcutsModal
-        isOpen={isShortcutsOpen}
-        onClose={() => setIsShortcutsOpen(false)}
-        onOpenTestConsole={() => handleOpenTest()}
-        onOpenSidebar={() => setIsSidebarOpen(true)}
-      />
-
-      {/* Floating Bottom Shortcuts Bar for quick navigation */}
-      <FloatingShortcutsBar
-        onOpenTestConsole={() => handleOpenTest()}
-        onOpenSidebar={() => setIsSidebarOpen(true)}
-        onOpenShortcutsModal={() => setIsShortcutsOpen(true)}
-      />
-
-      {/* Sovereign Navigation Bar */}
-      <Header 
-        onOpenSidebar={() => setIsSidebarOpen(true)}
-        onOpenTestConsole={() => handleOpenTest()}
-      />
-      
-      <main className="relative z-10 overflow-x-hidden w-full">
-        {/* Hero with transparent background opening directly into 3D universe */}
-        <Hero />
-
-        {/* 01 / Vision & Fondations */}
-        <Vision />
-
-        {/* 02 / Expertise Fondamentale */}
-        <Expertise />
-
-        {/* Matrice des 7 Offres Commerciales Cadrées (CTO Consulting) */}
-        <CommercialOffers />
-
-        {/* 03 / Validation Empirique & Suite Data-Viz (Bloch Sphere, Homologie, Radar QPU) */}
-        <ValidationSection />
-
-        {/* Audit des 43 Dépôts Publics & Traçabilité avec Lanceur de Tests Directs */}
-        <RepositoriesExplorer onRunTest={handleOpenTest} />
-
-        {/* 08 / Pôle Partenariat Industriel & Construction Physique (Clé 70/30 - Les 5 Dépôts Piliers) */}
-        <PhysicalPartnershipSection onRunTest={handleOpenTest} />
-
-        {/* 04 / Protocole Scientifique (Plan. Execute. Certify. Transfer.) */}
-        <ProtocolSection />
-
-        {/* 07 / Console de Contrôle & Paramètres Topologiques */}
-        <ScientificParametersSimulator onOpenTestConsole={() => handleOpenTest('ratiss-lewm-integration')} />
-
-        {/* 05 / Intégrité Scientifique & Délimitation */}
-        <IntegritySection />
-
-        {/* 06 / Contact & Ouverture de Protocole */}
-        <ContactProtocolSection />
-      </main>
-
-      <Footer />
-    </div>
-  );
+      <section id="contact" className="contact section-wrap">
+        <SectionTitle eyebrow="05 / OUVERTURE" title="Écrire au labo" />
+        <p>Écrire au labo : via GitHub (issues ou discussion sur jonathansearch/ratiss-audit-public). Toute demande d'audit reçoit une réponse publique ou nulle.</p>
+        <Link href="https://github.com/jonathansearch/ratiss-audit-public">Ouvrir le registre public →</Link>
+      </section>
+    </main>
+    <footer><span>RATISS LABS · AUDIT SCIENTIFIQUE EXÉCUTABLE</span><Link href="https://github.com/jonathansearch">github.com/jonathansearch</Link></footer>
+  </div>;
 }
