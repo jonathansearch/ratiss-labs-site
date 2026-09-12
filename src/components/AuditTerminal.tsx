@@ -14,34 +14,34 @@ interface AuditLog {
 const AUDIT_STAGES: AuditLog[] = [
   {
     id: '1',
-    timestamp: '14:42:01.104',
-    step: 'Manifest Scellé',
-    command: 'ratiss seal verify --target=osf.io/wf7qm',
-    hash: 'sha256:9f8a...3e41',
+    timestamp: '2026-09-12',
+    step: 'PUBLIC-AUDIT-REPORT-EN.md',
+    command: 'curl -sL https://raw.githubusercontent.com/jonathansearch/ratiss-audit-public/main/PUBLIC-AUDIT-REPORT-EN.md | sha256sum',
+    hash: '2ef4f16cbbcf030f1a1df63142d0b27bffafdc5020b299bdf5cdfa76fd26229a',
     status: 'sealed',
   },
   {
     id: '2',
-    timestamp: '14:42:01.320',
-    step: 'Hashes & Identifiants',
-    command: 'ratiss check-hashes --doi=10.17605/OSF.IO/WF7QM',
-    hash: 'sha256:4b21...87a0',
+    timestamp: '2026-09-12',
+    step: 'NOTICES-OSF-2026-09-12.md',
+    command: 'curl -sL https://raw.githubusercontent.com/jonathansearch/ratiss-audit-public/main/NOTICES-OSF-2026-09-12.md | sha256sum',
+    hash: 'f12f0aee1bb4045f93b5fe41801b0396599153ce9331e0565b9b7eebd4c59f7a',
     status: 'verified',
   },
   {
     id: '3',
-    timestamp: '14:42:01.688',
-    step: 'Graines & Reproductibilité',
-    command: 'ratiss exec-repro --seed=42 --env=frozen-py311',
-    hash: 'sha256:d109...bc92',
+    timestamp: '2026-09-12',
+    step: 'JOURNAL-DEVIATIONS.md',
+    command: 'curl -sL https://raw.githubusercontent.com/jonathansearch/ratiss-audit-public/main/JOURNAL-DEVIATIONS.md | sha256sum',
+    hash: 'c3b5a67de8da388e51b03eabb323de68f2278e326cd99ee25182669c43b404de',
     status: 'verified',
   },
   {
     id: '4',
-    timestamp: '14:42:02.045',
-    step: 'Plausibilité Physique',
-    command: 'ratiss test-bounds --strict --ablation',
-    hash: 'sha256:77fa...12cc',
+    timestamp: '2026-09-12',
+    step: 'README.md',
+    command: 'curl -sL https://raw.githubusercontent.com/jonathansearch/ratiss-audit-public/main/README.md | sha256sum',
+    hash: '8231043b8e9db09487faa8ab9507be2d3d79d145efa1aa17ab1b5d2f0f93ccba',
     status: 'verified',
   },
 ];
@@ -98,7 +98,7 @@ export function AuditTerminal() {
           <div className="flex items-center gap-2 sm:gap-3 ml-auto sm:ml-0">
             <div className="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-[11px] font-mono text-emerald-300 font-semibold">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              <span>100% Reproductible</span>
+              <span>4 fichiers · 4 hashes conformes</span>
             </div>
             <button
               onClick={triggerReExecution}
@@ -117,11 +117,11 @@ export function AuditTerminal() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-white/10 text-[11px] sm:text-xs">
             <div className="flex flex-wrap items-center gap-1.5">
               <span className="text-zinc-400 font-semibold">CIBLE :</span>
-              <span className="text-white font-semibold break-words">ratiss-audit-public (preprints OSF & dépôts)</span>
+              <span className="text-white font-semibold break-words">ratiss-audit-public — 4 fichiers publiés le 2026-09-12</span>
             </div>
             <div className="flex flex-wrap items-center gap-1.5">
               <span className="text-zinc-400 font-semibold">MÉTRIQUE :</span>
-              <span className="text-cyan-300 font-semibold">Plausibilité & Cohérence physique</span>
+              <span className="text-cyan-300 font-semibold">SHA-256 octet par octet, local = distant</span>
             </div>
           </div>
 
