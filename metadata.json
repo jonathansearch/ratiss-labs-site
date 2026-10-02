@@ -1,8 +1,0 @@
-{
-  "name": "RATISS Labs — audit scientifique exécutable",
-  "description": "Labo indépendant (Yaoundé, Cameroun). Audit d'artefacts de recherche : hashes, identifiants, plausibilité physique, reproductibilité. Rapports publiés avec annexe de reproduction.",
-  "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
-}
