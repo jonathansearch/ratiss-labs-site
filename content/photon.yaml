@@ -1,0 +1,57 @@
+id: ratiss-photon-001
+title: "Reproduction computationnelle d'une expérience photonique multi-chemins"
+slug: photon
+domain: [quantum_physics, photonics]
+type: [reproduction, computational_experiment]
+status: published
+authors: ["Jonathan Evina"]
+date: 2026-09-27
+version: "v2"
+temp: turquoise
+abstract: >
+  Reproduction in-silico, par un moteur paraxial v2 reprenant l'équation même du
+  papier de référence, de l'expérience photonique multi-chemins de Wen et al.
+  Sur l'expérience E-CANTON : 8 396 800 chemins à module égal, fidélité 95,92 %
+  (2 plans), 95,96 % (3 plans), 96,77 % (action naïve) ; corrélation d'intensité
+  97,08–97,10 % ; contrôle croisé 96,06 % ; phase de l'écran 5,4°. La fenêtre de
+  Canton (95–98,5 %) est atteinte. Calcul uniquement : zéro QPU.
+repository: "https://github.com/jonathansearch/RATISS-PHOTON"
+site: "https://jonathansearch.github.io/RATISS-PHOTON"
+zenodo: "https://zenodo.org/records/23117607"
+doi: "10.5281/zenodo.23117607"
+reproduction: "graine 20260927 — campagne ~1 s (voir README du dépôt)"
+keywords: [photons, optique quantique, chemins multiples, reproduction, paraxial, canton]
+references:
+  - "Wen et al., Science Advances 12, eaeh1011 (26/08/2026)"
+sections:
+  question: >
+    L'action d'un monde paraxial suffit-elle à retrouver les statistiques
+    multi-chemins mesurées, sans aucun tirage de Born câblé ?
+  reference_work: >
+    Wen et al., Science Advances 12, eaeh1011 (26/08/2026) — 1 419 857 chemins,
+    fidélité 87,6 → 98,5 %, MAPE 8,17 ± 3,50 %. Pas en compétition : eux le réel,
+    nous le monde.
+  method: >
+    Moteur paraxial v2 (l'équation même du papier). Action du monde QUADRATIQUE :
+    k0·dz + k0·dy²/2dz. Graine 20260927. Étiquette 🧮 calcul uniquement.
+    Visualisations Plotly embarqué + GIF kaleido (décision C2).
+  results:
+    - "E-CANTON : 8 396 800 chemins à module égal — fidélité 95,92 % (2 plans), 95,96 % (3 plans), 96,77 % (action naïve)."
+    - "Corrélation d'intensité 97,08–97,10 % ; contrôle croisé 96,06 % ; phase de l'écran 5,4° ; MAPE in-mundo ≈ 0."
+    - "E-F3 (la pépite) : à T = 0 K, 1 seule position d'impact sur 400 — le hasard ÉMERGE du bain thermique ; Pearson max 0,73 à 300 K, noyé à 0,24 à 4 T."
+    - "E-F4 : contre-flux fantômes ✔ (−7,1e−4, flux net −3,4e−8)."
+  negative:
+    - "E-F1 non tranché : plaque π/2 sub-pixel (−1 px observé vs 0 prédit) → bis à φ₀ plus grand."
+    - "H4 à moitié falsifié : aucune redistribution au blocage d'une branche (1,00 / 0,98 / 0,96) — la linéarité l'interdit."
+    - "Postulat 2 non résoluble à ≤ 12° (concordance 95,9 vs 96,8 %)."
+    - "E-F2 : entropie 4,92 vs 4,27 ; vortex 326/371 (porte amplitude, instrument perfectible)."
+  controls: >
+    Sceau 33/33. Six bugs documentés (B1 source au bord, B2 fentes, B3 action du
+    monde, B4 porte vortex, B5 moteur 2D boîte→paraxial, B6 chirpe inversé 29 %→95,9 %).
+    Miroir de projection avant export : tout point projeté vérifié par calcul.
+  limitations: >
+    Calcul uniquement (🧮) : aucune validation matérielle. Le monde paraxial n'est
+    pas le dispositif réel ; l'accord observé ne constitue pas une preuve physique.
+sources:
+  - "RATISS-ARCHIVES/POUR-LA-PROCHAINE-SESSION.md — mise à jour 27/09, section B"
+  - "RATISS-PHOTON/README.md et RAPPORT (commits 2f18e80, 6f7bd1b, b455621, fb81249, de138f2, 0ccaac5)"

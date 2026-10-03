@@ -1,0 +1,46 @@
+id: ratiss-navier-003
+title: "Navier–Stokes : blow-up SPH 3D et traceurs — reproductibilité bit à bit"
+slug: navier-stokes
+domain: [fluid_dynamics]
+type: [simulation, reproducibility]
+status: published
+authors: ["Jonathan Evina"]
+date: 2026-10-02
+version: "rév. 4"
+temp: ocean
+abstract: >
+  Étude Navier–Stokes par SPH 3D avec traceurs : le blow-up atteint
+  Om_max = 5654.1668 et se reproduit bit à bit, écart point par point 0.0000.
+  Quatre campagnes publiées ; révision 4 scellée (8557fc6). Le commissaire NAVIER
+  impose : critères scellés par le chef avant tout run, échantillonnage à chaque
+  pas, configuration explicite dans chaque JSON.
+repository: "https://github.com/jonathansearch/RATISS-NAVIER"
+site: null
+zenodo: "https://zenodo.org/records/23117605"
+doi: "10.5281/zenodo.23117605"
+reproduction: "campagnes/ — commandes et paramètres figés dans PARAMETRES-FIGES.md"
+keywords: [navier-stokes, SPH, blow-up, vorticité, reproductibilité, traceurs]
+references: []
+sections:
+  question: >
+    La croissance de vorticité jusqu'au blow-up est-elle reproductible à
+    l'identique, run après run, sur une machine modeste ?
+  reference_work: "Travail original RATISS ; pas de reproduction externe."
+  method: >
+    SPH 3D, traceurs lagrangiens, échantillonnage à chaque pas de temps ;
+    paramètres figés AVANT exécution ; configuration complète embarquée dans
+    chaque JSON de campagne.
+  results:
+    - "Blow-up : Om_max = 5654.1668, reproduit avec un écart point par point de 0.0000."
+    - "Quatre campagnes publiées (dernier commit 5e736e0) ; révision 4 scellée (8557fc6)."
+  negative:
+    - "Témoins V3 non refaits : les critères de la campagne dipoles-v3 attendent la signature du chef."
+  controls: >
+    Critères scellés par le chef avant tout run ; rien sur GitHub sans ordre ;
+    empreintes SHA-256 des sorties.
+  limitations: >
+    SPH : résolution limitée par le nombre de particules ; le blow-up numérique
+    n'établit pas un blow-up analytique de Navier–Stokes.
+sources:
+  - "RATISS-ARCHIVES/POUR-LA-PROCHAINE-SESSION.md — mise à jour 02/10 (Commissaire NAVIER)"
+  - "RATISS-ARCHIVES/preuves/tests/RAPPORT-TESTS-RATISS.md"

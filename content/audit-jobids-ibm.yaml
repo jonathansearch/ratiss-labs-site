@@ -1,0 +1,48 @@
+id: ratiss-audit-005
+title: "Audit : dater une tâche IBM Quantum depuis son identifiant"
+slug: audit-jobids-ibm
+domain: [quantum_computing, metrology, verification]
+type: [audit, verification_record]
+status: published
+authors: ["Jonathan Evina"]
+date: 2026-09-26
+version: "v1"
+temp: amber
+abstract: >
+  Découverte vérifiable : un identifiant de tâche IBM encode sa date de création —
+  t = base32(id[:9]) / 8192, en secondes depuis l'époque Unix. Sur 66 charges
+  brutes horodatées, l'écart médian avec l'horodatage serveur est de 278 ms.
+  86 identifiants inventoriés sur la période 12/08 → 23/09/2026. Corroboration par
+  quatre captures de plateforme : backends 17/17 identiques, horodatages concordants
+  à moins d'une minute, comptabilité du quota recoupant l'inventaire. Vérifiable
+  sans compte IBM.
+repository: "https://github.com/jonathansearch/RATISS-ARCHIVES"
+site: null
+zenodo: "https://zenodo.org/records/23117599"
+doi: "10.5281/zenodo.23117599"
+reproduction: "python3 outils/decode_job_id.py <id>  ·  python3 outils/verifier_corpus.py"
+keywords: [IBM Quantum, job id, datation, base32, audit, provenance, métrologie]
+references: []
+sections:
+  question: >
+    Un identifiant opaque de tâche QPU contient-il assez de structure pour en
+    dater la création, et cette datation est-elle corroborée par le serveur ?
+  reference_work: "Registre interne RATISS : 86 identifiants, 66 charges brutes horodatées."
+  method: >
+    Décodage base32 des 9 premiers caractères, division par 8192 → secondes Unix.
+    Comparaison aux horodatages serveur sur 66 tâches ; corroboration indépendante
+    par captures de plateforme et comptabilité du quota.
+  results:
+    - "Formule : t = base32(id[:9]) / 8192 (secondes depuis l'époque Unix)."
+    - "Écart médian 278 ms avec l'horodatage serveur sur 66 tâches."
+    - "86 identifiants inventoriés, période 12/08 → 23/09/2026."
+    - "Corroboration : backends 17/17 identiques, horodatages < 1 min, quota cohérent."
+  negative:
+    - "d762omnq1anc738d2cj0 n'est PAS une tâche : c'est l'exemple de la documentation IBM."
+    - "Pas de ZK-STARK : la certification repose sur des empreintes SHA-256 (correction de l'auteur)."
+    - "Divergences assumées : synchrotron-24/s04.json λ=0.002 (point sur la séparatrice), continuums/c01 (bruit d'échantillonnage sans graine)."
+  controls: "Cinq outils testés ; registre reconstruit depuis un clone par verifier_corpus.py."
+  limitations: "La datation donne la création côté serveur, pas l'heure d'exécution ; précision limitée au pas de 1/8192 s."
+sources:
+  - "RATISS-ARCHIVES/POUR-LA-PROCHAINE-SESSION.md — section B (audit des tâches IBM)"
+  - "RATISS-ARCHIVES/preuves/qpu/REGISTRE-QPU.md · outils/decode_job_id.py"

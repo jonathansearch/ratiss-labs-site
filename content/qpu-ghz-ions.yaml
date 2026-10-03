@@ -1,0 +1,59 @@
+id: ratiss-planck-002
+title: "États GHZ sur QPU réels : trilogie ions / Garnet / Cepheus, GHZ-4 ions à 97,27 %"
+slug: qpu-ghz-ions
+domain: [quantum_computing, hardware]
+type: [experimental_qpu, measurement]
+status: published
+authors: ["Jonathan Evina"]
+date: 2026-09-30
+version: "v1"
+temp: violet
+abstract: >
+  Quatorze charges exécutées le 29/09/2026 sur trois QPU réels via Open Quantum
+  (Rigetti Cepheus-1-108Q, IQM Garnet, AQT IBEX Q1 ions piégés). Pièce maîtresse :
+  GHZ-4 ions piégés df23deac = 97,27 % ((497 + 499) / 1024). Trilogie GHZ-4 :
+  ions 97,3 > Garnet 94,6 > Cepheus 79,3. Bell 99,61 % et GHZ-7 90,04 % sur IBEX.
+  Chat-12 à 66,0 %. Pente ions compatible avec −1,9 pt/qubit, décroissance qui
+  s'accélère. Coûts réels mesurés : 1 / 2 / 15 Spark par 1024 tirs.
+repository: "https://github.com/jonathansearch/RATISS-PLANCK"
+site: null
+zenodo: "https://zenodo.org/records/23117609"
+doi: "10.5281/zenodo.23117609"
+reproduction: "comptages bruts : RATISS-PLANCK/resultats/qpu_ghz4_ibex_counts.json ; récolte via get_job(...).output_data_url (URL signée)"
+keywords: [GHZ, intrication, QPU, ions piégés, supraconducteur, fidélité, spark]
+references:
+  - "Open Quantum (Quantum Rings) — attribution obligatoire www.openquantum.com/citation"
+sections:
+  question: >
+    Comment la fidélité des états GHZ décroît-elle avec le nombre de qubits,
+    selon la modality matérielle (ions piégés vs supraconducteurs) ?
+  reference_work: >
+    Pas de reproduction : mesure directe sur matériel réel. Registre des 14 charges :
+    RATISS-ARCHIVES/preuves/qpu/openquantum-20260929.json.
+  method: >
+    QASM multi-lignes, job_subcategory_id « phys:oth », auto_approve_quote=True après
+    lecture du devis (« Auto-selected plan: N credits »). Doctrine : tir 1 par 1,
+    Garnet → Cepheus → IBEX ; jamais annuler sans ordre ; tokens TTL ≈ 5 min, token
+    frais à chaque appel.
+  results:
+    - "GHZ-4 ions piégés df23deac : 97,27 % — (0000 = 497 + 1111 = 499) / 1024 tirs."
+    - "Trilogie GHZ-4 : ions 97,3 % > Garnet 94,6 % > Cepheus 79,3 %."
+    - "Bell 99,61 % et GHZ-7 90,04 % sur IBEX Q1 (15 Spark chacun)."
+    - "GHZ-3/4/5 séparés sur Garnet : 94,5 / 94,6 / 88,5 % (2 Spark) ; trilogie Cepheus 89,7 / 79,3 / 68,7 % (1 Spark)."
+    - "Chat-12 (GHZ-12) b373d22f : 66,0 % (2 Spark)."
+    - "Pente ions ≈ −1,9 pt/qubit sur 3 points (pentes locales −1,2 puis −2,4 : décroissance qui s'accélère)."
+  negative:
+    - "Épisodes Garnet réfutés (45 % en co-hébergé vs 94 %) → LOI RATISS du shot épisodique : all-to-all ONLY."
+    - "407cd969 annulé → 15 Spark remboursés (premier remboursement du labo)."
+    - "Chat-12 à 66,0 % : sous la cible, publié tel quel."
+  controls: >
+    Devis lu AVANT approbation ; comptages bruts archivés ; horodatages serveur
+    rejouables. Re-vérifié le 03/10/2026 depuis les octets bruts : 97,27 % confirmé
+    à l'identique (1024 tirs, 497/499).
+  limitations: >
+    Stats à 1024 tirs : incertitude statistique non réduite davantage (coût Spark).
+    Comparaison inter-modality à nombre de qubits non constant au-delà de la trilogie.
+sources:
+  - "RATISS-ARCHIVES/POUR-LA-PROCHAINE-SESSION.md — mise à jour 29/09, sections B/D"
+  - "RATISS-ARCHIVES/preuves/qpu/openquantum-20260929.json"
+  - "RATISS-PLANCK/RAPPORT-FINAL.md (sceau 52/52)"

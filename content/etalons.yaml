@@ -1,0 +1,49 @@
+id: ratiss-etalons-004
+title: "RATISS-ETALONS : quatre étalons calculatoires à critères scellés avant exécution"
+slug: etalons
+domain: [fundamental, statistical_physics]
+type: [benchmark, negative_results]
+status: published
+authors: ["Jonathan Evina"]
+date: 2026-09-26
+version: "v1"
+temp: lime
+abstract: >
+  Quatre étalons (percolation, Ising 2D, problème à trois corps, empilements
+  compacts) avec critères figés AVANT exécution (PROTOCOLE.md). Score 11/16 puis
+  14/16 après corrections déclarées. Deux rouges ASSUMÉS et diagnostiqués :
+  E01-P2, dont l'hypothèse « pic de densité de trous à p_c » est INVALIDE (h(p)
+  monotone), et E04-P4, où le compresseur 3D sous-estime (0,61403 vs 0,64 ± 0,020)
+  en raison d'une taille finie et d'un état partiellement cristallin
+  (ψ₆ = 0,827 / 0,935). Chiffres clés : p_c = 0,0006 ; d_f = 1,8934 ± 0,0192 ;
+  T_c = 2,2613 ; γ/ν = 1,7540 ; ΔE/E = 1,21e−15 ; FCC = 4,44e−16 ;
+  Burrau λ = 0,55402 stable à 0,78 %.
+repository: "https://github.com/jonathansearch/RATISS-ETALONS"
+site: null
+zenodo: "https://zenodo.org/records/23117603"
+doi: "10.5281/zenodo.23117603"
+reproduction: "PROTOCOLE.md + scripts du dépôt (commits c230b65, 776658a, b86d027, 8c12b73)"
+keywords: [étalons, percolation, ising, trois corps, empilements, résultats négatifs]
+references: []
+sections:
+  question: >
+    Une batterie d'étalons à critères scellés peut-elle servir de référence
+    reproductible pour juger les futurs moteurs de calcul RATISS ?
+  reference_work: "Cas tests classiques de physique statistique et de mécanique céleste."
+  method: >
+    Critères figés AVANT exécution dans PROTOCOLE.md ; exécutions ensuite ;
+    tout écart publié, y compris les échecs.
+  results:
+    - "Score 11/16 → 14/16 après corrections déclarées ; sceau 23/23."
+    - "p_c = 0,0006 ; d_f = 1,8934 ± 0,0192 ; T_c = 2,2613 ; γ/ν = 1,7540."
+    - "Conservation : ΔE/E = 1,21e−15 ; réseau FCC = 4,44e−16."
+    - "Burrau λ = 0,55402 stable à 0,78 %."
+  negative:
+    - "E01-P2 : hypothèse « pic de densité de trous à p_c » INVALIDE — h(p) est monotone. Rouge assumé."
+    - "E04-P4 : compresseur 3D sous-estimé (0,61403 vs 0,64 ± 0,020) — taille finie + état partiellement cristallin (ψ₆ = 0,827 / 0,935). Rouge assumé."
+    - "RK4 à pas fixe FALSIFIÉ comme étalon : λ = +44 124, du bruit."
+  controls: "Critères scellés avant run ; figures matplotlib sans emoji ; empreintes du sceau 23/23."
+  limitations: "Tailles finies ; deux rouges conservés volontairement comme bornes connues du moteur."
+sources:
+  - "RATISS-ARCHIVES/POUR-LA-PROCHAINE-SESSION.md — mise à jour 27/09, section A"
+  - "RATISS-ETALONS/PROTOCOLE.md et README"

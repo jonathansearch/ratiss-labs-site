@@ -1,0 +1,31 @@
+% RATISS Labs — shared preamble (Tectonic / LaTeX)
+\usepackage[a4paper,margin=2.3cm]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\definecolor{ratiss}{RGB}{14,107,102}
+\definecolor{ratisslight}{RGB}{238,252,249}
+\definecolor{inkgray}{RGB}{74,111,107}
+\hypersetup{colorlinks=true,linkcolor=ratiss,urlcolor=ratiss,citecolor=ratiss}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\renewcommand{\familydefault}{\sfdefault}
+\newcommand{\ratisshead}[4]{%
+  {\color{ratiss}\rule{\linewidth}{1.2pt}}\vspace{6pt}\\
+  {\LARGE\bfseries #1}\\[4pt]
+  {\large #2}\\[2pt]
+  {\color{inkgray}\small #3}\\[2pt]
+  {\color{inkgray}\small #4}\vspace{8pt}\\
+  {\color{ratiss}\rule{\linewidth}{0.6pt}}\vspace{10pt}%
+}
+\newcommand{\kwsection}[1]{\section*{\color{ratiss}#1}\addcontentsline{toc}{section}{#1}}
+\newcommand{\sourcefoot}{%
+  \vspace{10pt}{\color{ratiss}\rule{\linewidth}{0.6pt}}\vspace{4pt}\\
+  {\color{inkgray}\scriptsize RATISS Labs --- independent, single-author laboratory, Yaoundé (Cameroon).
+  No number in this document is invented: every value carries a source in
+  Section~``Data and code availability'' or in the references.
+  Negative results are published with the same prominence as positive ones.}%
+}

@@ -1,0 +1,70 @@
+\documentclass[10pt]{article}
+\input{preambule.tex}
+\begin{document}
+\ratisshead
+{Dating an IBM Quantum Job from Its Identifier: a Verifiable Audit}
+{Jonathan Evina --- RATISS Labs, Yaoundé, Cameroon}
+{Audit record \texttt{ratiss-audit-005} · version v1 · 2026-09-26 · status: published}
+{Repository: \url{https://github.com/jonathansearch/RATISS-ARCHIVES} (tools and register)}
+
+\kwsection{Abstract}
+An IBM Quantum job identifier encodes its creation date:
+$t = \mathrm{base32}(\mathrm{id}[:9]) / 8192$, in seconds since the Unix epoch.
+Over 66 timestamped raw payloads the median gap with the server timestamp is 278\,ms.
+86 identifiers were inventoried over 12/08 $\rightarrow$ 23/09/2026. The finding is
+corroborated by four platform captures: 17/17 identical backends, timestamps agreeing
+within one minute, and quota accounting matching the inventory. The check requires no
+IBM account.
+
+\kwsection{Question}
+Does an opaque QPU job identifier carry enough structure to date its creation, and is
+that dating corroborated by server-side timestamps?
+
+\kwsection{Method}
+Base32 decoding of the first nine characters, division by 8192 $\rightarrow$ Unix
+seconds; comparison with server timestamps on 66 payloads; independent corroboration by
+platform captures and quota accounting.
+
+\begin{figure}[h]\centering
+\includegraphics[width=0.95\linewidth]{fig/audit-decode.pdf}
+\caption{Decoding pipeline from identifier to creation time. Schematic diagram,
+not measured data. Median gap 278\,ms over 66 payloads.}\label{fig:decode}
+\end{figure}
+
+\kwsection{Results}
+\begin{itemize}
+  \item Formula: $t = \mathrm{base32}(\mathrm{id}[:9]) / 8192$ (Unix seconds).
+  \item Median gap 278\,ms against server timestamps, over 66 payloads.
+  \item 86 identifiers inventoried, period 12/08 $\rightarrow$ 23/09/2026.
+  \item Corroboration: 17/17 identical backends, timestamps within one minute, coherent quota.
+\end{itemize}
+
+\kwsection{Negative results and corrections}
+\begin{itemize}
+  \item \texttt{d762omnq1anc738d2cj0} is NOT a job: it is the IBM documentation example.
+  \item No ZK-STARK: certification rests on SHA-256 fingerprints (author's correction).
+  \item Assumed divergences: \texttt{synchrotron-24/s04.json} $\lambda=0.002$ (point on the
+        separatrix); \texttt{continuums/c01} (sampling noise without seed).
+\end{itemize}
+
+\kwsection{Controls}
+Five tools tested; the register is rebuildable from a clone via
+\texttt{verifier\_corpus.py}; job exports comparable via \texttt{comparer\_export\_ibm.py}.
+
+\kwsection{Reproducibility}
+\begin{verbatim}
+python3 outils/decode_job_id.py <job_id>
+python3 outils/verifier_corpus.py
+\end{verbatim}
+
+\kwsection{Limitations}
+The dating yields server-side creation time, not execution time; resolution limited by
+the $1/8192$\,s step.
+
+\kwsection{Data and code availability}
+\url{https://github.com/jonathansearch/RATISS-ARCHIVES} ---
+\texttt{outils/decode\_jobid.py} family and \texttt{preuves/qpu/REGISTRE-QPU.md}.
+Zenodo DOI: to be assigned.
+
+\sourcefoot
+\end{document}
