@@ -23,7 +23,19 @@ import argparse, datetime, json, pathlib, re, sys, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 
 RACINE = pathlib.Path(__file__).resolve().parent
-DOSSIER = RACINE / "site" / "data"
+
+def _dossier_sortie() -> pathlib.Path:
+    """Trouve le dossier data/ quel que soit l'agencement.
+    · dépôt tel quel (CI) : <racine>/data
+    · espace de travail local : <racine>/site/data (le dépôt vit dans site/)
+    """
+    if (RACINE / "build.py").exists():
+        return RACINE / "data"
+    if (RACINE / "site" / "build.py").exists():
+        return RACINE / "site" / "data"
+    return RACINE / "data"
+
+DOSSIER = _dossier_sortie()
 UA = {"User-Agent": "RATISS-Labs-Veille/1.0 (contact: jonathan.ratisslabs@zohomail.com)"}
 
 # Thèmes suivis par le labo (notre niche : fiabilité IA + quantique + intégrité)
