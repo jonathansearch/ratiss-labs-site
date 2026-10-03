@@ -34,9 +34,23 @@ NAV = [
     ("Research", "/research/"),
     ("Audits", "/audits/"),
     ("Protocoles", "/protocols/"),
-    ("Entreprises", "/audit/"),
+    ("RATISS Pro", "/pro/"),
     ("À propos", "/about/"),
 ]
+
+RBAR = '''<style>
+#rbar{position:fixed;top:var(--nav-h,66px);left:0;right:0;z-index:68;display:flex;gap:8px;justify-content:center;padding:7px 12px;overflow-x:auto;scrollbar-width:none;background:rgba(2,10,9,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(45,212,191,.18)}
+#rbar::-webkit-scrollbar{display:none}
+#rbar a{flex:0 0 auto;font:600 .78rem "IBM Plex Mono",ui-monospace,monospace;color:#9fd8d2;text-decoration:none;padding:6px 12px;border:1px solid rgba(45,212,191,.22);border-radius:99px;background:rgba(6,34,32,.55)}
+#rbar a:hover{color:#eefcf9;border-color:#2dd4bf}
+#rbar a.hot{color:#03100f;background:linear-gradient(100deg,#facc15,#fde68a);border-color:#facc15;box-shadow:0 0 18px rgba(250,204,21,.35)}
+main{padding-top:calc(var(--nav-h) + 48px)!important}
+.hero{min-height:calc(100svh - var(--nav-h) - 48px)!important}
+</style>
+<nav id="rbar" aria-label="Accès rapide aux sections principales">
+<a href="/research/">📚 Research</a><a class="hot" href="/pro/">💼 RATISS Pro</a><a href="/audits/">🧾 Audits</a><a href="/protocols/">🧭 Protocoles</a><a href="/about/">ℹ️ À propos</a>
+</nav>
+'''
 
 CSS_ART = """
 /* ===== couche multi-pages (mêmes jetons que le site d'origine) ===== */
@@ -477,13 +491,25 @@ def construire() -> int:
                     "/audits/", sec, "amber"), encoding="utf-8")
     pages["/audits/"] = "Audits"
 
-    # --- offre entreprises ---
-    (OUT / "audit").mkdir()
-    (OUT / "audit" / "index.html").write_text(page_audit(), encoding="utf-8")
+    # --- RATISS Pro (offre entreprises) sur /pro/ ; /audit/ redirige ---
+    (OUT / "pro").mkdir()
     vente = ICI / "audit-entreprise.html"
     if vente.exists():
-        shutil.copyfile(vente, OUT / "audit" / "index.html")
-    pages["/audit/"] = "Audit d'intégrité"
+        shutil.copyfile(vente, OUT / "pro" / "index.html")
+    else:
+        (OUT / "pro" / "index.html").write_text(page_audit(), encoding="utf-8")
+    (OUT / "audit").mkdir()
+    (OUT / "audit" / "index.html").write_text(
+        '<!doctype html><html lang="fr"><head><meta charset="utf-8">'
+        '<meta name="robots" content="noindex">'
+        '<meta http-equiv="refresh" content="0; url=/pro/">'
+        '<link rel="canonical" href="https://ratiss-labs.vercel.app/pro/">'
+        '<title>RATISS Pro — redirection</title></head>'
+        '<body style="background:#03100f;color:#eefcf9;font-family:Inter,sans-serif">'
+        '<p style="text-align:center;padding:20vh 20px">Redirection vers '
+        '<a style="color:#facc15" href="/pro/">RATISS Pro</a>…</p></body></html>',
+        encoding="utf-8")
+    pages["/pro/"] = "RATISS Pro — audit d'intégrité IA"
 
     # --- protocoles (les lois du labo, documentées) ---
     sec = ('<p class="rkick"><i></i>Méthode</p><h1>Protocoles &amp; lois du labo</h1>'
@@ -551,14 +577,15 @@ def construire() -> int:
         'src="/assets/ratiss_labs_logo.webp"')
     accueil = accueil.replace(
         '<a href="#/recherche" data-r="/recherche">Recherche</a>',
-        '<a href="#/recherche" data-r="/recherche">Recherche</a>\n      <a href="/research/">Research</a>',
+        '<a href="#/recherche" data-r="/recherche">Recherche</a>\n      <a href="/research/">Research</a>\n      <a href="/pro/" style="color:#facc15;font-weight:700">💼 RATISS Pro</a>',
         1)
     accueil = accueil.replace(
         '  <hr>\n  <a href="#/confidentialite"',
-        '  <a href="/research/">— Pages Research (indexables)</a>\n  <a href="/audit/">— Audit d’intégrité (entreprises)</a>\n  <hr>\n  <a href="#/confidentialite"')
+        '  <a href="/research/">— Pages Research (indexables)</a>\n  <a href="/pro/">— RATISS Pro (intégrité IA, entreprises)</a>\n  <hr>\n  <a href="#/confidentialite"')
     accueil = accueil.replace(
         '<li><a href="#/recherche">Recherche</a></li>',
-        '<li><a href="#/recherche">Recherche</a></li>\n          <li><a href="/research/">Research (pages indexables)</a></li>\n          <li><a href="/audit/">Audit d’intégrité (entreprises)</a></li>')
+        '<li><a href="#/recherche">Recherche</a></li>\n          <li><a href="/research/">Research (pages indexables)</a></li>\n          <li><a href="/pro/" style="color:#facc15">💼 RATISS Pro (intégrité IA)</a></li>')
+    accueil = accueil.replace('<body>', '<body>\n' + RBAR, 1)
     accueil = accueil.replace(
         "<title>", '<link rel="sitemap" type="application/xml" href="/sitemap.xml" />\n<title>', 1)
     (OUT / "index.html").write_text(accueil, encoding="utf-8")

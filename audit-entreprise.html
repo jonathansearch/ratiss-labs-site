@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Audit d'intégrité pour équipes techniques — RATISS Labs</title>
-<meta name="description" content="Contrôle d'intégrité exécutable : artefacts scellés, rejouables et tracés, divergences documentées. Laboratoire indépendant, mono-auteur. On ne croit pas. On rejoue.">
-<link rel="canonical" href="https://ratiss-labs.vercel.app/audit/">
+<title>RATISS Pro — Audit d'intégrité exécutable pour systèmes IA</title>
+<meta name="description" content="Le marché de la fiabilité IA en chiffres sourcés, la régulation (AI Act art. 50), et la niche RATISS Pro : sceller, empreinter SHA-256, rejouer, tracer. On ne croit pas. On rejoue.">
+<link rel="canonical" href="https://ratiss-labs.vercel.app/pro/">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Audit d'intégrité pour équipes techniques — RATISS Labs">
-<meta property="og:description" content="Artefacts scellés, rejouables et tracés. Chaque divergence est documentée. On ne croit pas. On rejoue.">
-<meta property="og:url" content="https://ratiss-labs.vercel.app/audit/">
+<meta property="og:title" content="RATISS Pro — Audit d'intégrité exécutable pour systèmes IA">
+<meta property="og:description" content="Vos IA produisent. Qui peut le rejouer ? Marché, régulation, preuves rejouables. On ne croit pas. On rejoue.">
+<meta property="og:url" content="https://ratiss-labs.vercel.app/pro/">
 <meta property="og:locale" content="fr_FR">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"Audit d'intégrité exécutable","serviceType":"Contrôle d'intégrité d'artefacts techniques","provider":{"@type":"Person","name":"Jonathan Evina (RATISS Labs)","url":"https://ratiss-labs.vercel.app","email":"jonathan.ratisslabs@zohomail.com"},"description":"Scellement des paramètres avant exécution, empreintes SHA-256, verdicts rejouables, journal de déviations chaîné, intégration CI. Ne certifie pas qu'un résultat est scientifiquement vrai.","areaServed":"Worldwide","inLanguage":"fr"}
+{"@context":"https://schema.org","@type":"Service","name":"RATISS Pro — Audit d'intégrité exécutable","serviceType":"Contrôle d'intégrité d'artefacts techniques et IA","provider":{"@type":"Person","name":"Jonathan Evina (RATISS Labs)","url":"https://ratiss-labs.vercel.app","email":"jonathan.ratisslabs@zohomail.com"},"description":"Scellement des paramètres avant exécution, empreintes SHA-256, verdicts rejouables, journal de déviations chaîné, intégration CI. Ne certifie pas qu'un résultat est scientifiquement vrai.","areaServed":"Worldwide","inLanguage":"fr"}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,20 +24,29 @@
 html{scroll-behavior:smooth}
 body{margin:0;color:var(--text);font:400 1rem/1.65 Inter,system-ui,sans-serif;-webkit-text-size-adjust:100%;overflow-x:hidden;
 background:radial-gradient(60rem 40rem at 85% -5%,rgba(45,212,191,.22),transparent 60%),radial-gradient(45rem 35rem at -10% 20%,rgba(250,204,21,.10),transparent 60%),radial-gradient(50rem 40rem at 100% 70%,rgba(14,107,102,.35),transparent 60%),var(--bg);background-attachment:fixed}
-.wrap{max-width:980px;margin:0 auto;padding:0 20px}
-section{padding:72px 0;position:relative}
-h1,h2,h3{font-family:Syne,Inter,sans-serif;font-weight:800;line-height:1.02;margin:0 0 18px}
-h1{font-size:clamp(2.6rem,11vw,6rem);letter-spacing:-.035em;background:linear-gradient(100deg,#fff 0%,var(--t2) 25%,var(--gold) 50%,var(--t2) 75%,#fff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-h2{font-size:clamp(1.9rem,7vw,3.2rem);letter-spacing:-.025em;padding-left:18px;border-left:6px solid var(--gold)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+section{padding:64px 0;position:relative;scroll-margin-top:64px}
+h1,h2,h3{font-family:Syne,Inter,sans-serif;font-weight:800;line-height:1.05;margin:0 0 18px}
+h1{font-size:clamp(2.5rem,10vw,5.4rem);letter-spacing:-.035em;background:linear-gradient(100deg,#fff 0%,var(--t2) 25%,var(--gold) 50%,var(--t2) 75%,#fff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 100%;animation:shine 9s linear infinite}
+h2{font-size:clamp(1.8rem,6vw,3rem);letter-spacing:-.025em;padding-left:18px;border-left:6px solid var(--gold)}
 h3{font-size:1.05rem;color:var(--t2);margin-bottom:8px}
-p{margin:0 0 14px;max-width:66ch}
+p{margin:0 0 14px;max-width:70ch}
 .mute{color:var(--mute)}
+a{color:var(--t2)}
+a:focus-visible{outline:3px solid var(--t2);outline-offset:3px}
 code,pre{font-family:"IBM Plex Mono",ui-monospace,monospace}
-header{padding:56px 0 72px}
+/* sous-navigation collante de la page */
+.subnav{position:sticky;top:0;z-index:40;background:rgba(2,10,9,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.subnav div{max-width:1020px;margin:0 auto;padding:10px 16px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.subnav div::-webkit-scrollbar{display:none}
+.subnav a{flex:0 0 auto;font:500 .82rem "IBM Plex Mono",monospace;color:var(--mute);text-decoration:none;padding:7px 13px;border:1px solid var(--line);border-radius:99px;transition:.15s}
+.subnav a:hover{color:var(--text);border-color:var(--t1)}
+.subnav a.pro{color:#03100f;background:var(--gold);border-color:var(--gold);font-weight:600}
+header{padding:52px 0 60px}
 .devise{display:inline-block;font:500 .9rem "IBM Plex Mono",monospace;color:#03100f;background:var(--gold);padding:7px 14px;border-radius:99px;margin-bottom:26px;box-shadow:0 0 28px rgba(250,204,21,.45)}
-.lead{font-size:clamp(1.1rem,3.4vw,1.4rem);max-width:56ch;color:var(--text)}
-.statut{margin-top:26px;padding:16px 18px;border:1px solid rgba(250,204,21,.4);border-radius:16px;background:rgba(250,204,21,.07);font-size:.95rem;max-width:66ch}
-.term{margin-top:34px;max-width:620px;background:#020a09;border:1px solid var(--t3);border-radius:18px;box-shadow:0 0 0 1px rgba(45,212,191,.1),0 20px 60px -10px rgba(45,212,191,.35);overflow:hidden;font-family:"IBM Plex Mono",monospace;font-size:.88rem}
+.lead{font-size:clamp(1.1rem,3.2vw,1.35rem);max-width:58ch;color:var(--text)}
+.statut{margin-top:26px;padding:16px 18px;border:1px solid rgba(250,204,21,.4);border-radius:16px;background:rgba(250,204,21,.07);font-size:.95rem;max-width:70ch}
+.term{margin-top:34px;max-width:640px;background:#020a09;border:1px solid var(--t3);border-radius:18px;box-shadow:0 0 0 1px rgba(45,212,191,.1),0 20px 60px -10px rgba(45,212,191,.35);overflow:hidden;font-family:"IBM Plex Mono",monospace;font-size:.88rem}
 .term .bar{display:flex;gap:7px;align-items:center;padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mute);font-size:.75rem}
 .term .bar i{width:10px;height:10px;border-radius:50%;background:var(--t3)}
 .term .bar i:first-child{background:var(--alert)}.term .bar i:nth-child(2){background:var(--gold)}.term .bar i:nth-child(3){background:var(--t1)}
@@ -47,10 +56,20 @@ header{padding:56px 0 72px}
 pre{margin:12px 0;padding:16px 18px;background:#020a09;border:1px solid var(--t3);border-radius:16px;overflow-x:auto;color:var(--t2);font-size:.9rem;line-height:1.7;box-shadow:0 12px 40px -16px rgba(45,212,191,.5)}
 .seal{display:inline-flex;align-items:center;gap:9px;font:500 .8rem "IBM Plex Mono",monospace;color:var(--t2);margin-top:6px}
 .seal::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--t1);box-shadow:0 0 0 4px rgba(45,212,191,.2),0 0 18px var(--t1)}
-.chiffres{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:30px 0}
+.chiffres{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:30px 0}
 .chiffres div{background:linear-gradient(160deg,var(--panel),#04181a);border:1px solid var(--t3);border-radius:20px;padding:22px 20px;box-shadow:0 16px 50px -20px rgba(45,212,191,.55)}
-.chiffres b{display:block;font:800 clamp(3.4rem,13vw,5rem)/.95 Syne,sans-serif;letter-spacing:-.04em;background:linear-gradient(180deg,#fff,var(--t1));-webkit-background-clip:text;background-clip:text;color:transparent}
-.chiffres span{font-size:.9rem;color:var(--mute)}
+.chiffres b{display:block;font:800 clamp(3rem,12vw,4.4rem)/.95 Syne,sans-serif;letter-spacing:-.04em;background:linear-gradient(180deg,#fff,var(--t1));-webkit-background-clip:text;background-clip:text;color:transparent}
+.chiffres span{font-size:.88rem;color:var(--mute)}
+/* tableaux sourcés */
+.tbl{width:100%;border-collapse:collapse;margin:20px 0;font-size:.92rem;background:linear-gradient(160deg,var(--panel),#04181a);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.tblwrap{overflow-x:auto;border-radius:18px}
+.tbl th{font:600 .78rem "IBM Plex Mono",monospace;color:var(--gold);text-align:left;padding:13px 14px;border-bottom:1px solid var(--line);white-space:nowrap;background:rgba(2,10,9,.5)}
+.tbl td{padding:13px 14px;border-bottom:1px solid rgba(45,212,191,.07);vertical-align:top;color:var(--text)}
+.tbl tr:last-child td{border-bottom:none}
+.tbl td:first-child{font-weight:600;min-width:11ch}
+.chip{display:inline-block;font:600 .72rem "IBM Plex Mono",monospace;padding:3px 9px;border-radius:99px;white-space:nowrap}
+.chipV{color:#03100f;background:var(--t1)}
+.chipC{color:#03100f;background:var(--gold)}
 ol.liv{list-style:none;counter-reset:l;margin:26px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
 ol.liv li{counter-increment:l;background:linear-gradient(160deg,var(--panel),#04181a);border:1px solid var(--line);border-radius:20px;padding:70px 20px 22px;position:relative;overflow:hidden;transition:transform .2s,border-color .2s,box-shadow .2s}
 ol.liv li:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 18px 50px -18px rgba(250,204,21,.45)}
@@ -60,97 +79,163 @@ ol.liv span{color:var(--mute);font-size:.95rem}
 .non{border:2px solid var(--alert);border-radius:22px;padding:30px 24px;background:repeating-linear-gradient(135deg,rgba(251,113,133,.09) 0 14px,rgba(251,113,133,.03) 14px 28px);box-shadow:0 0 60px -20px rgba(251,113,133,.6)}
 .non h2{color:var(--alert);border-color:var(--alert)}
 .non strong{color:#fff}
-.non ul,.cadre ul{margin:0;padding-left:20px}
-.non li,.cadre li{margin-bottom:9px;max-width:62ch}
+.non ul,.cadre ul,.pos ul{margin:0;padding-left:20px}
+.non li,.cadre li,.pos li{margin-bottom:9px;max-width:66ch}
 .cadre .wrap{background:rgba(6,34,32,.6);border:1px solid var(--line);border-radius:22px;padding:34px 24px}
+.pos{border:1px solid rgba(250,204,21,.35);border-radius:22px;padding:30px 24px;background:linear-gradient(160deg,rgba(250,204,21,.06),rgba(6,34,32,.6))}
 .cta{display:inline-block;margin-top:14px;padding:18px 30px;background:linear-gradient(100deg,var(--gold),#fde68a);color:#03100f;font:600 1.05rem Inter,sans-serif;border-radius:16px;text-decoration:none;box-shadow:0 0 0 4px rgba(250,204,21,.18),0 14px 50px -6px rgba(250,204,21,.6);transition:transform .15s}
 .cta:hover{transform:scale(1.03)}
-a:focus-visible{outline:3px solid var(--t2);outline-offset:3px}
-a{color:var(--t2)}
+.srcs{font-size:.85rem;color:var(--mute)}
+.srcs li{margin-bottom:10px;max-width:80ch}
+.srcs a{word-break:break-all}
 footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--mute);font-size:.85rem}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cur{animation:none}ol.liv li{transition:none}}
-
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cur{animation:none}ol.liv li{transition:none}.bg *,h1{animation:none!important}}
 .bg{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
 .bg .g{position:absolute;inset:-60px;background-image:linear-gradient(rgba(45,212,191,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(45,212,191,.07) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%);animation:grid 24s linear infinite}
 .bg .b{position:absolute;width:46vmax;height:46vmax;border-radius:50%;will-change:transform}
 .bg .b1{left:-12vmax;top:-10vmax;background:radial-gradient(circle,rgba(45,212,191,.28),transparent 65%);animation:d1 22s ease-in-out infinite alternate}
 .bg .b2{right:-14vmax;top:25vh;background:radial-gradient(circle,rgba(250,204,21,.16),transparent 65%);animation:d2 28s ease-in-out infinite alternate}
 .bg .b3{left:20vw;bottom:-18vmax;background:radial-gradient(circle,rgba(14,107,102,.5),transparent 65%);animation:d3 26s ease-in-out infinite alternate}
-.bg .p{position:absolute;bottom:-12px;width:4px;height:4px;border-radius:50%;background:var(--t2);box-shadow:0 0 10px var(--t1);opacity:0;animation:rise 14s linear infinite}
-.bg .p:nth-of-type(1){left:8%;animation-delay:0s}.bg .p:nth-of-type(2){left:22%;animation-delay:3s;animation-duration:17s}.bg .p:nth-of-type(3){left:37%;animation-delay:6s;background:var(--gold);box-shadow:0 0 10px var(--gold)}.bg .p:nth-of-type(4){left:53%;animation-delay:1.5s;animation-duration:19s}.bg .p:nth-of-type(5){left:68%;animation-delay:8s}.bg .p:nth-of-type(6){left:81%;animation-delay:4.5s;animation-duration:16s;background:var(--gold);box-shadow:0 0 10px var(--gold)}.bg .p:nth-of-type(7){left:92%;animation-delay:10s}
 @keyframes grid{to{transform:translateY(56px)}}
 @keyframes d1{to{transform:translate(18vw,14vh) scale(1.15)}}
 @keyframes d2{to{transform:translate(-16vw,-12vh) scale(1.2)}}
 @keyframes d3{to{transform:translate(14vw,-10vh) scale(.9)}}
-@keyframes rise{0%{transform:translateY(0);opacity:0}12%{opacity:.9}85%{opacity:.5}100%{transform:translateY(-105vh);opacity:0}}
 @keyframes shine{to{background-position:200% 0}}
-h1{background-size:200% 100%;animation:shine 9s linear infinite}
-@media(prefers-reduced-motion:reduce){.bg *,h1{animation:none!important}}
 @supports not ((-webkit-background-clip:text) or (background-clip:text)){h1,.chiffres b{color:var(--t2);background:none;-webkit-text-stroke:0}}
-@media(max-width:520px){section{padding:52px 0}h2{padding-left:12px;border-left-width:4px}.wrap{padding:0 16px}}
+@media(max-width:520px){section{padding:48px 0}h2{padding-left:12px;border-left-width:4px}.wrap{padding:0 16px}.tbl{font-size:.84rem}}
 </style>
 </head>
 <body>
-<div class="bg" aria-hidden="true"><div class="g"></div><div class="b b1"></div><div class="b b2"></div><div class="b b3"></div><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span></div>
+<div class="bg" aria-hidden="true"><div class="g"></div><div class="b b1"></div><div class="b b2"></div><div class="b b3"></div></div>
+
+<nav class="subnav" aria-label="Sections de la page">
+<div>
+<a href="/" >← Accueil</a>
+<a href="#marche">Marché</a>
+<a href="#regulation">Régulation</a>
+<a href="#position">Position</a>
+<a href="#preuves">Preuves</a>
+<a href="#livrables">Livrables</a>
+<a href="#limites">Limites</a>
+<a class="pro" href="#contact">💼 Premier échange</a>
+</div>
+</nav>
+
 <header>
 <div class="wrap">
-<div class="devise">On ne croit pas. On rejoue.</div>
-<h1>Audit d'intégrité pour équipes techniques</h1>
-<p class="lead">Entre le moment où un résultat est mesuré et celui où il est publié ou déployé, les artefacts changent. Vérifier à la main coûte du temps et ne laisse aucune trace. L'audit RATISS scelle, rejoue et trace.</p>
+<div class="devise">💼 RATISS Pro · On ne croit pas. On rejoue.</div>
+<h1>Vos IA produisent.<br>Qui peut le rejouer ?</h1>
+<p class="lead">Hallucinations mesurées, traçabilité désormais obligatoire en Europe, garde-fous qui cèdent sous pression adverse : le marché de la fiabilité IA explose. Personne ne répond à la seule question qui reste vérifiable — <strong>l'artefact publié est-il exactement celui qui a été mesuré, et peut-on le rejouer ?</strong> C'est notre niche.</p>
 <div class="term" role="img" aria-label="Exemple de rejeu en ligne de commande : un cas conforme, un cas divergent détecté">
 <div class="bar"><i></i><i></i><i></i><span>rejeu · RATISS-ARCHIVES</span></div>
 <div class="body">$ python3 outils/verifier_manifeste.py<br><span class="ok">&#10003; CONFORME</span> &nbsp;empreintes vérifiées<br><span class="ko">&#10007; DIVERGENCE</span> &nbsp;détectée (cas négatif)<br>$ <span class="cur"></span></div>
 </div>
-<p class="statut">Laboratoire indépendant, mono-auteur : aucune entreprise enregistrée, aucune équipe, aucun financement. Ce que vous achetez, c'est une méthode exécutable, pas un label.</p>
+<p class="statut">Laboratoire indépendant, mono-auteur : aucune entreprise enregistrée, aucune équipe, aucun financement. Ce que vous achetez, c'est une méthode exécutable, pas un label. Cette page applique notre propre règle : chaque chiffre est marqué <span class="chip chipV">✓ revérifié</span> (contrôlé par nous le 03/10/2026, lien fourni) ou <span class="chip chipC">⚠ cité</span> (repris d'une source, non revérifié par nous).</p>
 </div>
 </header>
 
 <main>
-<section>
+
+<section id="marche">
 <div class="wrap">
-<h2>Une preuve publique, que vous pouvez rejouer</h2>
-<p>Tout ce qui est annoncé ici se vérifie depuis un clone neuf. Règle maison : aucune affirmation de contrôle sans sa commande de rejeu.</p>
-<div class="chiffres">
-<div><b>68</b><span>dépôts publics au 03/10/2026 — dont 24 sous MIT standard</span></div>
-<div><b>51</b><span>tests rejoués à froid</span></div>
-<div><b>86</b><span>tâches QPU archivées</span></div>
-<div><b>5</b><span>règles scellées</span></div>
-</div>
-<p class="mute" style="font-size:.85rem">Inventaire et licences lus via l’API GitHub le 03/10/2026. Campagne du 02/10 : 84 dépôts lus et vérifiés, 11 exécutés à froid, 51/51 tests (RECAP-02-03-OCT, RATISS-ARCHIVES).</p>
-<h3>Rejeu en une commande (dépôt RATISS-ARCHIVES)</h3>
-<pre>python3 outils/verifier_corpus.py
-python3 outils/verifier_manifeste.py</pre>
-<p>Le vérificateur de manifeste est testé sur 3 cas dont 2 négatifs : empreintes divergentes, JSON illisible. Un contrôle qui ne sait pas échouer ne prouve rien.</p>
-<p>Le 03/10/2026, 5 rapports scientifiques en anglais ont été publiés avec DOI Zenodo. Exemple : <code>10.5281/zenodo.23117609</code>, GHZ-4 sur ions piégés à 97,27 % sur QPU réel.</p>
-<span class="seal">empreintes vérifiées</span>
-<p style="margin-top:14px"><a href="https://ratiss-labs.vercel.app">ratiss-labs.vercel.app</a> · preuves publiques : <a href="https://ratiss-labs.vercel.app/research/">/research/</a> (5 pages canoniques + DOI)</p>
+<h2>1 · Le problème est mesuré, pas ressenti</h2>
+<p>Les systèmes génératifs les plus récents restent structurellement fautifs sur les faits. Ce n'est plus une opinion : ce sont des benchmarks publiés.</p>
+<div class="tblwrap"><table class="tbl">
+<tr><th>Constat</th><th>Chiffre</th><th>Statut</th><th>Source</th></tr>
+<tr><td>HALoGEN, le benchmark d'hallucinations le plus large (10 923 prompts, 9 domaines, ~150 000 générations, 14 modèles)</td><td>jusqu'à <strong>86 % de faits atomiques erronés</strong> dans les pires domaines (attribution scientifique) ; taxonomie A (rappel raté) / B (donnée fausse apprise) / C (fabrication)</td><td><span class="chip chipV">✓ revérifié 03/10</span></td><td><a href="https://aclanthology.org/2025.acl-long.71/">Ravichander, Ghela, Wadden &amp; Choi, ACL 2025</a></td></tr>
+<tr><td>Google Research + Technion : les modèles frontière <em>connaissent</em> les faits mais échouent à les rappeler</td><td>encodage <strong>95–98 %</strong>, rappel direct en échec sur <strong>26–34 %</strong>, encore <strong>11–12 %</strong> ratés avec chaîne de raisonnement ; <strong>&gt; 70 %</strong> des erreurs factuelles = échecs de rappel (13 LLM, 4 M+ réponses)</td><td><span class="chip chipV">✓ revérifié 03/10</span></td><td><a href="https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/">« Empty Shelves or Lost Keys? », 12/08/2026</a></td></tr>
+<tr><td>Le RLHF sur préférences générales dégrade la fiabilité au lieu de la garantir</td><td>biais stéréotypiques <strong>en hausse</strong>, véracité <strong>en baisse</strong> après SFT/PPO/DPO (sens confirmé ; les pourcentages exacts circulant — « +150 % / −25 % » — n'ont pas été retrouvés dans l'article, nous ne les reprenons pas)</td><td><span class="chip chipV">✓ revérifié 03/10</span></td><td><a href="https://arxiv.org/abs/2404.18870">Li, Krishna &amp; Lakkaraju, arXiv 2404.18870</a></td></tr>
+<tr><td>Sorties médicales des modèles vision-langage</td><td><strong>61,9–82,3 %</strong> contiendraient des hallucinations (HalluCXR)</td><td><span class="chip chipC">⚠ cité</span></td><td><a href="https://arxiv.org/html/2605.20469">arXiv 2605.20469</a></td></tr>
+<tr><td>Faits datés temporellement</td><td>le meilleur LLM testé ne distingue correctement que <strong>11 %</strong> (TimeStress)</td><td><span class="chip chipC">⚠ cité</span></td><td><a href="https://aclanthology.org/2025.l2m2-1.1.pdf">ACL 2025</a></td></tr>
+<tr><td>Coût économique estimé</td><td><strong>67,4 Md$</strong> de pertes mondiales attribuées aux hallucinations (2024) ; <strong>2,3 Md$</strong> de pertes de trading au T1 2026</td><td><span class="chip chipC">⚠ cité</span></td><td><a href="https://tendem.ai/blog/true-cost-ai-hallucinations-business-data">Tendem</a> · <a href="https://chatfin.ai/blog/how-to-fix-ai-hallucinations-caused-2-3b-in-trading-losses/">ChatFin</a></td></tr>
+<tr><td>Conséquences juridiques réelles</td><td><strong>22 affaires</strong> à citations fictives en 30 jours (tribunaux US) ; deux avocats amendés de <strong>3 000 $</strong> chacun (affaire MyPillow)</td><td><span class="chip chipC">⚠ cité</span></td><td><a href="https://www.thomsonreuters.com/en/institute/articles/genai-hallucinations">Thomson Reuters</a> · <a href="https://www.npr.org/2025-07-10/nx-s1-5463512/ai-courts-lawyers-mypillow-fines">NPR</a></td></tr>
+</table></div>
+<p class="mute" style="font-size:.85rem">Lecture honnête : les lignes <span class="chip chipV">✓</span> ont été contrôlées une par une par RATISS Labs le 03/10/2026 (source ouverte, chiffres comparés). Les lignes <span class="chip chipC">⚠</span> proviennent d'une veille de marché que nous citons sans l'avoir rejouée — exactement la distinction que nous appliquons à vos artefacts.</p>
 </div>
 </section>
 
-<section>
+<section id="regulation">
 <div class="wrap">
-<h2>Ce que vous recevez</h2>
+<h2>2 · La traçabilité devient une obligation légale</h2>
+<p>En Europe, la question n'est plus « faut-il tracer ? » mais « votre traçabilité tient-elle devant un régulateur ? ».</p>
+<div class="tblwrap"><table class="tbl">
+<tr><th>Règle</th><th>Contenu</th><th>Statut</th><th>Source</th></tr>
+<tr><td><strong>AI Act, art. 50</strong></td><td>marquage lisible par machine des contenus générés : filigrane statistique invisible <strong>ou métadonnées de provenance cryptographique (C2PA)</strong> — Code de pratique du 20/07/2026. Applicable depuis le <strong>02/08/2026</strong> ; systèmes déjà sur le marché : sursis jusqu'au <strong>02/12/2026</strong>. Sanctions : jusqu'à <strong>15 M€ ou 3 %</strong> du CA mondial</td><td><span class="chip chipV">✓ revérifié 03/10</span></td><td><a href="https://archivemacropolo.org/analysis/eu-ai-act-article-50-watermarking-mandate">analyse art. 50</a> · <a href="https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines">Latham &amp; Watkins (Omnibus)</a></td></tr>
+<tr><td>AI Act, art. 15</td><td>exactitude, robustesse et cybersécurité obligatoires pour les systèmes à haut risque (échéances décalées par l'Omnibus : 12/2027 → 08/2028)</td><td><span class="chip chipC">⚠ cité</span></td><td><a href="https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines">Latham &amp; Watkins</a></td></tr>
+<tr><td>ISO/IEC 42001</td><td>premier standard certifiable de management des systèmes IA (2026)</td><td><span class="chip chipC">⚠ cité</span></td><td>ISO</td></tr>
+</table></div>
+<p>La provenance cryptographique (C2PA) devient l'une des deux voies de conformité reconnues. Un <strong>journal d'empreintes SHA-256 chaîné</strong> — ce que produit notre audit — est précisément ce registre : ce qui a été mesuré, quand, avec quoi, et la preuve que rien n'a changé depuis.</p>
+</div>
+</section>
+
+<section id="position">
+<div class="wrap">
+<h2>3 · Le marché, et le trou où nous nous plaçons</h2>
+<p>Un écosystème entier attaque le problème <em>avant</em> la génération. Il est réel, financé, et il a des limites documentées :</p>
+<div class="tblwrap"><table class="tbl">
+<tr><th>Famille</th><th>Exemples</th><th>Limite documentée</th><th>Statut</th></tr>
+<tr><td>RAG &amp; pipelines</td><td>RAG multi-couches : 89 % de précision contre 59 % pour le LLM seul</td><td>améliore la réponse, ne prouve rien sur l'artefact final publié</td><td><span class="chip chipC">⚠ cité</span> (<a href="https://www.mdpi.com/2073-431X/14/8/332">MDPI Computers 2025</a>)</td></tr>
+<tr><td>Garde-fous commerciaux</td><td>Llama Guard 3, Bedrock Guardrails, Google Verified Grounding…</td><td>tous les garde-fous commerciaux testés laissent passer une fraction significative de contenu adversarial ; Bedrock : 96,34 % de précision mais <strong>94,26 % de faux négatifs sous pression adverse</strong></td><td><span class="chip chipC">⚠ cité</span> (<a href="https://unit42.paloaltonetworks.com/comparing-llm-guardrails-across-genai-platforms/">Unit 42, 06/2025</a>)</td></tr>
+<tr><td>Décodage &amp; auto-vérification</td><td>TRACER (+12,26 MC1), CASAL (−30 à −40 %), VeriFY (−9,7 à −53,3 % d'hallucinations factuelles)</td><td>réduisent le taux à l'instant t ; aucune trace opposable après coup</td><td><span class="chip chipC">⚠ cité</span> (arXiv/ACL 2025–2026)</td></tr>
+<tr><td>Startups de détection</td><td>Cognition Scale (100 M$), Arize (70 M$), Galileo→Cisco (68 M$), Resect AI (25 M$), GPTZero→Superhuman (13,5 M$), Pangram (9 M$)</td><td>répondent « est-ce vrai ? » — pas « est-ce encore le même artefact, et peut-on le rejouer ? »</td><td><span class="chip chipC">⚠ cité</span> (annonces de financement 2025–2026)</td></tr>
+</table></div>
+<div class="pos">
+<h3 style="color:var(--gold)">La niche RATISS Pro</h3>
+<p><strong>Nous ne corrigeons pas le modèle. Nous rendons vos artefacts vérifiables.</strong> L'audit d'intégrité exécutable intervient là où les autres solutions s'arrêtent : entre la mesure et la publication.</p>
+<ul>
+<li><strong>Scellement</strong> : les paramètres sont figés et empreintés <em>avant</em> l'exécution — personne ne peut les ajuster après coup.</li>
+<li><strong>Rejeu</strong> : chaque verdict s'accompagne de la commande qui le reproduit (règle R7 du labo). Un contrôle sans rejeu est une opinion.</li>
+<li><strong>Chaînage</strong> : toute déviation s'ajoute au journal, ne le réécrit jamais — le format registre que l'art. 50 appelle de ses vœux.</li>
+<li><strong>Complémentaire</strong> : gardez vos garde-fous et votre RAG. Nous auditons ce qu'ils produisent.</li>
+</ul>
+<p class="mute" style="margin-bottom:0">Positionnement vérifiable : cette méthode n'est pas une promesse, elle tourne déjà sur le corpus public du laboratoire (section 4).</p>
+</div>
+</div>
+</section>
+
+<section id="preuves">
+<div class="wrap">
+<h2>4 · Nos preuves à nous : calculées, pas citées</h2>
+<p>Tout ce qui suit vient de nos propres exécutions et se rejoue depuis un clone neuf. C'est la différence entre cette section et les précédentes — et c'est exactement ce que nous ferons chez vous.</p>
+<div class="chiffres">
+<div><b>68</b><span>dépôts publics au 03/10/2026 — dont 24 sous MIT standard</span></div>
+<div><b>51/51</b><span>tests rejoués à froid (campagne du 02/10 : 84 dépôts lus, 11 exécutés)</span></div>
+<div><b>97,27 %</b><span>état GHZ-4 sur QPU ions réel — 1024 tirs, 497+499 (job df23deac)</span></div>
+<div><b>5</b><span>rapports scientifiques avec DOI Zenodo publiés le 03/10/2026</span></div>
+</div>
+<h3>Rejeu en une commande (dépôt RATISS-ARCHIVES)</h3>
+<pre>python3 outils/verifier_corpus.py
+python3 outils/verifier_manifeste.py</pre>
+<p>Le vérificateur de manifeste est testé sur 3 cas dont <strong>2 négatifs</strong> (empreintes divergentes, JSON illisible) : un contrôle qui ne sait pas échouer ne prouve rien. Les chiffres du compteur ci-dessus ont été recalculés via l'API GitHub et nos journaux de jobs le 03/10/2026.</p>
+<p>Exemple de DOI : <code>10.5281/zenodo.23117609</code> (GHZ sur QPU réels, PDF anglais illustré). Catalogue complet : <a href="/research/">/research/</a> — 5 pages canoniques + rapports PDF.</p>
+<span class="seal">empreintes vérifiées · rejouables depuis un clone neuf</span>
+</div>
+</section>
+
+<section id="livrables">
+<div class="wrap">
+<h2>5 · Ce que vous recevez</h2>
 <ol class="liv">
 <li><strong>Rapport scellé PDF</strong><span>Paramètres scellés avant exécution, empreintes SHA-256 de chaque artefact, verdicts structurés, visa de relecture.</span></li>
 <li><strong>Verdict rejouable JSON</strong><span>Avec la commande de rejeu fournie : votre équipe refait le contrôle sans nous.</span></li>
 <li><strong>Journal de déviations chaîné</strong><span>Date, empreintes avant et après, décision. Rien ne se réécrit, tout s'ajoute.</span></li>
-<li><strong>Intégration CI (GitHub Actions)</strong><span>Les mêmes contrôles à chaque push.</span></li>
+<li><strong>Intégration CI (GitHub Actions)</strong><span>Les mêmes contrôles à chaque push — la traçabilité devient automatique.</span></li>
 <li><strong>Sceau factuel dans le README</strong><span>Date, empreinte, commande. Un fait vérifiable, pas un badge « certifié ».</span></li>
 <li><strong>Séance de restitution</strong><span>Chaque rouge est expliqué, y compris quand il met en défaut le protocole du labo lui-même.</span></li>
 </ol>
 </div>
 </section>
 
-<section>
+<section id="limites">
 <div class="wrap">
 <div class="non">
-<h2>Ce que l'audit ne fait pas</h2>
+<h2>6 · Ce que l'audit ne fait pas</h2>
 <p>Règle maison : <strong>CONFORME ne veut pas dire VRAI.</strong> Un verdict CONFORME signifie que le contrôle défini a été exécuté et que l'artefact respecte le contrat technique annoncé.</p>
 <ul>
 <li>Il ne certifie pas qu'un résultat est scientifiquement vrai.</li>
-<li>Il ne garantit aucune conformité réglementaire.</li>
-<li>Il n'est pas une validation par les pairs.</li>
-<li>Il ne remplace pas une revue scientifique.</li>
+<li>Il ne réduit pas le taux d'hallucination de vos modèles — ce n'est pas un garde-fou.</li>
+<li>Il ne garantit aucune conformité réglementaire (il produit les registres qui <em>aident</em> la vôtre ; la conformité reste votre responsabilité).</li>
+<li>Il n'est pas une validation par les pairs et ne remplace pas une revue scientifique.</li>
 </ul>
 </div>
 </div>
@@ -158,37 +243,43 @@ python3 outils/verifier_manifeste.py</pre>
 
 <section class="cadre">
 <div class="wrap">
-<h2>Statut et cadre</h2>
-<p>Laboratoire indépendant, mono-auteur : aucune entreprise enregistrée, aucune équipe, aucun financement. La prestation est réalisée en indépendant.</p>
+<h2>7 · Statut, cadre, confidentialité</h2>
+<p>Laboratoire indépendant, mono-auteur : <strong>aucune entreprise enregistrée, aucune équipe, aucun financement</strong>. La prestation est réalisée en indépendant, au framework MIT — le code est ouvert, vous pouvez le lire avant de payer. Les échecs sont publiés comme les succès.</p>
 <ul>
-<li>Le framework est sous licence MIT : le code est ouvert, vous pouvez le lire avant de payer.</li>
-<li>Les échecs sont publiés comme les succès.</li>
-</ul>
-</div>
-</section>
-
-<section class="cadre">
-<div class="wrap">
-<h2>Confidentialité</h2>
-<ul>
-<li>Aucun formulaire, aucun cookie.</li>
+<li>Aucun formulaire, aucun cookie, aucun tiers : cette page ne sait pas qui vous êtes.</li>
 <li>Premier contact par courriel seul.</li>
 <li>Vos artefacts ne quittent pas votre infrastructure : l'audit produit des empreintes, pas des copies.</li>
 </ul>
 </div>
 </section>
 
-<section>
+<section id="contact">
 <div class="wrap">
-<h2>L'offre</h2>
-<p>Un audit ponctuel, puis un suivi continu en CI si vous le souhaitez. Les tarifs se définissent après un premier échange, gratuit.</p>
-<a class="cta" href="mailto:jonathan.ratisslabs@zohomail.com?subject=Audit%20d%27int%C3%A9grit%C3%A9">Écrire pour un premier échange gratuit</a>
+<h2>8 · L'offre</h2>
+<p>Un <strong>audit ponctuel</strong> (un artefact, un pipeline, une publication), puis un <strong>suivi continu en CI</strong> si vous le souhaitez. Les tarifs se définissent après un premier échange, gratuit — comme tout le reste, le devis sera écrit et chiffré, pas approximatif.</p>
+<a class="cta" href="mailto:jonathan.ratisslabs@zohomail.com?subject=RATISS%20Pro%20%E2%80%94%20premier%20%C3%A9change">💼 Écrire pour un premier échange gratuit</a>
 </div>
 </section>
+
+<section>
+<div class="wrap">
+<h2>Sources</h2>
+<p class="mute">Méthode : les sources <span class="chip chipV">✓</span> ont été ouvertes et comparées chiffre par chiffre le 03/10/2026. Les sources <span class="chip chipC">⚠</span> sont citées telles que reçues d'une veille de marché, sans rejeu — signalées comme telles dans chaque tableau.</p>
+<ul class="srcs">
+<li><span class="chip chipV">✓</span> Ravichander, Ghela, Wadden &amp; Choi — « HALoGEN: Fantastic LLM Hallucinations and Where to Find Them », ACL 2025 · <a href="https://aclanthology.org/2025.acl-long.71/">aclanthology.org/2025.acl-long.71</a></li>
+<li><span class="chip chipV">✓</span> Google Research &amp; Technion — « Empty Shelves or Lost Keys? Recall Is the Bottleneck for Parametric Factuality », 12/08/2026 · <a href="https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality/">research.google</a></li>
+<li><span class="chip chipV">✓</span> Li, Krishna &amp; Lakkaraju — « More RLHF, More Trust? », arXiv 2404.18870 · <a href="https://arxiv.org/abs/2404.18870">arxiv.org/abs/2404.18870</a></li>
+<li><span class="chip chipV">✓</span> AI Act art. 50 : applicabilité 02/08/2026, sursis 02/12/2026, C2PA/filigrane, sanctions 15 M€/3 % · <a href="https://archivemacropolo.org/analysis/eu-ai-act-article-50-watermarking-mandate">archivemacropolo.org</a> · <a href="https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines">lw.com</a></li>
+<li><span class="chip chipC">⚠</span> HalluCXR (arXiv 2605.20469) · TimeStress (ACL 2025) · Tendem/AllAboutAI (67,4 Md$) · ChatFin (2,3 Md$) · Thomson Reuters (22 affaires) · NPR (amendes MyPillow) · MDPI Computers 14(8):332 (RAG 89 %/59 %) · Unit 42 (garde-fous, 06/2025) · TRACER/CASAL/VeriFY/CCPS/ConfTuner (arXiv/ACL/EMNLP/NeurIPS 2025–2026) · Jakkli et al. (IA constitutionnelle) · financements Cognition Scale/Arize/Galileo/Resect/GPTZero/Pangram — liens dans les tableaux ci-dessus.</li>
+<li><span class="chip chipV">✓</span> Chiffres RATISS : API GitHub (03/10/2026), journaux de jobs QPU archivés (RATISS-ARCHIVES), DOI Zenodo 10.5281/zenodo.23117599–23117609 + 23122648.</li>
+</ul>
+</div>
+</section>
+
 </main>
 
 <footer>
-<div class="wrap">© 2026 RATISS Labs · Yaoundé · <a href="mailto:jonathan.ratisslabs@zohomail.com">jonathan.ratisslabs@zohomail.com</a> · <a href="https://ratiss-labs.vercel.app/about/#confidentialite">confidentialité</a> · <a href="https://ratiss-labs.vercel.app/about/#licence">licence MIT</a></div>
+<div class="wrap">© 2026 RATISS Labs · Jonathan Evina · Yaoundé · <a href="mailto:jonathan.ratisslabs@zohomail.com">jonathan.ratisslabs@zohomail.com</a> · <a href="/about/#confidentialite">confidentialité</a> · <a href="/about/#licence">licence MIT</a> · <a href="/research/">Research</a></div>
 </footer>
 </body>
 </html>
