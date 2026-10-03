@@ -2,3 +2,5 @@ _site/
 __pycache__/
 *.aux
 *.log
+deploy_vercel.py
+zenodo_depose.py
