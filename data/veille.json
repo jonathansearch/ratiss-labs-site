@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-10-03T20:04:11",
+  "genere_le": "2026-10-03T20:06:27",
   "fenetre_jours": 4,
   "sources": [
     "arXiv API (export.arxiv.org)",
@@ -955,8 +955,8 @@
           "titre": "Pop!_OS bans AI-generated code from much of its codebase",
           "lien": "https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/",
           "discussion": "https://news.ycombinator.com/item?id=49946321",
-          "points": 61,
-          "commentaires": 43,
+          "points": 63,
+          "commentaires": 47,
           "date": "2026-10-03",
           "source": "Hacker News"
         },
