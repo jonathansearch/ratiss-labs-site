@@ -1,0 +1,55 @@
+name: Veille RATISS — actualité tech/IA/quantique
+
+# Tous les 2 jours à 05:41 UTC (≈06:41 à Yaoundé) + déclenchement manuel.
+on:
+  schedule:
+    - cron: "41 5 */2 * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "veille.py"
+      - "build.py"
+      - "contenu_vivant.py"
+
+permissions:
+  contents: write
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # nécessaire : le build restaure le logo depuis l'historique
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dépendances
+        run: pip install pyyaml requests
+
+      - name: Collecte de la veille (sources publiques, sans clé)
+        run: python3 veille.py --jours 4
+
+      - name: Construction du site
+        env:
+          SITE_URL: https://ratiss-labs.vercel.app
+        run: python3 build.py
+
+      - name: Déploiement en production
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: python3 deploy_ci.py
+
+      - name: Enregistrer la veille dans le dépôt
+        run: |
+          git config user.name  "RATISS Veille"
+          git config user.email "jonathan.ratisslabs@zohomail.com"
+          git add data/veille.json data/veille.js
+          if git diff --staged --quiet; then
+            echo "Aucun changement de veille."
+          else
+            git commit -m "veille: collecte automatique $(date -u +%Y-%m-%d)"
+            git push
+          fi

@@ -1,0 +1,38 @@
+{
+  "jensen-huang": {
+    "titre": "File:Jensen huang stanford 2026-04-30 008.jpg",
+    "licence": "CC BY-SA 4.0",
+    "auteur": "<a href=\"//commons.wikimedia.org/wiki/User:Anderseidesvik\" title=\"User:Anderseidesvik\">Anderseidesvik</a>",
+    "page": "https://commons.wikimedia.org/wiki/File:Jensen_huang_stanford_2026-04-30_008.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Jensen_huang_stanford_2026-04-30_008.jpg/960px-Jensen_huang_stanford_2026-04-30_008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Jensen_huang_stanford_2026-04-30_008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "taille": "3888x5184"
+  },
+  "sam-altman": {
+    "titre": "File:Ilya Sutskever and Sam Altman in TAU.jpg",
+    "licence": "CC BY-SA 4.0",
+    "auteur": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Eladkarmel&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Eladkarmel (page does not exist)\">Eladkarmel</a>",
+    "page": "https://commons.wikimedia.org/wiki/File:Ilya_Sutskever_and_Sam_Altman_in_TAU.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/de/Ilya_Sutskever_and_Sam_Altman_in_TAU.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/d/de/Ilya_Sutskever_and_Sam_Altman_in_TAU.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "taille": "768x1024"
+  },
+  "demis-hassabis": {
+    "titre": "File:Demis Hassabis.jpg",
+    "licence": "CC BY-SA 4.0",
+    "auteur": "Alain Herzog",
+    "page": "https://commons.wikimedia.org/wiki/File:Demis_Hassabis.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Demis_Hassabis.jpg/960px-Demis_Hassabis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Demis_Hassabis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "taille": "1024x683"
+  },
+  "dario-amodei": {
+    "titre": "File:Dario Amodei at TechCrunch Disrupt 2023 02.jpg",
+    "licence": "CC BY 2.0",
+    "auteur": "TechCrunch",
+    "page": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_02.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Dario_Amodei_at_TechCrunch_Disrupt_2023_02.jpg/960px-Dario_Amodei_at_TechCrunch_Disrupt_2023_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Dario_Amodei_at_TechCrunch_Disrupt_2023_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "taille": "2667x4000"
+  }
+}

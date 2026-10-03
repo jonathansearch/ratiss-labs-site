@@ -22,6 +22,7 @@ import sys
 from pathlib import Path
 
 import yaml
+import contenu_vivant as CV
 
 ICI = Path(__file__).resolve().parent
 SRC = ICI / "legacy" / "index.html"
@@ -35,6 +36,8 @@ NAV = [
     ("Audits", "/audits/"),
     ("Protocoles", "/protocols/"),
     ("RATISS Pro", "/pro/"),
+    ("Actualité", "/actualite/"),
+    ("50 problèmes", "/problemes/"),
     ("À propos", "/about/"),
 ]
 
@@ -48,7 +51,7 @@ main{padding-top:calc(var(--nav-h) + 48px)!important}
 .hero{min-height:calc(100svh - var(--nav-h) - 48px)!important}
 </style>
 <nav id="rbar" aria-label="Accès rapide aux sections principales">
-<a href="/research/">📚 Research</a><a class="hot" href="/pro/">💼 RATISS Pro</a><a href="/audits/">🧾 Audits</a><a href="/protocols/">🧭 Protocoles</a><a href="/about/">ℹ️ À propos</a>
+<a href="/actualite/">📡 Actualité</a><a href="/research/">📚 Research</a><a class="hot" href="/pro/">💼 RATISS Pro</a><a href="/problemes/">🧩 50 problèmes</a><a href="/audits/">🧾 Audits</a><a href="/protocols/">🧭 Protocoles</a><a href="/about/">ℹ️ À propos</a>
 </nav>
 '''
 
@@ -245,7 +248,8 @@ def page(titre: str, desc: str, chemin: str, corps: str, temp: str = "teal",
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 <style>{src['css']}
-{CSS_ART}</style>
+{CSS_ART}
+{CV.CSS_VIVANT}</style>
 {ld}
 </head>
 <body{' class="doc-mode"' if doc_mode else ''}>
@@ -447,6 +451,9 @@ def construire() -> int:
     (OUT / "audits").mkdir()
     (OUT / "protocols").mkdir()
     (OUT / "about").mkdir()
+    (OUT / "actualite").mkdir()
+    (OUT / "problemes").mkdir()
+    (OUT / "img").mkdir()
 
     # logo restauré depuis l'historique (corrige le 404)
     logo = subprocess.run(
@@ -457,6 +464,18 @@ def construire() -> int:
     manifs = []
     for f in sorted(CONTENU.glob("*.yaml")):
         manifs.append(yaml.safe_load(f.read_text(encoding="utf-8")))
+
+    # --- copie des images (licences libres, créditées) et des données de veille
+    for src_img in (ICI / "img").rglob("*"):
+        if src_img.is_file():
+            cible = OUT / "img" / src_img.relative_to(ICI / "img")
+            cible.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(src_img, cible)
+    if (ICI / "data").exists():
+        (OUT / "data").mkdir(exist_ok=True)
+        for f in (ICI / "data").iterdir():
+            if f.is_file():
+                shutil.copyfile(f, OUT / "data" / f.name)
 
     pages = {"/": None}
     for m in manifs:
@@ -510,6 +529,31 @@ def construire() -> int:
         '<a style="color:#facc15" href="/pro/">RATISS Pro</a>…</p></body></html>',
         encoding="utf-8")
     pages["/pro/"] = "RATISS Pro — audit d'intégrité IA"
+
+    # --- actualité (veille vivante + visages réels + faits sourcés) ---
+    (OUT / "actualite" / "index.html").write_text(
+        page("Actualité — ce qui se passe en IA, régulation et quantique | RATISS Labs",
+             "Actualité tech, IA et quantique suivie par RATISS Labs : faits sourcés, "
+             "photos sous licence libre, flux de recherche collecté automatiquement.",
+             "/actualite/", CV.page_actualite(), "teal"), encoding="utf-8")
+    pages["/actualite/"] = "Actualité"
+
+    # --- 50 problèmes ouverts (interactif, réponses locales) ---
+    (OUT / "problemes" / "index.html").write_text(
+        page("50 problèmes ouverts — IA, audit, quantique | RATISS Labs",
+             "50 problèmes réels rencontrés en auditant des artefacts et des résultats de machines. "
+             "Donnez votre avis : il oriente notre feuille de route.",
+             "/problemes/", CV.page_problemes(), "amber"), encoding="utf-8")
+    pages["/problemes/"] = "50 problèmes ouverts"
+
+    # --- recherche fondamentale (ce qui ne se vend pas) ---
+    (OUT / "fondamentale").mkdir()
+    (OUT / "fondamentale" / "index.html").write_text(
+        page("Recherche fondamentale — PHOTON, NAVIER, ÉTALONS, GHZ-4 | RATISS Labs",
+             "Les chantiers de recherche fondamentale du laboratoire : résultats rejouables, "
+             "DOI, identifiants de jobs, échecs publiés. Mono-auteur, Yaoundé.",
+             "/fondamentale/", CV.page_fondamentale(), "teal"), encoding="utf-8")
+    pages["/fondamentale/"] = "Recherche fondamentale"
 
     # --- protocoles (les lois du labo, documentées) ---
     sec = ('<p class="rkick"><i></i>Méthode</p><h1>Protocoles &amp; lois du labo</h1>'
@@ -608,7 +652,8 @@ def construire() -> int:
     base = SITE_URL or "https://ratiss-labs.org"
     (OUT / "robots.txt").write_text(
         f"User-Agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n", encoding="utf-8")
-    urls = ["/", "/research/", "/audits/", "/protocols/", "/about/", "/pro/"] + [
+    urls = ["/", "/research/", "/audits/", "/protocols/", "/about/", "/pro/",
+            "/actualite/", "/problemes/", "/fondamentale/"] + [
         f"/research/{m['slug']}/" for m in manifs]
     xml = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

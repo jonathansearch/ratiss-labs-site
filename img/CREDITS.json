@@ -1,0 +1,58 @@
+{
+  "sam-altman": {
+    "fichier": "File:Sam Altman TechCrunch SF 2019 Day 2 Oct 3 (cropped).jpg",
+    "licence": "CC BY 2.0",
+    "auteur": "TechCrunch",
+    "page": "https://commons.wikimedia.org/wiki/File:Sam_Altman_TechCrunch_SF_2019_Day_2_Oct_3_(cropped).jpg",
+    "local": "site/img/personnes/sam-altman.jpg",
+    "taille": 262878
+  },
+  "jensen-huang": {
+    "fichier": "File:Jensen huang stanford 2026-04-30 008.jpg",
+    "licence": "CC BY-SA 4.0",
+    "auteur": "Anderseidesvik",
+    "page": "https://commons.wikimedia.org/wiki/File:Jensen_huang_stanford_2026-04-30_008.jpg",
+    "local": "site/img/personnes/jensen-huang.jpg",
+    "taille": 224823
+  },
+  "demis-hassabis": {
+    "fichier": "File:Demis Hassabis.jpg",
+    "licence": "CC BY-SA 4.0",
+    "auteur": "Alain Herzog",
+    "page": "https://commons.wikimedia.org/wiki/File:Demis_Hassabis.jpg",
+    "local": "site/img/personnes/demis-hassabis.jpg",
+    "taille": 51941
+  },
+  "dario-amodei": {
+    "fichier": "File:Dario Amodei at TechCrunch Disrupt 2023 02.jpg",
+    "licence": "CC BY 2.0",
+    "auteur": "TechCrunch",
+    "page": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_02.jpg",
+    "local": "site/img/personnes/dario-amodei.jpg",
+    "taille": 188948
+  },
+  "ordinateur-quantique": {
+    "fichier": "File:Ionenfalle - Quantencomputer.jpg",
+    "licence": "CC BY-SA 3.0",
+    "auteur": "Mnolf",
+    "page": "https://commons.wikimedia.org/wiki/File:Ionenfalle_-_Quantencomputer.jpg",
+    "local": "site/img/labos/ordinateur-quantique.jpg",
+    "taille": 398472
+  },
+  "yaounde": {
+    "fichier": "File:Cameroon Market(Yaoundé).jpg",
+    "licence": "CC BY-SA 4.0",
+    "auteur": "Black Lyn",
+    "page": "https://commons.wikimedia.org/wiki/File:Cameroon_Market(Yaound%C3%A9).jpg",
+    "local": "site/img/labos/yaounde.jpg",
+    "taille": 696461
+  },
+  "puces-photoniques": {
+    "fichier": "File:InP Mult-Project Wafer.jpg",
+    "licence": "CC BY-SA 4.0",
+    "auteur": "JonathanMarks",
+    "page": "https://commons.wikimedia.org/wiki/File:InP_Mult-Project_Wafer.jpg",
+    "local": "site/img/labos/puces-photoniques.jpg",
+    "taille": 522953
+  }
+}
