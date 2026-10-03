@@ -24,7 +24,7 @@ from pathlib import Path
 import yaml
 
 ICI = Path(__file__).resolve().parent
-SRC = ICI / "index.html"
+SRC = ICI / "legacy" / "index.html"
 CONTENU = ICI / "content"
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
 OUT = ICI / "_site"
@@ -34,6 +34,7 @@ NAV = [
     ("Research", "/research/"),
     ("Audits", "/audits/"),
     ("Protocoles", "/protocols/"),
+    ("Entreprises", "/audit/"),
     ("À propos", "/about/"),
 ]
 
@@ -174,6 +175,7 @@ PIED = """<footer>
         <ul>
           <li><a href="/protocols/">Lois du labo</a></li>
           <li><a href="/audits/">Audits</a></li>
+          <li><a href="/audit/">Audit d'intégrité (entreprises)</a></li>
           <li><a href="/research/audit-jobids-ibm/">Datation job IDs</a></li>
         </ul>
       </div>
@@ -345,6 +347,84 @@ def page_simple(titre: str, desc: str, chemin: str, sections_html: str, temp: st
     return page(titre + " — RATISS Labs", desc, chemin, corps, temp)
 
 
+def page_audit() -> str:
+    sec = (
+        '<p class="rkick"><i></i>Offre aux équipes techniques</p>'
+        '<h1>Audit d’intégrité exécutable</h1>'
+        '<p class="lede2">Un contrôle d’intégrité, pas un label de vérité : les artefacts '
+        'annoncés sont scellés, rejouables et tracés, et chaque divergence est documentée. '
+        'C’est modeste — et c’est exactement ce qui peut être prouvé.</p>'
+        '<div class="sec"><h2>Le problème</h2><p>Vos résultats, livrables et artefacts '
+        'changent entre le moment où ils sont mesurés et celui où ils sont publiés ou '
+        'déployés. Vérifier à la main coûte du temps d’ingénieur et ne laisse aucune '
+        'trace rejouable.</p></div>'
+        '<div class="sec"><h2>La preuve, déjà publique</h2><p>Le même protocole est '
+        'appliqué en continu aux 57 dépôts publics du laboratoire, avec des contrôles '
+        'négatifs (une divergence volontaire est effectivement détectée : les trois cas '
+        'du vérificateur de manifeste — conforme, empreintes divergentes, JSON '
+        'illisible — sont testés). Tout se rejoue :</p>'
+        '<pre>python3 outils/verifier_corpus.py      # registre reconstruit depuis un clone\n'
+        'python3 outils/verifier_manifeste.py   # empreintes SHA-256, sortie texte ou JSON</pre></div>'
+        '<div class="sec"><h2>Ce que vous recevez, concrètement</h2>'
+        '<div class="grille">'
+        '<div class="carte"><h4 style="margin:0 0 8px">1 · Rapport scellé (PDF)</h4><p>Paramètres '
+        'scellés avant exécution, empreintes SHA-256 de chaque artefact vérifié, verdicts '
+        'structurés, visa de relecture. Aucun chiffre sans source.</p></div>'
+        '<div class="carte"><h4 style="margin:0 0 8px">2 · Verdict rejouable (JSON)</h4><p>Sortie '
+        'machine du vérificateur + commande de rejeu fournie : votre équipe peut '
+        'reproduire le verdict sans nous croire sur parole.</p></div>'
+        '<div class="carte"><h4 style="margin:0 0 8px">3 · Journal de déviations chaîné</h4><p>Chaque '
+        'écart entre mesure et publication : date, empreintes avant/après, décision '
+        'prise. Chaîné, donc falsifiable.</p></div>'
+        '<div class="carte"><h4 style="margin:0 0 8px">4 · Intégration CI</h4><p>Les mêmes contrôles '
+        'branchés sur vos pushes (GitHub Actions) : le suivi continu remplace le '
+        'contrôle ponctuel.</p></div>'
+        '<div class="carte"><h4 style="margin:0 0 8px">5 · Sceau factuel README</h4><p>Une ligne '
+        'datée + empreinte + commande de rejeu dans votre README. Un fait vérifiable, '
+        'pas un badge « certifié ».</p></div>'
+        '<div class="carte"><h4 style="margin:0 0 8px">6 · Restitution</h4><p>Une séance de '
+        'restitution où chaque rouge est expliqué, y compris ceux qui tombent sur '
+        'notre propre protocole.</p></div></div></div>'
+        '<div class="sec neg"><h2>Ce que l’audit ne fait pas</h2><ul>'
+        '<li>Il ne certifie pas qu’un résultat est scientifiquement vrai.</li>'
+        '<li>Il ne garantit aucune conformité réglementaire, et ne vend pas de '
+        '« tranquillité d’esprit » : le framework du labo dit lui-même que '
+        'CONFORME ne veut pas dire VRAI.</li>'
+        '<li>Il ne remplace pas une revue par les pairs.</li></ul></div>'
+        '<div class="sec"><h2>Statut &amp; cadre</h2><p>Aucune entreprise enregistrée, '
+        'aucune équipe, aucun financement : un seul auteur, Jonathan Evina, '
+        'laboratoire indépendant à Yaoundé. Intervention en prestataire indépendant ; '
+        'framework et outils sous licence MIT ; échecs publiés comme les succès. '
+        'Une entreprise qui lit cette page et les mentions légales y lira la même '
+        'chose.</p></div>'
+        '<div class="sec"><h2>Confidentialité</h2><p>Aucun formulaire, aucun cookie, '
+        'aucun outil tiers sur ce site : le premier contact est un simple lien '
+        'courriel. Vos artefacts audités ne quittent pas votre infrastructure : '
+        'l’audit produit des empreintes, pas des copies.</p></div>'
+        '<div class="sec"><h2>L’offre</h2><p>Un audit ponctuel d’un dépôt ou d’un '
+        'pipeline, puis un suivi continu en CI si vous le souhaitez. Tarifs à définir '
+        'ensemble après un premier échange gratuit.</p>'
+        '<div class="liens"><a href="mailto:jonathan.ratisslabs@zohomail.com">'
+        'jonathan.ratisslabs@zohomail.com — premier échange gratuit</a></div></div>'
+    )
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Audit d'intégrité exécutable RATISS Labs",
+        "serviceType": "Executable integrity audit of code, data and artefacts",
+        "provider": {"@type": "Person", "name": "Jonathan Evina",
+                     "address": "Yaoundé, Cameroon"},
+        "description": "Contrôle d'intégrité exécutable : artefacts scellés, rejouables, "
+                       "tracés, divergences documentées. Ne certifie pas la vérité "
+                       "scientifique d'un résultat.",
+        "url": f"{SITE_URL}/audit/" if SITE_URL else "/audit/",
+    }
+    return page("Audit d'intégrité exécutable — RATISS Labs",
+                "Contrôle d'intégrité exécutable pour équipes techniques : artefacts scellés, "
+                "rejouables, tracés, divergences documentées. Ni label de vérité, ni certification.",
+                "/audit/", f'<div class="art"><div class="wx">{sec}</div></div>', "or", ld)
+
+
 def construire() -> int:
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -397,6 +477,11 @@ def construire() -> int:
                     "/audits/", sec, "amber"), encoding="utf-8")
     pages["/audits/"] = "Audits"
 
+    # --- offre entreprises ---
+    (OUT / "audit").mkdir()
+    (OUT / "audit" / "index.html").write_text(page_audit(), encoding="utf-8")
+    pages["/audit/"] = "Audit d'intégrité"
+
     # --- protocoles (les lois du labo, documentées) ---
     sec = ('<p class="rkick"><i></i>Méthode</p><h1>Protocoles &amp; lois du labo</h1>'
            '<p class="lede2">Les règles ci-dessous ont été payées en crédits, en temps ou en '
@@ -428,7 +513,9 @@ def construire() -> int:
     sec = ('<p class="rkick"><i></i>Identité</p><h1>À propos</h1>'
            '<p class="lede2">RATISS Labs est un laboratoire indépendant, mono-auteur, basé à '
            'Yaoundé (Cameroun). Ce n’est pas un laboratoire institutionnel et il ne prétend '
-           'à aucune validation par les pairs.</p>'
+           'à aucune validation par les pairs. <b>Aucune entreprise enregistrée, aucune '
+           'équipe, aucun financement</b> — la même phrase figure sur la page '
+           '<a href="/audit/" style="color:var(--t2)">Audit d’intégrité</a>.</p>'
            '<div class="grille"><div class="carte"><h3>Chef de labo</h3>'
            '<p>Jonathan Evina, 18 ans. ORCID 0009-0000-4092-5313. '
            'Contact : jonathan.ratisslabs@zohomail.com</p></div>'
@@ -444,8 +531,11 @@ def construire() -> int:
            'licence MIT (Copyright (c) 2026 Jonathan Evina · RATISS Labs), sauf mention contraire '
            'dans chaque dépôt.</p></div>'
            '<div class="sec" id="confidentialite"><h2>Confidentialité</h2><p>Site statique : '
-           'aucun cookie, aucun traceur, aucun compte. Les seules requêtes externes sont les '
-           'polices Google Fonts et les liens sortants cliqués volontairement.</p></div>')
+           'aucun cookie, aucun traceur, aucun compte, aucun formulaire. Les seules requêtes '
+           'externes sont les polices Google Fonts et les liens sortants cliqués '
+           'volontairement. Hébergement : Vercel (ratiss-labs.vercel.app) ; sources et '
+           'historique : GitHub ; archives scientifiques : Zenodo. L’ancienne adresse '
+           'GitHub Pages redirige vers ce site.</p></div>')
     (OUT / "about" / "index.html").write_text(
         page_simple("À propos", "RATISS Labs : laboratoire indépendant mono-auteur, Yaoundé. Principe : on ne croit pas, on rejoue.",
                     "/about/", sec, "indigo"), encoding="utf-8")
@@ -462,10 +552,10 @@ def construire() -> int:
         1)
     accueil = accueil.replace(
         '  <hr>\n  <a href="#/confidentialite"',
-        '  <a href="/research/">— Pages Research (indexables)</a>\n  <hr>\n  <a href="#/confidentialite"')
+        '  <a href="/research/">— Pages Research (indexables)</a>\n  <a href="/audit/">— Audit d’intégrité (entreprises)</a>\n  <hr>\n  <a href="#/confidentialite"')
     accueil = accueil.replace(
         '<li><a href="#/recherche">Recherche</a></li>',
-        '<li><a href="#/recherche">Recherche</a></li>\n          <li><a href="/research/">Research (pages indexables)</a></li>')
+        '<li><a href="#/recherche">Recherche</a></li>\n          <li><a href="/research/">Research (pages indexables)</a></li>\n          <li><a href="/audit/">Audit d’intégrité (entreprises)</a></li>')
     accueil = accueil.replace(
         "<title>", '<link rel="sitemap" type="application/xml" href="/sitemap.xml" />\n<title>', 1)
     (OUT / "index.html").write_text(accueil, encoding="utf-8")
@@ -488,7 +578,7 @@ def construire() -> int:
     base = SITE_URL or "https://ratiss-labs.org"
     (OUT / "robots.txt").write_text(
         f"User-Agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n", encoding="utf-8")
-    urls = ["/", "/research/", "/audits/", "/protocols/", "/about/"] + [
+    urls = ["/", "/research/", "/audits/", "/protocols/", "/about/", "/audit/"] + [
         f"/research/{m['slug']}/" for m in manifs]
     xml = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
