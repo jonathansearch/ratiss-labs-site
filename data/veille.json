@@ -1,6 +1,6 @@
 {
-  "genere_le": "2026-10-03T20:00:19",
-  "fenetre_jours": 3,
+  "genere_le": "2026-10-03T20:04:11",
+  "fenetre_jours": 4,
   "sources": [
     "arXiv API (export.arxiv.org)",
     "Hacker News API (hn.algolia.com)"
@@ -59,6 +59,66 @@
             "Bo Hu"
           ],
           "source": "arXiv"
+        },
+        {
+          "titre": "VERITYGATE: A Four-Gate Schema-Level Faithfulness Framework and Paired Benchmark for Grounded LLM Narrations over Structured Evidence",
+          "resume": "Fluent LLM explanations may not follow the evidence from a structured system. We present VERITYGATE, a four-gate checker for declared evidence IDs, entities, numbers, and claim types. It checks a fixed schema; it does not verify every fact in the prose. At r=0 and r=1, we test 900 instances per setting (450 grounded-un",
+          "date": "2026-09-30",
+          "lien": "http://arxiv.org/abs/2610.00833v1",
+          "auteurs": [
+            "Sachin Gupta"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "PhantomEnvironments: Training LLM Agents in Fictional Worlds",
+          "resume": "Training LLM agents with reinforcement learning (RL) is bottlenecked by environments, which must provide verifiable rewards, support long-horizon interaction, and scale cheaply. Existing approaches rely on costly human-curated data or on LLM-generated environments that risk hallucinations and benchmark contamination. W",
+          "date": "2026-09-30",
+          "lien": "http://arxiv.org/abs/2609.40221v1",
+          "auteurs": [
+            "Anmol Kabra",
+            "Swathi Saravana Selvam",
+            "Albert Gong",
+            "Chao Wan"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Explore-on-Graph: Hybrid Embedding-LLM Reasoning for Knowledge Graph Question Answering under Incompleteness",
+          "resume": "Large language models (LLMs) are increasingly combined with knowledge graphs (KGs) to ground reasoning in structured evidence. However, most LLM-based KGQA methods rely on traversing existing graph edges and become unreliable when reasoning paths are broken by missing facts. Alternatives that ask LLMs to generate missi",
+          "date": "2026-09-30",
+          "lien": "http://arxiv.org/abs/2609.39786v1",
+          "auteurs": [
+            "Ola El Khatib",
+            "Djellel Difallah"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "MEND: Label-Free Detection, Localisation, and Correction of Latent Hallucination in World Models",
+          "resume": "World Models are appearing as the next major frontier in computer vision. However, their robustness is currently largely unexplored. We identify the phenomenon of hallucination in latent World Models: given a state and an action, the predicted next latent can decode to a scene that never occurs. Because the prediction ",
+          "date": "2026-09-30",
+          "lien": "http://arxiv.org/abs/2609.39182v1",
+          "auteurs": [
+            "Ali J Alrasheed",
+            "Aryan Yazdan Parast",
+            "Basim Azam",
+            "James Bailey"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Alleviating Hallucination in Reasoning Tasks with Training-Free Uncertainty-Guided Steering",
+          "resume": "Recent work on hallucination detection in large language models has shown that, for a fixed pre-trained model and reasoning task, it is possible to estimate the model's confidence in the correctness of its outputs. Such uncertainty estimates have primarily been used to improve truthfulness by detecting or filtering con",
+          "date": "2026-09-30",
+          "lien": "http://arxiv.org/abs/2609.38962v1",
+          "auteurs": [
+            "Litian Liu",
+            "Qiqi Hou",
+            "Yubing Jian",
+            "Reza Pourreza"
+          ],
+          "source": "arXiv"
         }
       ]
     },
@@ -76,6 +136,82 @@
             "Qizhou Wang",
             "Yuke Hu",
             "Kemou Li"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Do Defenses Against LLM Extraction Work Across Attacks? A Lifecycle Benchmark of Black-Box Model Extraction",
+          "resume": "Large language models (LLMs) deployed through text-only APIs face model extraction risks, as adversaries can collect their responses to train surrogates that reproduce their capabilities. While prior work has developed diverse attacks and defenses, evaluations remain fragmented across access assumptions, model configur",
+          "date": "2026-09-30",
+          "lien": "http://arxiv.org/abs/2610.00839v1",
+          "auteurs": [
+            "Shuze Liu",
+            "Kaixiang Zhao",
+            "Runyang Xu",
+            "Jingzhi Chen"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Made to Measure: Designing Image Watermarks to Specification",
+          "resume": "Image watermarking supports provenance and attribution by embedding verifiable identity information into images. Practical deployments, however, must jointly satisfy requirements for attack resistance, false-positive rate (FPR), image quality, and latency. Existing watermarking methods are robust to different classes o",
+          "date": "2026-09-30",
+          "lien": "http://arxiv.org/abs/2610.00780v1",
+          "auteurs": [
+            "Mingzhe Li",
+            "Yuefeng Peng",
+            "Kejing Xia",
+            "Pranav Jeyakumar"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Blind Unforgeability implies Plus-One Unforgeability",
+          "resume": "We prove that quantum blind-unforgeability implies quantum plus-one unforgeability, settling an open question in the literature. Since plus-one unforgeability is known not to imply blind-unforgeability, our result establishes that blind-unforgeability is \\emph{strictly stronger} than plus-one unforgeability in the quan",
+          "date": "2026-09-30",
+          "lien": "http://arxiv.org/abs/2610.00517v1",
+          "auteurs": [
+            "Mehil Agarwal",
+            "Calliope S. Reimann",
+            "Fang Song"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Privacy Foundations for Multi-Institutional Scientific Artificial Intelligence",
+          "resume": "Scientific artificial intelligence (AI), spanning foundation models (FMs) to federated data-analysis pipelines, is becoming shared infrastructure across national laboratories, universities, hospitals, and industrial partners. This collaboration creates privacy risks whose natural unit is often an institution's particip",
+          "date": "2026-09-30",
+          "lien": "http://arxiv.org/abs/2609.39787v1",
+          "auteurs": [
+            "Olivera Kotevska",
+            "Sumit Jha",
+            "Aurélien Bellet",
+            "Rui Hu"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "SEW: Style-Encoded Watermarking of LLM-Generated Code",
+          "resume": "Code watermarking supports provenance tracking for code generated by LLMs. Modifying token selection to embed watermarks as an LLM generates code can create a trade-off between detectability and functional correctness. Other methods instead watermark completed code using predefined transformations or trained neural mod",
+          "date": "2026-09-30",
+          "lien": "http://arxiv.org/abs/2609.39414v1",
+          "auteurs": [
+            "Soohan Lim",
+            "Hyundong Jin",
+            "Yo-Sub Han"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Anchor-ECC: Local Integrity Checking for Watermarked LLM Outputs via Error-Correcting Codes",
+          "resume": "LLM watermarking has become an effective approach to distinguishing AI-generated text from human-written text by embedding detectable patterns during generation. However, a small post-generation edit may change the meaning of the text without removing its overall watermark signal, creating a risk that the modified cont",
+          "date": "2026-09-30",
+          "lien": "http://arxiv.org/abs/2609.38722v1",
+          "auteurs": [
+            "Zewei Deng",
+            "Muhammad Siddeek",
+            "Liyan Xie",
+            "Mohamed Seif"
           ],
           "source": "arXiv"
         }
@@ -708,11 +844,20 @@
       "source": "Hacker News",
       "entrees": [
         {
+          "titre": "The AI Race Just Got Awkward",
+          "lien": "https://insufferable.dev/posts/the-ai-race-just-got-awkward/",
+          "discussion": "https://news.ycombinator.com/item?id=49910553",
+          "points": 412,
+          "commentaires": 462,
+          "date": "2026-09-30",
+          "source": "Hacker News"
+        },
+        {
           "titre": "With most information hidden, the game Stratego had stumped AI until now",
           "lien": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
           "discussion": "https://news.ycombinator.com/item?id=49933740",
-          "points": 274,
-          "commentaires": 138,
+          "points": 275,
+          "commentaires": 139,
           "date": "2026-10-02",
           "source": "Hacker News"
         },
@@ -750,6 +895,24 @@
           "points": 135,
           "commentaires": 49,
           "date": "2026-10-02",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Responsible Release of AI-Generated Mathematics",
+          "lien": "https://agmai.org/general-sep29/",
+          "discussion": "https://news.ycombinator.com/item?id=49903713",
+          "points": 123,
+          "commentaires": 222,
+          "date": "2026-09-30",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "CS240 AI Cheating Retrospective",
+          "lien": "https://turkeyland.net/thoughts/ai.php",
+          "discussion": "https://news.ycombinator.com/item?id=49913458",
+          "points": 118,
+          "commentaires": 104,
+          "date": "2026-09-30",
           "source": "Hacker News"
         },
         {
@@ -792,9 +955,18 @@
           "titre": "Pop!_OS bans AI-generated code from much of its codebase",
           "lien": "https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/",
           "discussion": "https://news.ycombinator.com/item?id=49946321",
-          "points": 59,
-          "commentaires": 40,
+          "points": 61,
+          "commentaires": 43,
           "date": "2026-10-03",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Show HN: Lathoa, a math app for kids where the AI is wrong on purpose",
+          "lien": "https://lathoa.ai/en",
+          "discussion": "https://news.ycombinator.com/item?id=49909648",
+          "points": 52,
+          "commentaires": 49,
+          "date": "2026-09-30",
           "source": "Hacker News"
         },
         {
@@ -834,6 +1006,15 @@
           "source": "Hacker News"
         },
         {
+          "titre": "Reddit is killing RSS feeds and ending public API access because of AI bots",
+          "lien": "https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/",
+          "discussion": "https://news.ycombinator.com/item?id=49912499",
+          "points": 45,
+          "commentaires": 31,
+          "date": "2026-09-30",
+          "source": "Hacker News"
+        },
+        {
           "titre": "Don't Be Fooled by this Summer of AI Hype",
           "lien": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype/",
           "discussion": "https://news.ycombinator.com/item?id=49927331",
@@ -849,6 +1030,15 @@
           "points": 39,
           "commentaires": 28,
           "date": "2026-10-01",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "McDonald's Is Using AI to Dynamically Price Its Burgers",
+          "lien": "https://www.rnz.co.nz/news/world/1656965/inside-mcdonald-s-push-to-have-ai-price-your-big-mac",
+          "discussion": "https://news.ycombinator.com/item?id=49901900",
+          "points": 39,
+          "commentaires": 20,
+          "date": "2026-09-29",
           "source": "Hacker News"
         },
         {
@@ -870,12 +1060,57 @@
           "source": "Hacker News"
         },
         {
+          "titre": "FTC opens probe into AI giants including Anthropic and OpenAI",
+          "lien": "https://www.reuters.com/business/ftc-opens-probe-into-ai-giants-including-anthropic-openai-new-york-post-reports-2026-09-30/",
+          "discussion": "https://news.ycombinator.com/item?id=49911520",
+          "points": 36,
+          "commentaires": 2,
+          "date": "2026-09-30",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Pledge signed by President Trump and top AI leaders misspells the United States",
+          "lien": "https://techcrunch.com/2026/09/30/pledge-signed-by-president-trump-and-top-ai-leaders-misspells-the-united-states/",
+          "discussion": "https://news.ycombinator.com/item?id=49909966",
+          "points": 35,
+          "commentaires": 17,
+          "date": "2026-09-30",
+          "source": "Hacker News"
+        },
+        {
           "titre": "Mozilla shutting down Solo AI website creator",
           "lien": "https://support.soloist.ai/doc/solo-shutdown-faq",
           "discussion": "https://news.ycombinator.com/item?id=49934502",
           "points": 31,
           "commentaires": 64,
           "date": "2026-10-02",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Muse.ai gets me kicked off fb marketplace",
+          "lien": "https://news.ycombinator.com/item?id=49907601",
+          "discussion": "https://news.ycombinator.com/item?id=49907601",
+          "points": 30,
+          "commentaires": 15,
+          "date": "2026-09-30",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "\"Apple engineer\" builds GitHub AI torture chamber to inflict \"pain\" on models",
+          "lien": "https://www.machine.news/apple-engineer-builds-github-ai-torture-chamber-to-inflict-digital-pain-on-models/",
+          "discussion": "https://news.ycombinator.com/item?id=49906892",
+          "points": 27,
+          "commentaires": 45,
+          "date": "2026-09-30",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Councilmember, residents push back on AI 'blight scores' given to homes",
+          "lien": "https://www.nbcdfw.com/investigations/dallas-councilmember-residents-push-back-on-ai-blight-scores-assigned-to-thousands-of-homes/4071874/",
+          "discussion": "https://news.ycombinator.com/item?id=49902354",
+          "points": 27,
+          "commentaires": 5,
+          "date": "2026-09-29",
           "source": "Hacker News"
         },
         {
@@ -894,6 +1129,15 @@
           "points": 24,
           "commentaires": 10,
           "date": "2026-10-02",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "AI tools generated nearly $1B in extra costs, Blue Cross insurers say",
+          "lien": "https://www.reuters.com/legal/litigation/ai-tools-generated-nearly-1-billion-extra-costs-blue-cross-insurers-say-2026-09-24/",
+          "discussion": "https://news.ycombinator.com/item?id=49904221",
+          "points": 23,
+          "commentaires": 12,
+          "date": "2026-09-30",
           "source": "Hacker News"
         },
         {
@@ -942,129 +1186,21 @@
           "source": "Hacker News"
         },
         {
-          "titre": "The Philadelphia Inquirer built Scrape, an AI tool to surface hyperlocal news",
-          "lien": "https://www.lenfestinstitute.org/solutions-resources/philadelphia-inquirer-scrape-ai-hyperlocal-news/",
-          "discussion": "https://news.ycombinator.com/item?id=49930872",
-          "points": 14,
-          "commentaires": 3,
-          "date": "2026-10-02",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Robot Hands for Modern AI and Real Work",
-          "lien": "https://bostondynamics.com/blog/robot-hands-for-modern-ai-and-real-work/",
-          "discussion": "https://news.ycombinator.com/item?id=49933288",
-          "points": 13,
-          "commentaires": 3,
-          "date": "2026-10-02",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "AI as Normal Technology (2025)",
-          "lien": "https://knightcolumbia.org/content/ai-as-normal-technology",
-          "discussion": "https://news.ycombinator.com/item?id=49926986",
-          "points": 13,
+          "titre": "Is open-weight AI banned yet?",
+          "lien": "https://isopenweightaibannedyet.com",
+          "discussion": "https://news.ycombinator.com/item?id=49899734",
+          "points": 17,
           "commentaires": 2,
-          "date": "2026-10-01",
+          "date": "2026-09-29",
           "source": "Hacker News"
         },
         {
-          "titre": "Trump renaming AI to SI is making his wife's home country a little richer",
-          "lien": "https://www.neowin.net/news/trump-renaming-ai-to-super-intelligence-is-making-his-wifes-home-country-a-little-richer/",
-          "discussion": "https://news.ycombinator.com/item?id=49931240",
-          "points": 13,
-          "commentaires": 0,
-          "date": "2026-10-02",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Two American Airlines Flights End Up with the Same Flight Numbers",
-          "lien": "https://aviationa2z.com/index.php/2026/08/19/two-american-airlines-flights-end-up-with-same-flight-numbers-again/",
-          "discussion": "https://news.ycombinator.com/item?id=49946827",
-          "points": 12,
-          "commentaires": 4,
-          "date": "2026-10-03",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Our AI Midwife",
-          "lien": "https://www.astralcodexten.com/p/our-ai-midwife",
-          "discussion": "https://news.ycombinator.com/item?id=49928904",
-          "points": 12,
-          "commentaires": 2,
-          "date": "2026-10-02",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Show HN: Premortem – AI agents that red-team your startup idea",
-          "lien": "https://premortem.site",
-          "discussion": "https://news.ycombinator.com/item?id=49926691",
-          "points": 11,
-          "commentaires": 12,
-          "date": "2026-10-01",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "AI-Generated Victim Statement Leads to Sentence Being Vacated",
-          "lien": "https://apnews.com/article/arizona-ai-video-victim-cd1ca553c7fa80c6698d7f97b51b1edd",
-          "discussion": "https://news.ycombinator.com/item?id=49931449",
-          "points": 11,
-          "commentaires": 0,
-          "date": "2026-10-02",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Musk's AI chatbot Grok encouraged Trump to capture Venezuela's president",
-          "lien": "https://techcrunch.com/2026/10/01/musks-ai-chatbot-grok-reportedly-encouraged-trump-to-capture-venezuelas-president/",
-          "discussion": "https://news.ycombinator.com/item?id=49935794",
-          "points": 10,
-          "commentaires": 0,
-          "date": "2026-10-02",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "US Government's new AI chatbot pulls back from debunking Trump",
-          "lien": "https://techxplore.com/news/2026-10-ai-chatbot-debunking-trump.html",
-          "discussion": "https://news.ycombinator.com/item?id=49919314",
-          "points": 10,
-          "commentaires": 0,
-          "date": "2026-10-01",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Reddit to sunset RSS access because of AI bots",
-          "lien": "https://www.theverge.com/tech/1002788/old-reddit-ai-scraping",
-          "discussion": "https://news.ycombinator.com/item?id=49933619",
-          "points": 9,
-          "commentaires": 10,
-          "date": "2026-10-02",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "AI 'godfather' LeCun has 'zero concerns' about human extinction",
-          "lien": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
-          "discussion": "https://news.ycombinator.com/item?id=49946228",
-          "points": 9,
-          "commentaires": 3,
-          "date": "2026-10-03",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "The AI Pascal's Wager",
-          "lien": "https://ploum.net/2026-10-01-pascal_wager.html",
-          "discussion": "https://news.ycombinator.com/item?id=49915338",
-          "points": 9,
-          "commentaires": 2,
+          "titre": "Ask HN: How will the AI endgame play out?",
+          "lien": "https://news.ycombinator.com/item?id=49906174",
+          "discussion": "https://news.ycombinator.com/item?id=49906174",
+          "points": 15,
+          "commentaires": 28,
           "date": "2026-09-30",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Apple will limit Mac disk access as AI agents 'substantially' increase risk",
-          "lien": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
-          "discussion": "https://news.ycombinator.com/item?id=49938271",
-          "points": 9,
-          "commentaires": 1,
-          "date": "2026-10-02",
           "source": "Hacker News"
         }
       ]
@@ -1072,8 +1208,8 @@
   },
   "erreurs": [],
   "compte": {
-    "Fiabilité & hallucinations IA": 4,
-    "Vérification & provenance": 1,
+    "Fiabilité & hallucinations IA": 9,
+    "Vérification & provenance": 7,
     "Quantique — matériel": 25,
     "Quantique — algorithmes": 25,
     "Audit & intégrité logicielle": 0,
