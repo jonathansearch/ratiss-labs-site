@@ -189,7 +189,7 @@ PIED = """<footer>
         <ul>
           <li><a href="/protocols/">Lois du labo</a></li>
           <li><a href="/audits/">Audits</a></li>
-          <li><a href="/audit/">Audit d'intégrité (entreprises)</a></li>
+          <li><a href="/pro/">RATISS Pro (intégrité IA)</a></li>
           <li><a href="/research/audit-jobids-ibm/">Datation job IDs</a></li>
         </ul>
       </div>
@@ -431,12 +431,12 @@ def page_audit() -> str:
         "description": "Contrôle d'intégrité exécutable : artefacts scellés, rejouables, "
                        "tracés, divergences documentées. Ne certifie pas la vérité "
                        "scientifique d'un résultat.",
-        "url": f"{SITE_URL}/audit/" if SITE_URL else "/audit/",
+        "url": f"{SITE_URL}/pro/" if SITE_URL else "/pro/",
     }
     return page("Audit d'intégrité exécutable — RATISS Labs",
                 "Contrôle d'intégrité exécutable pour équipes techniques : artefacts scellés, "
                 "rejouables, tracés, divergences documentées. Ni label de vérité, ni certification.",
-                "/audit/", f'<div class="art"><div class="wx">{sec}</div></div>', "or", ld)
+                "/pro/", f'<div class="art"><div class="wx">{sec}</div></div>', "or", ld)
 
 
 def construire() -> int:
@@ -608,7 +608,7 @@ def construire() -> int:
     base = SITE_URL or "https://ratiss-labs.org"
     (OUT / "robots.txt").write_text(
         f"User-Agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n", encoding="utf-8")
-    urls = ["/", "/research/", "/audits/", "/protocols/", "/about/", "/audit/"] + [
+    urls = ["/", "/research/", "/audits/", "/protocols/", "/about/", "/pro/"] + [
         f"/research/{m['slug']}/" for m in manifs]
     xml = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
