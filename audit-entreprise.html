@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audit d'intégrité pour équipes techniques — RATISS Labs</title>
+<meta name="description" content="Contrôle d'intégrité exécutable : artefacts scellés, rejouables et tracés, divergences documentées. Laboratoire indépendant, mono-auteur. On ne croit pas. On rejoue.">
+<link rel="canonical" href="https://ratiss-labs.vercel.app/audit/">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Audit d'intégrité pour équipes techniques — RATISS Labs">
+<meta property="og:description" content="Artefacts scellés, rejouables et tracés. Chaque divergence est documentée. On ne croit pas. On rejoue.">
+<meta property="og:url" content="https://ratiss-labs.vercel.app/audit/">
+<meta property="og:locale" content="fr_FR">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Audit d'intégrité exécutable","serviceType":"Contrôle d'intégrité d'artefacts techniques","provider":{"@type":"Person","name":"Jonathan Evina (RATISS Labs)","url":"https://ratiss-labs.vercel.app","email":"jonathan.ratisslabs@zohomail.com"},"description":"Scellement des paramètres avant exécution, empreintes SHA-256, verdicts rejouables, journal de déviations chaîné, intégration CI. Ne certifie pas qu'un résultat est scientifiquement vrai.","areaServed":"Worldwide","inLanguage":"fr"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Syne:wght@800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#03100f;--panel:#062220;--text:#eefcf9;--mute:#7fa8a3;--t1:#2dd4bf;--t2:#5eead4;--t3:#0e6b66;--alert:#fb7185;--gold:#facc15;--line:rgba(45,212,191,.13)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--text);font:400 1rem/1.65 Inter,system-ui,sans-serif;-webkit-text-size-adjust:100%;overflow-x:hidden;
+background:radial-gradient(60rem 40rem at 85% -5%,rgba(45,212,191,.22),transparent 60%),radial-gradient(45rem 35rem at -10% 20%,rgba(250,204,21,.10),transparent 60%),radial-gradient(50rem 40rem at 100% 70%,rgba(14,107,102,.35),transparent 60%),var(--bg);background-attachment:fixed}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+section{padding:72px 0;position:relative}
+h1,h2,h3{font-family:Syne,Inter,sans-serif;font-weight:800;line-height:1.02;margin:0 0 18px}
+h1{font-size:clamp(2.6rem,11vw,6rem);letter-spacing:-.035em;background:linear-gradient(100deg,#fff 0%,var(--t2) 25%,var(--gold) 50%,var(--t2) 75%,#fff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:clamp(1.9rem,7vw,3.2rem);letter-spacing:-.025em;padding-left:18px;border-left:6px solid var(--gold)}
+h3{font-size:1.05rem;color:var(--t2);margin-bottom:8px}
+p{margin:0 0 14px;max-width:66ch}
+.mute{color:var(--mute)}
+code,pre{font-family:"IBM Plex Mono",ui-monospace,monospace}
+header{padding:56px 0 72px}
+.devise{display:inline-block;font:500 .9rem "IBM Plex Mono",monospace;color:#03100f;background:var(--gold);padding:7px 14px;border-radius:99px;margin-bottom:26px;box-shadow:0 0 28px rgba(250,204,21,.45)}
+.lead{font-size:clamp(1.1rem,3.4vw,1.4rem);max-width:56ch;color:var(--text)}
+.statut{margin-top:26px;padding:16px 18px;border:1px solid rgba(250,204,21,.4);border-radius:16px;background:rgba(250,204,21,.07);font-size:.95rem;max-width:66ch}
+.term{margin-top:34px;max-width:620px;background:#020a09;border:1px solid var(--t3);border-radius:18px;box-shadow:0 0 0 1px rgba(45,212,191,.1),0 20px 60px -10px rgba(45,212,191,.35);overflow:hidden;font-family:"IBM Plex Mono",monospace;font-size:.88rem}
+.term .bar{display:flex;gap:7px;align-items:center;padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mute);font-size:.75rem}
+.term .bar i{width:10px;height:10px;border-radius:50%;background:var(--t3)}
+.term .bar i:first-child{background:var(--alert)}.term .bar i:nth-child(2){background:var(--gold)}.term .bar i:nth-child(3){background:var(--t1)}
+.term .body{padding:16px 18px;line-height:1.9;overflow-x:auto;white-space:nowrap}
+.ok{color:var(--t1)}.ko{color:var(--alert)}.cur{display:inline-block;width:9px;height:1em;background:var(--t2);vertical-align:-2px;animation:bl 1.1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+pre{margin:12px 0;padding:16px 18px;background:#020a09;border:1px solid var(--t3);border-radius:16px;overflow-x:auto;color:var(--t2);font-size:.9rem;line-height:1.7;box-shadow:0 12px 40px -16px rgba(45,212,191,.5)}
+.seal{display:inline-flex;align-items:center;gap:9px;font:500 .8rem "IBM Plex Mono",monospace;color:var(--t2);margin-top:6px}
+.seal::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--t1);box-shadow:0 0 0 4px rgba(45,212,191,.2),0 0 18px var(--t1)}
+.chiffres{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:30px 0}
+.chiffres div{background:linear-gradient(160deg,var(--panel),#04181a);border:1px solid var(--t3);border-radius:20px;padding:22px 20px;box-shadow:0 16px 50px -20px rgba(45,212,191,.55)}
+.chiffres b{display:block;font:800 clamp(3.4rem,13vw,5rem)/.95 Syne,sans-serif;letter-spacing:-.04em;background:linear-gradient(180deg,#fff,var(--t1));-webkit-background-clip:text;background-clip:text;color:transparent}
+.chiffres span{font-size:.9rem;color:var(--mute)}
+ol.liv{list-style:none;counter-reset:l;margin:26px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+ol.liv li{counter-increment:l;background:linear-gradient(160deg,var(--panel),#04181a);border:1px solid var(--line);border-radius:20px;padding:70px 20px 22px;position:relative;overflow:hidden;transition:transform .2s,border-color .2s,box-shadow .2s}
+ol.liv li:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 18px 50px -18px rgba(250,204,21,.45)}
+ol.liv li::before{content:counter(l);position:absolute;left:14px;top:2px;font:800 4.4rem/1 Syne,sans-serif;color:transparent;-webkit-text-stroke:1.5px var(--t3)}
+ol.liv strong{display:block;margin-bottom:6px;font-size:1.08rem}
+ol.liv span{color:var(--mute);font-size:.95rem}
+.non{border:2px solid var(--alert);border-radius:22px;padding:30px 24px;background:repeating-linear-gradient(135deg,rgba(251,113,133,.09) 0 14px,rgba(251,113,133,.03) 14px 28px);box-shadow:0 0 60px -20px rgba(251,113,133,.6)}
+.non h2{color:var(--alert);border-color:var(--alert)}
+.non strong{color:#fff}
+.non ul,.cadre ul{margin:0;padding-left:20px}
+.non li,.cadre li{margin-bottom:9px;max-width:62ch}
+.cadre .wrap{background:rgba(6,34,32,.6);border:1px solid var(--line);border-radius:22px;padding:34px 24px}
+.cta{display:inline-block;margin-top:14px;padding:18px 30px;background:linear-gradient(100deg,var(--gold),#fde68a);color:#03100f;font:600 1.05rem Inter,sans-serif;border-radius:16px;text-decoration:none;box-shadow:0 0 0 4px rgba(250,204,21,.18),0 14px 50px -6px rgba(250,204,21,.6);transition:transform .15s}
+.cta:hover{transform:scale(1.03)}
+a:focus-visible{outline:3px solid var(--t2);outline-offset:3px}
+a{color:var(--t2)}
+footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--mute);font-size:.85rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cur{animation:none}ol.liv li{transition:none}}
+
+.bg{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.bg .g{position:absolute;inset:-60px;background-image:linear-gradient(rgba(45,212,191,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(45,212,191,.07) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%);animation:grid 24s linear infinite}
+.bg .b{position:absolute;width:46vmax;height:46vmax;border-radius:50%;will-change:transform}
+.bg .b1{left:-12vmax;top:-10vmax;background:radial-gradient(circle,rgba(45,212,191,.28),transparent 65%);animation:d1 22s ease-in-out infinite alternate}
+.bg .b2{right:-14vmax;top:25vh;background:radial-gradient(circle,rgba(250,204,21,.16),transparent 65%);animation:d2 28s ease-in-out infinite alternate}
+.bg .b3{left:20vw;bottom:-18vmax;background:radial-gradient(circle,rgba(14,107,102,.5),transparent 65%);animation:d3 26s ease-in-out infinite alternate}
+.bg .p{position:absolute;bottom:-12px;width:4px;height:4px;border-radius:50%;background:var(--t2);box-shadow:0 0 10px var(--t1);opacity:0;animation:rise 14s linear infinite}
+.bg .p:nth-of-type(1){left:8%;animation-delay:0s}.bg .p:nth-of-type(2){left:22%;animation-delay:3s;animation-duration:17s}.bg .p:nth-of-type(3){left:37%;animation-delay:6s;background:var(--gold);box-shadow:0 0 10px var(--gold)}.bg .p:nth-of-type(4){left:53%;animation-delay:1.5s;animation-duration:19s}.bg .p:nth-of-type(5){left:68%;animation-delay:8s}.bg .p:nth-of-type(6){left:81%;animation-delay:4.5s;animation-duration:16s;background:var(--gold);box-shadow:0 0 10px var(--gold)}.bg .p:nth-of-type(7){left:92%;animation-delay:10s}
+@keyframes grid{to{transform:translateY(56px)}}
+@keyframes d1{to{transform:translate(18vw,14vh) scale(1.15)}}
+@keyframes d2{to{transform:translate(-16vw,-12vh) scale(1.2)}}
+@keyframes d3{to{transform:translate(14vw,-10vh) scale(.9)}}
+@keyframes rise{0%{transform:translateY(0);opacity:0}12%{opacity:.9}85%{opacity:.5}100%{transform:translateY(-105vh);opacity:0}}
+@keyframes shine{to{background-position:200% 0}}
+h1{background-size:200% 100%;animation:shine 9s linear infinite}
+@media(prefers-reduced-motion:reduce){.bg *,h1{animation:none!important}}
+@supports not ((-webkit-background-clip:text) or (background-clip:text)){h1,.chiffres b{color:var(--t2);background:none;-webkit-text-stroke:0}}
+@media(max-width:520px){section{padding:52px 0}h2{padding-left:12px;border-left-width:4px}.wrap{padding:0 16px}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div class="g"></div><div class="b b1"></div><div class="b b2"></div><div class="b b3"></div><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span></div>
+<header>
+<div class="wrap">
+<div class="devise">On ne croit pas. On rejoue.</div>
+<h1>Audit d'intégrité pour équipes techniques</h1>
+<p class="lead">Entre le moment où un résultat est mesuré et celui où il est publié ou déployé, les artefacts changent. Vérifier à la main coûte du temps et ne laisse aucune trace. L'audit RATISS scelle, rejoue et trace.</p>
+<div class="term" role="img" aria-label="Exemple de rejeu en ligne de commande : un cas conforme, un cas divergent détecté">
+<div class="bar"><i></i><i></i><i></i><span>rejeu · RATISS-ARCHIVES</span></div>
+<div class="body">$ python3 outils/verifier_manifeste.py<br><span class="ok">&#10003; CONFORME</span> &nbsp;empreintes vérifiées<br><span class="ko">&#10007; DIVERGENCE</span> &nbsp;détectée (cas négatif)<br>$ <span class="cur"></span></div>
+</div>
+<p class="statut">Laboratoire indépendant, mono-auteur : aucune entreprise enregistrée, aucune équipe, aucun financement. Ce que vous achetez, c'est une méthode exécutable, pas un label.</p>
+</div>
+</header>
+
+<main>
+<section>
+<div class="wrap">
+<h2>Une preuve publique, que vous pouvez rejouer</h2>
+<p>Tout ce qui est annoncé ici se vérifie depuis un clone neuf. Règle maison : aucune affirmation de contrôle sans sa commande de rejeu.</p>
+<div class="chiffres">
+<div><b>68</b><span>dépôts publics au 03/10/2026 — dont 24 sous MIT standard</span></div>
+<div><b>51</b><span>tests rejoués à froid</span></div>
+<div><b>86</b><span>tâches QPU archivées</span></div>
+<div><b>5</b><span>règles scellées</span></div>
+</div>
+<p class="mute" style="font-size:.85rem">Inventaire et licences lus via l’API GitHub le 03/10/2026. Campagne du 02/10 : 84 dépôts lus et vérifiés, 11 exécutés à froid, 51/51 tests (RECAP-02-03-OCT, RATISS-ARCHIVES).</p>
+<h3>Rejeu en une commande (dépôt RATISS-ARCHIVES)</h3>
+<pre>python3 outils/verifier_corpus.py
+python3 outils/verifier_manifeste.py</pre>
+<p>Le vérificateur de manifeste est testé sur 3 cas dont 2 négatifs : empreintes divergentes, JSON illisible. Un contrôle qui ne sait pas échouer ne prouve rien.</p>
+<p>Le 03/10/2026, 5 rapports scientifiques en anglais ont été publiés avec DOI Zenodo. Exemple : <code>10.5281/zenodo.23117609</code>, GHZ-4 sur ions piégés à 97,27 % sur QPU réel.</p>
+<span class="seal">empreintes vérifiées</span>
+<p style="margin-top:14px"><a href="https://ratiss-labs.vercel.app">ratiss-labs.vercel.app</a> · preuves publiques : <a href="https://ratiss-labs.vercel.app/research/">/research/</a> (5 pages canoniques + DOI)</p>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<h2>Ce que vous recevez</h2>
+<ol class="liv">
+<li><strong>Rapport scellé PDF</strong><span>Paramètres scellés avant exécution, empreintes SHA-256 de chaque artefact, verdicts structurés, visa de relecture.</span></li>
+<li><strong>Verdict rejouable JSON</strong><span>Avec la commande de rejeu fournie : votre équipe refait le contrôle sans nous.</span></li>
+<li><strong>Journal de déviations chaîné</strong><span>Date, empreintes avant et après, décision. Rien ne se réécrit, tout s'ajoute.</span></li>
+<li><strong>Intégration CI (GitHub Actions)</strong><span>Les mêmes contrôles à chaque push.</span></li>
+<li><strong>Sceau factuel dans le README</strong><span>Date, empreinte, commande. Un fait vérifiable, pas un badge « certifié ».</span></li>
+<li><strong>Séance de restitution</strong><span>Chaque rouge est expliqué, y compris quand il met en défaut le protocole du labo lui-même.</span></li>
+</ol>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<div class="non">
+<h2>Ce que l'audit ne fait pas</h2>
+<p>Règle maison : <strong>CONFORME ne veut pas dire VRAI.</strong> Un verdict CONFORME signifie que le contrôle défini a été exécuté et que l'artefact respecte le contrat technique annoncé.</p>
+<ul>
+<li>Il ne certifie pas qu'un résultat est scientifiquement vrai.</li>
+<li>Il ne garantit aucune conformité réglementaire.</li>
+<li>Il n'est pas une validation par les pairs.</li>
+<li>Il ne remplace pas une revue scientifique.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="cadre">
+<div class="wrap">
+<h2>Statut et cadre</h2>
+<p>Laboratoire indépendant, mono-auteur : aucune entreprise enregistrée, aucune équipe, aucun financement. La prestation est réalisée en indépendant.</p>
+<ul>
+<li>Le framework est sous licence MIT : le code est ouvert, vous pouvez le lire avant de payer.</li>
+<li>Les échecs sont publiés comme les succès.</li>
+</ul>
+</div>
+</section>
+
+<section class="cadre">
+<div class="wrap">
+<h2>Confidentialité</h2>
+<ul>
+<li>Aucun formulaire, aucun cookie.</li>
+<li>Premier contact par courriel seul.</li>
+<li>Vos artefacts ne quittent pas votre infrastructure : l'audit produit des empreintes, pas des copies.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<h2>L'offre</h2>
+<p>Un audit ponctuel, puis un suivi continu en CI si vous le souhaitez. Les tarifs se définissent après un premier échange, gratuit.</p>
+<a class="cta" href="mailto:jonathan.ratisslabs@zohomail.com?subject=Audit%20d%27int%C3%A9grit%C3%A9">Écrire pour un premier échange gratuit</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">© 2026 RATISS Labs · Yaoundé · <a href="mailto:jonathan.ratisslabs@zohomail.com">jonathan.ratisslabs@zohomail.com</a> · <a href="https://ratiss-labs.vercel.app/about/#confidentialite">confidentialité</a> · <a href="https://ratiss-labs.vercel.app/about/#licence">licence MIT</a></div>
+</footer>
+</body>
+</html>

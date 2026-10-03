@@ -359,7 +359,7 @@ def page_audit() -> str:
         'déployés. Vérifier à la main coûte du temps d’ingénieur et ne laisse aucune '
         'trace rejouable.</p></div>'
         '<div class="sec"><h2>La preuve, déjà publique</h2><p>Le même protocole est '
-        'appliqué en continu aux 57 dépôts publics du laboratoire, avec des contrôles '
+        'appliqué en continu aux 68 dépôts publics du laboratoire (au 03/10/2026), avec des contrôles '
         'négatifs (une divergence volontaire est effectivement détectée : les trois cas '
         'du vérificateur de manifeste — conforme, empreintes divergentes, JSON '
         'illisible — sont testés). Tout se rejoue :</p>'
@@ -480,6 +480,9 @@ def construire() -> int:
     # --- offre entreprises ---
     (OUT / "audit").mkdir()
     (OUT / "audit" / "index.html").write_text(page_audit(), encoding="utf-8")
+    vente = ICI / "audit-entreprise.html"
+    if vente.exists():
+        shutil.copyfile(vente, OUT / "audit" / "index.html")
     pages["/audit/"] = "Audit d'intégrité"
 
     # --- protocoles (les lois du labo, documentées) ---
