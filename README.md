@@ -1,73 +1,73 @@
-# RATISS Labs — le site
+# RATISS Labs — the website
 
-**Site canonique : <https://ratiss-labs.vercel.app>** 
-Toutes les anciennes URLs (GitHub Pages, liens `#/…`) redirigent vers lui.
+**Canonical site: <https://ratiss-labs.vercel.app>** 
+All the old URLs (GitHub Pages, `#/…` links) redirect to it.
 
-Laboratoire indépendant, mono-auteur — Jonathan Evina, Yaoundé (Cameroun).
-*On ne croit pas. On rejoue.*
+Independent, single-author laboratory — Jonathan Evina, Yaoundé (Cameroon).
+*We don't believe. We replay.*
 
 ---
 
-## Ce que contient ce dépôt
+## What this repository contains
 
-| Chemin | Rôle |
+| Path | Role |
 |---|---|
-| `index.html` | **Page de redirection** (meta-refresh 0 s + traduction des anciens liens `#/…` vers les nouvelles URLs). C'est elle que sert GitHub Pages. |
-| `legacy/` | L'ancien site mono-fichier (SPA) conservé comme source éditable. Il vit en production sur `ratiss-labs.vercel.app/` (page d'accueil). |
-| `build.py` | Générateur statique du site multi-pages (stdlib + PyYAML). Déterministe : mêmes manifests → mêmes pages. |
-| `content/*.yaml` | Les **research manifests** : un par objet de recherche. Source unique de vérité des pages ET des rapports. |
-| `rapports/*.tex` | Rapports scientifiques **en anglais**, compilés en PDF (Tectonic). |
-| `rapports/figures.py` | Figures matplotlib — valeurs archivées uniquement ; les schémas sans données portent la mention « SCHEMATIC ». |
-| `rapports/*.pdf` | Les 5 rapports compilés, servis sur `/research/<slug>/report.pdf`. |
-| `verif/` | Fichiers de vérification (Google Search Console). |
+| `index.html` | **Redirection page** (0 s meta-refresh + translation of the old `#/…` links to the new URLs). This is what GitHub Pages serves. |
+| `legacy/` | The old single-file site (SPA) kept as an editable source. It runs in production on `ratiss-labs.vercel.app/` (home page). |
+| `build.py` | Static generator of the multi-page site (stdlib + PyYAML). Deterministic: same manifests → same pages. |
+| `content/*.yaml` | The **research manifests**: one per research object. Single source of truth of the pages AND the reports. |
+| `rapports/*.tex` | Scientific reports **in English**, compiled to PDF (Tectonic). |
+| `rapports/figures.py` | Matplotlib figures — archived values only; diagrams without data carry the "SCHEMATIC" label. |
+| `rapports/*.pdf` | The 5 compiled reports, served on `/research/<slug>/report.pdf`. |
+| `verif/` | Verification files (Google Search Console). |
 
-## Reconstruire le site
+## Rebuild the site
 
 ```bash
 pip install pyyaml
-python3 build.py                                  # preview (URLs relatives)
+python3 build.py                                  # preview (relative URLs)
 SITE_URL=https://ratiss-labs.vercel.app python3 build.py   # production
-python3 -m http.server 8000 --directory _site     # regarder en local
+python3 -m http.server 8000 --directory _site     # look at it locally
 ```
 
-Sortie : `_site/` (compatible Vercel **et** GitHub Pages).
-L'esthétique (CSS, scène Canvas, header, footer) est extraite de `legacy/index.html` :
-aucune divergence visuelle entre l'accueil et les pages Research.
+Output: `_site/` (compatible with Vercel **and** GitHub Pages).
+The aesthetics (CSS, Canvas scene, header, footer) are extracted from `legacy/index.html`:
+no visual divergence between the home page and the Research pages.
 
-## Compiler les rapports PDF
+## Compile the PDF reports
 
 ```bash
-# Tectonic (binaire unique) : https://github.com/tectonic-typesetting/tectonic
-cd rapports && tectonic photon.tex   # idem pour les 5
+# Tectonic (single binary): https://github.com/tectonic-typesetting/tectonic
+cd rapports && tectonic photon.tex   # same for the 5
 ```
 
-## Architecture de publication
+## Publishing architecture
 
 ```
-GitHub (code, données, protocoles)
-   → manifests YAML
-   → pages canoniques + PDF anglais   (Vercel)
-   → Zenodo : record + DOI            (préservation)
-   → Google : sitemap + Search Console (découverte)
+GitHub (code, data, protocols)
+   → YAML manifests
+   → canonical pages + English PDF   (Vercel)
+   → Zenodo: record + DOI            (preservation)
+   → Google: sitemap + Search Console (discovery)
 ```
 
-- **Une URL canonique par recherche** : `/research/<slug>/`
+- **One canonical URL per research**: `/research/<slug>/`
 - `sitemap.xml`, `robots.txt`, canonical, Open Graph, JSON-LD `ScholarlyArticle`
-- **Aucun chiffre publié sans source d'origine** ; les résultats négatifs sont
-  publiés avec le même poids que les positifs.
+- **No published figure without an original source**; negative results are
+  published with the same weight as positive ones.
 
-## DOI publiés (Zenodo, 03/10/2026)
+## Published DOIs (Zenodo, 03/10/2026)
 
-| Objet | DOI |
+| Object | DOI |
 |---|---|
 | Photon | `10.5281/zenodo.23117607` |
 | GHZ ions QPU | `10.5281/zenodo.23117609` |
 | Navier–Stokes | `10.5281/zenodo.23117605` |
 | Étalons | `10.5281/zenodo.23117603` |
-| Audit job IDs IBM | `10.5281/zenodo.23117599` |
+| IBM job IDs audit | `10.5281/zenodo.23117599` |
 
-## Règles
+## Rules
 
-- Aucune clé, token ou secret dans ce dépôt : seul `.env.example`-like est permis ailleurs ; ici, rien.
-- Rien n'est poussé sans ordre du chef.
-- Licence : MIT (Copyright (c) 2026 Jonathan Evina · RATISS Labs).
+- No key, token or secret in this repository: only `.env.example`-like is permitted elsewhere; here, nothing.
+- Nothing is pushed without an order from the boss.
+- License: MIT (Copyright (c) 2026 Jonathan Evina · RATISS Labs).
