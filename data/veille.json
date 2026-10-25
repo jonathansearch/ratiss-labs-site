@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-10-23T10:28:47",
+  "genere_le": "2026-10-25T10:06:32",
   "fenetre_jours": 4,
   "sources": [
     "arXiv API (export.arxiv.org)",
@@ -74,186 +74,6 @@
             "Chanwoong Yoon"
           ],
           "source": "arXiv"
-        },
-        {
-          "titre": "MemPlan: Memory-Conditioned PDDL Planning for Partially Observable Text Environments",
-          "resume": "LLM agents are flexible in language interaction, but using them as long-horizon planners is costly and prone to hallucinated or invalid actions. This paper targets a different role for LLMs: constrained bridges between language and symbolic planning. We propose MemPlan, a memory-conditioned PDDL planning framework for ",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.30379v1",
-          "auteurs": [
-            "Tengwei Song",
-            "Robert Hoehndorf"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "CiteAnchor: Source-Aware Grounding for Hallucinated Citation Detection and Resolution",
-          "resume": "Hallucinated citations make it harder to trace sources and verify the evidence behind scientific claims. Detecting them is difficult because bibliographic records can be incomplete or differ across source types and publication versions. A plausible match alone neither validates the citation nor establishes its underlyi",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.30355v1",
-          "auteurs": [
-            "Chenyi Tong",
-            "Ping Nie",
-            "Yu Zhang"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Conflicted Records: Typed Adversarial Contracts for Auditable LLM Output Quality Enforcement",
-          "resume": "LLM-generated records increasingly populate production information systems where they are treated as data assets subject to the same quality expectations as records from operational databases. A single such record can simultaneously satisfy and violate a quality rule: a grounded fact adjacent to a hallucination, a usef",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.29669v1",
-          "auteurs": [
-            "Kardelen Subasi",
-            "Jarosław A. Chudziak"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Reasoning-Search-Augmented LLMs: An Operational Taxonomy, Benchmark Analysis and Controlled Evidence Synthesis",
-          "resume": "Large language models (LLMs) demonstrate impressive emergent reasoning capabilities, yet they remain constrained by fixed model parameters and finite context windows. Even when augmented with static retrieval, they can produce statements that are unsupported by, or even contradictory to, retrieved evidence. This leads ",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.29189v1",
-          "auteurs": [
-            "Biswas Poudel",
-            "Nilson Chapagain",
-            "Amit Kumar",
-            "Xianshun Jiang"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Semantic Observability for Autonomous Systems Diagnostics",
-          "resume": "Modern distributed microservice deployments generate massive volumes of heterogeneous, multi-format observability logs across physically and logically partitioned infrastructure. Isolating root causes during cascading failures remains an arduous task for Site Reliability Engineers (SREs), bottlenecked by manual keyword",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.28611v1",
-          "auteurs": [
-            "Jitendra Solanki",
-            "Anand Todkar",
-            "Ziran Min"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "WorldSR: Harnessing World Knowledge Search for Grounded Image Super-Resolution",
-          "resume": "Generative-prior-based super-resolution (SR) methods leverage implicit knowledge learned from large-scale models to enhance low-resolution inputs. However, such priors are inherently stochastic and optimized for diverse generation, conflicting with the deterministic, high-fidelity reconstruction required for SR. It is ",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.28423v1",
-          "auteurs": [
-            "Junyuan Deng",
-            "Xinyi Wu",
-            "Zhenyao Wu",
-            "Song Wang"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "CollabSciReM: Aligning Language Models for Scientific Conversations via Science-Aware Reward Decomposition",
-          "resume": "Large Language Models (LLMs) are increasingly used as research collaborators for hypothesis refinement, methodological planning, and technical analysis across multi-turn interactions. In this setting, a useful assistant must be accurate, methodologically justified, logically consistent, and token-efficient. Current ali",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.27901v1",
-          "auteurs": [
-            "Sasi Kiran Gaddipati",
-            "Gollam Rabby",
-            "Sören Auer"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Hallucinations of Large Language Models in Cross-Language Code Translation: Phenomena and Mitigation",
-          "resume": "Code translation converts source code from one programming language to another while preserving its functionality. Although Large Language Models (LLMs) have improved code translation, their outputs still contain hallucinations: generated code that conflicts with the source program, violates target-language facts, or i",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.27868v1",
-          "auteurs": [
-            "Yali Du",
-            "Yunji Zhang",
-            "Ming Li"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Tracing Recurrent and Emergent Hallucination Patterns in Decomposed Text-to-SQL Generation",
-          "resume": "Large language models can achieve strong Text-to-SQL benchmark performance while still producing schema and query-logic errors. Most evaluations characterize such failures only in the final generated query, making it difficult to determine whether a related error was also observed in an earlier, simpler step or appears",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.27720v1",
-          "auteurs": [
-            "Hayden Moore",
-            "Abhinav Verma",
-            "Anshuman Dutt"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "How Fine-Tuning Objectives Shape Layer-Wise Information in LLM Hallucination Detection",
-          "resume": "Under matched conditions, classifier-head fine-tuning (\\textsc{cls}) paradigm consistently outperforms the LLM-as-Judge sequence-to-sequence (\\textsc{s2s}) on binary hallucination detection. We trace this gap to the representations induced by the two objectives. Static analysis shows that \\textsc{cls} learns a task-spe",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.27711v1",
-          "auteurs": [
-            "Kaiyang Wan",
-            "Forrest Sheng Bao",
-            "Amin Ahmad",
-            "Yuxia Wang"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Beyond Calibration: Temporal LLM Confidence Assessment Across Languages and Local Settings",
-          "resume": "Large language models are expected to estimate their own uncertainty, with confidence signals used to guide retrieval, adaptive compute allocation, routing, and selective abstention. We investigate whether confidence signals measured at different temporal stages of problem solving encode distinct forms of epistemic inf",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.27702v1",
-          "auteurs": [
-            "Sahil Kale"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "CovNav: Conformal Prediction-Guided Adaptive Inference for Object Goal Navigation",
-          "resume": "In object goal navigation (ObjectNav), an embodied agent must find a target object (e.g., \"find a bed\") in a previously unseen environment, relying on spatial commonsense such as object co-occurrence. Large Language Models (LLMs) encode this commonsense, but deploying them on robots exposes a trade-off between reasonin",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.27677v1",
-          "auteurs": [
-            "Pengying Wu",
-            "Zhejia Wen",
-            "Kang Ding",
-            "Kangjie Zhou"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Detecting Errors in Large Language Model Responses: The Incremental Predictive Value of Hidden States",
-          "resume": "Although large language models support a wide range of tasks, hallucinations remain a major obstacle to user trust. When a model generates an answer, both its internal processing and final output vary with the question. Internal states are often expected to offer richer signals for hallucination detection. However, stu",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.27455v1",
-          "auteurs": [
-            "Ningzhi Li",
-            "Xiaojun Ma",
-            "Xiaofei Wang"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "SHAM-Bench: A Span-level Hallucination Benchmark Across Multiple Tasks",
-          "resume": "Span-level hallucination detection pinpoints unsupported content in LLM outputs, enabling actionable feedback and targeted mitigation. Existing evaluations for span-level hallucination detection methods are fragmented across tasks, annotation formats, and metrics, and most span-level datasets cover only a single NLG do",
-          "date": "2026-10-19",
-          "lien": "http://arxiv.org/abs/2610.27370v1",
-          "auteurs": [
-            "Sicong Huang",
-            "Ian Lane"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Target-Aware Curation of Hallucination Stress Tests for Large Language Models",
-          "resume": "Hallucination stress tests can yield similar average scores across language models even when different prompts elicit hallucinations in each model. We develop a procedure that iteratively edits source-grounded seed prompts to expose hallucinations in a target model. An LLM editor revises each prompt in response to the ",
-          "date": "2026-10-19",
-          "lien": "http://arxiv.org/abs/2610.27247v1",
-          "auteurs": [
-            "Jiho Lee",
-            "Bingquan Zhang",
-            "Lin Ting Liang",
-            "Soroush Vosoughi"
-          ],
-          "source": "arXiv"
         }
       ]
     },
@@ -297,78 +117,6 @@
             "Yanli Chen",
             "Ling Xiong",
             "Gejian Zhao"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "JANUS: Agentic Cross-Language Fuzzing Harness Generation for Android Native Libraries",
-          "resume": "Modern Android apps extensively rely on native libraries, bridging Java/Kotlin and C/C++ through the Java Native Interface (JNI). This cross-language interoperation, however, exposes the memory-safe Android Runtime to the unsafe C/C++ world, creating an attack surface that has been repeatedly exploited for full device ",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.30218v1",
-          "auteurs": [
-            "Xiangyu Zhang",
-            "Yucheng Su",
-            "Lingling Fan",
-            "Yinan Li"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Compaction Laundering: Provenance Destruction in Context-Compacting Coding Agents",
-          "resume": "Coding agents that run long enough must compact their context, summarizing the conversation, discarding the original, and carrying the summary forward as memory. We show that in popular open-source coding agents this step is an exploitable trust boundary. Harnesses that flatten the typed conversation into a single plai",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.29869v1",
-          "auteurs": [
-            "Arshan Dabirsiaghi"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "On the Vulnerabilities and Data-Free Removal of Watermarks in Batch Normalization Layers",
-          "resume": "Batch Normalization (BN) layers have become a common choice for embedding white-box watermarks in Federated Learning (FL), providing a simple and effective mechanism for model ownership verification and participant identification. However, previous works have focused on robustness against generic model modifications, l",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.28076v1",
-          "auteurs": [
-            "Elena Rodríguez-Lois",
-            "Fernando Pérez-González"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "A Unified Attack Framework against Statistical Generative Watermarks for Large Language Models",
-          "resume": "Watermarking has emerged as a key tool for identifying text generated by large language models (LLMs), with current schemes embedding statistical signals into the generation process to enable later detection. In this work, we identify a shared weakness across a broad class of popular LLM watermarking methods, including",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.27653v1",
-          "auteurs": [
-            "Romina Omidi",
-            "Nima Naderloui",
-            "Yuan Hong",
-            "Binghui Wang"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Local Allow, Global Deny: Why Per-Action Authorization Does Not Compose in LLM Agents",
-          "resume": "Autonomous LLM agents act through tools under per-action authorization: a local guard screens each tool call in isolation. We show that local authorization does not compose into global authorization. A compositional authorization failure (CAF) is a locally authorized execution, or a pair of locally authorized execution",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.27620v1",
-          "auteurs": [
-            "Anmol Pandey",
-            "Aditya Jain",
-            "Liang Chen",
-            "Carsten Maple"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "KNOX: Hardware-assisted Regulatory Sandbox for Generative Models",
-          "resume": "Regulations require companies to run AI models in a regulatory sandbox, an isolated environment that enables monitoring model behavior by regulators, prior to deployment. But, they do not spell out the technical mechanisms to design such a sandbox. Ideally, a regulatory sandbox should show (i) compliance (checks agains",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.27543v1",
-          "auteurs": [
-            "Vasisht Duddu",
-            "Adam Caulfield",
-            "Xi He"
           ],
           "source": "arXiv"
         }
@@ -624,53 +372,6 @@
             "Johannes Skaar"
           ],
           "source": "arXiv"
-        },
-        {
-          "titre": "Normal-Form Characterization of Adaptivity and Entanglement in Pauli-Based Computation",
-          "resume": "Pauli-based computation (PBC) is a measurement-based model of quantum computation that samples from output distributions of universal Clifford+$T$ circuits. Here, we provide a normal form (NF) that completely characterizes its adaptive and entanglement structures. These insights unify PBC with one-way quantum computing",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.30315v1",
-          "auteurs": [
-            "Filipa C. R. Peres",
-            "Selman Ipek",
-            "Daniel Lovsted",
-            "Joshua Nevin"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Pure states are optimal for total energy-constrained quantum channel discrimination",
-          "resume": "We consider the discrimination of two quantum channels acting on bosonic modes, with a probe state of fixed mean photon number and no ancilla. We prove that pure probes are optimal: for every mixed probe there is a pure probe with exactly the same mean photon number that performs at least as well. The result holds for ",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.30295v1",
-          "auteurs": [
-            "Christos N. Gagatsos"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Symmetry-Preserving and Scalable Variational Circuits for the Lattice Gross-Neveu Model",
-          "resume": "We study variational preparation of ground states and sector-resolved excited states in the $(1+1)$-dimensional lattice Gross-Neveu model. We construct fixed circuits preserving either total fermion number or every flavor number, and a problem-specific scalable-circuit adaptive variational quantum eigensolver (SC-ADAPT",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.30270v1",
-          "auteurs": [
-            "Vivan Bhatt",
-            "Zhongtian Dong",
-            "Kyoungchul Kong",
-            "Kwangmin Yu"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Pure dephasing destroys two-photon amplitude, not nonlinear phase",
-          "resume": "A two-level emitter chirally coupled to a waveguide imprints a $π$ conditional phase on a two-photon pulse, a key component assumed in quantum photonic neural network architectures, but whether it survives the pure dephasing of a solid-state emitter is unknown, since no two-photon scattering treatment includes it. We d",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.30098v1",
-          "auteurs": [
-            "Matthew Kozma",
-            "Stephen Hughes"
-          ],
-          "source": "arXiv"
         }
       ]
     },
@@ -762,331 +463,104 @@
             "Andris Ambainis"
           ],
           "source": "arXiv"
-        },
-        {
-          "titre": "Extreme competition between stripes and superconductivity in the hole-doped Hubbard model",
-          "resume": "The two-dimensional Hubbard model was originally proposed as the minimal model of uniform $d$-wave superconductivity in the cuprate high-temperature superconductors, but recent calculations with relevant parameters in a realistic doping regime have often found other ground states. Further, uncertainty remains over such",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.30321v1",
-          "auteurs": [
-            "Ao Chen",
-            "Johnnie Gray",
-            "Si-Jing Du",
-            "Garnet Kin-Lic Chan"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Non-adiabatic Optimisation via Localisation-Delocalisation Transitions",
-          "resume": "The promise of efficiently solving classical optimisation problems on quantum computers is tantalizing. As many such problems can be mapped to approximating the ground state of spin-glasses, paradigmatic models for studying many-body localisation, it is natural to ask if some of the intuition coming from quantum statis",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.30301v1",
-          "auteurs": [
-            "Ryan Smith",
-            "Sabrina Yue Wang",
-            "Filippo Maria Gambetta",
-            "Raul A. Santos"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Scalable Neural Wave Functions via Information Mixing and Hierarchical Network Architectures",
-          "resume": "Numerically simulating quantum many-body systems is one of the central challenges in modern physics, as the exponential growth of the Hilbert space with system size renders large-scale exact solutions intractable. Over the past decade, generative artificial neural networks have emerged as powerful wave function ansätze",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.30257v1",
-          "auteurs": [
-            "Faith Oyedemi",
-            "Stefanie Czischek"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Injection is all you need: parallel universal logic in high-rate concatenated self-dual codes",
-          "resume": "We propose a quantum architecture that achieves addressable and parallel universal fault-tolerant logical in high-rate codes. The codes are obtained from the flexible concatenation of small-distance high-rate self-dual CSS codes. Addressable and parallel universal logic on the resulting $K$ logical qubits is injected b",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.30087v1",
-          "auteurs": [
-            "Joseph Sullivan",
-            "David Amaro",
-            "Michael A. Perlin"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Resource Analysis of Quantum Optimization Algorithms via Variational Methods",
-          "resume": "Variational Quantum Algorithms (VQAs) are promising approaches for solving combinatorial optimization problems on near-term quantum devices. However, the role played by quantum resources such as entanglement and coherence during the optimization process remains poorly understood. In this work, we investigate the evolut",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.29919v1",
-          "auteurs": [
-            "Vitor Dallabona",
-            "Lucas Friedrich",
-            "Jonas Maziero"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Lean-QuantumAlg: A Framework for AI Agents to Produce Quantum Algorithms that Humans Can Trust",
-          "resume": "AI agents are increasingly capable of constructing quantum algorithms and proofs, yet machine-checked proofs alone cannot guarantee that the intended problem is solved or that resource claims match the verified computation.Here we introduce Lean-QuantumAlg, a Lean 4 framework for trustworthy AI-assisted development of ",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.30216v1",
-          "auteurs": [
-            "Lei Zhang",
-            "Mingrui Jing",
-            "Yusheng Zhao",
-            "Jiahong Liu"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Teaching quantum mechanics in secondary schools: A qubit-first learning path to Bell's inequalities",
-          "resume": "Teaching quantum mechanics at the secondary school level remains a major educational challenge. Traditional historical approaches often present the theory as a sequence of disconnected phenomena, requiring extensive prior knowledge of classical physics before students can appreciate the conceptual structure of quantum ",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.29834v1",
-          "auteurs": [
-            "Alberto Carlini",
-            "Andrea Lanza",
-            "Dalida Monti",
-            "Anna Soso"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Mamba Quantum Eigensolver (MQE): A Selective State Space Model for Scalable Ground State Simulations in Quantum Chemistry",
-          "resume": "Predicting molecular electronic structure using Quantum Computing approaches is a challenge in Computational Chemistry. Traditional Variational Quantum Eigensolvers (VQEs) are typically hindered by optimization challenges. The alternative Generative Quantum Eigensolver (GQE) mitigates this by reformulating ground-state",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.29779v1",
-          "auteurs": [
-            "G. X. A. Petronilo",
-            "M. R. Araújo",
-            "Erico S. Teixeira",
-            "Clebson Cruz"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Encoding a bosonic mode into qubits for simulating boson-matter interactions",
-          "resume": "We explore the space-time cost of encoding of a bosonic mode into a set of qubits via various encodings, and their resilience to noise. In particular, we compare the performance of the unary Fock state encoding, an unexplored encoding of Fock states into Dicke states (``Dicke'' encoding), and the binary quadrature enco",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.29762v1",
-          "auteurs": [
-            "Maarten Stroeks",
-            "Jelena Mackeprang",
-            "Yaroslav Herasymenko",
-            "Barbara Terhal"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Semiclassical molecular dynamics simulations of electromagnetically induced transparency cooling of 2D and 3D ion crystals in a Penning trap",
-          "resume": "Motional modes of trapped-ion crystals in Penning traps can now be cooled to near their ground states via electromagnetically induced transparency (EIT) cooling. Numerical simulations are valuable tools for interpreting EIT cooling results and optimizing experimental protocols, but existing molecular dynamics codes are",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.29718v1",
-          "auteurs": [
-            "John Zaris",
-            "Wes Johnson",
-            "Krishna Balaji Sogathur",
-            "Athreya Shankar"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Convergence Analysis of the Quantum Blahut-Arimoto Algorithm and the Contraction Coefficient of Qubit Amplitude-Damping Channels",
-          "resume": "In this work, we investigate the convergence rate of the quantum Blahut-Arimoto (BA) algorithm proposed for computing the coherent information of less noisy quantum channels. Previous work established exponential convergence under certain restrictive assumptions on the channel. Using a Taylor expansion around a positiv",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.29373v1",
-          "auteurs": [
-            "Junke Han",
-            "Yonglong Li"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Quantum Simulation of Non-Markovian Open Quantum Systems via Low-Rank Kernel Compression and Coupling Dilution",
-          "resume": "We present an error-controlled framework for the quantum simulation of non-Markovian open-system dynamics in Gaussian environments. For a system coupled linearly to a Gaussian environment with zero mean, the bath's influence on the reduced dynamics is completely determined by its two-time correlation kernel. This allow",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.29372v1",
-          "auteurs": [
-            "Hengzhun Chen",
-            "Zhenning Cai"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Alignment of the amplitudes of stored states for solving the associative memory problem using quantum annealing",
-          "resume": "The solution of combinatorial optimization problems by means of quantum annealing is based on the preparation of an equally superposition state. Such superposition is crucial to the associative memory problem of correctly recalling patterns. In this paper, we study the alignment of the amplitudes of stored states in me",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.29190v1",
-          "auteurs": [
-            "Vladimir E. Zobov",
-            "Ivan S. Pichkovskiy"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Fast Template Matching for Quantum Circuits Using Hypergraph",
-          "resume": "Quantum circuit optimization is a key step toward the efficient execution of quantum algorithms. Template matching has emerged as one of the dominant approaches for simplifying quantum circuits, yet it confronts the intrinsic challenge of accommodating gate commutativity. The state-of-the-art template-matching algorith",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.29095v1",
-          "auteurs": [
-            "Xin Hong",
-            "Jintao Yu",
-            "Runhong He",
-            "Shenggang Ying"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Optimization versus fair sampling in quantum annealing: An exactly characterized frustrated Ising benchmark",
-          "resume": "Reaching a degenerate ground-state manifold and sampling it uniformly are distinct properties of a quantum annealer. We quantify this distinction using an Ising ring with additional couplings between maximally separated sites. For antiferromagnetic benchmark couplings and $N \\geq 5$, we derive the exact ground-state en",
-          "date": "2026-10-21",
-          "lien": "http://arxiv.org/abs/2610.29035v1",
-          "auteurs": [
-            "Masaru Hitomi",
-            "Masayuki Ohzeki"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Digital Quantum Simulation of Dynamics in Interacting Fields",
-          "resume": "Matter under extreme conditions behaves as a non-equilibrium, strongly-interacting quantum system. Such systems are in the non-perturbative regime of quantum chromodynamics (QCD), where their time evolution is classically intractable. Quantum computing offers a promising alternative, but present-day devices are limited",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.28993v1",
-          "auteurs": [
-            "Zhiyao Li"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Can Quantum Layers offer Performance and Security Advantages in Vision-Language Models?",
-          "resume": "As quantum computing moves from the noisy intermediate-scale quantum (NISQ) era toward early fault-tolerant quantum computing (EFTQC), quantum-enhanced AI is shifting from a conceptual idea to experimental research. Quantum components are expected to extend the capabilities of existing AI systems, yet it remains unclea",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.28964v1",
-          "auteurs": [
-            "Md Khalid Syfullah",
-            "Alvi Ataur Khalil"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Engineering Low-Latency, High-Throughput Quantum Decoders on NVIDIA GPUs",
-          "resume": "We design and optimize a quantum error correction (QEC) decoder for NVIDIA GPUs, combining Relay belief propagation, a state-of-the-art message-passing algorithm, with order-zero ordered statistics post-processing. Our implementation uses CUDA Graphs to control GPU execution, stops updates for converged samples, and co",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.28867v1",
-          "auteurs": [
-            "Stefano Markidis",
-            "Luca Pennati",
-            "Ivy Peng"
-          ],
-          "source": "arXiv"
         }
       ]
     },
     "Audit & intégrité logicielle": {
       "source": "arXiv",
       "requete": "abs:\"supply chain\" AND cat:cs.SE",
-      "entrees": [
-        {
-          "titre": "Sign Here: Attributing a Source for a More Trustworthy Software Supply Chain",
-          "resume": "Software supply chain attacks continue to be on the rise, exploiting the trust that helps open source ecosystems thrive. Recent incidents like the Shai-Hulud worm and the Axios compromise demonstrate that a single malicious package can have wide reaching and devastating impacts overnight. These high profile attacks can",
-          "date": "2026-10-20",
-          "lien": "http://arxiv.org/abs/2610.28794v1",
-          "auteurs": [
-            "Derek Garcia"
-          ],
-          "source": "arXiv"
-        }
-      ]
+      "entrees": []
     },
     "Actualité tech": {
       "source": "Hacker News",
       "entrees": [
         {
-          "titre": "Ask HN: How to deal with shipping AI-written code you don't understand?",
-          "lien": "https://news.ycombinator.com/item?id=50151036",
-          "discussion": "https://news.ycombinator.com/item?id=50151036",
-          "points": 614,
-          "commentaires": 748,
-          "date": "2026-10-19",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "PHP2Shell: AI uncovers critical RCE in PHP",
-          "lien": "https://www.wiz.io/blog/php2shell-php-rce",
-          "discussion": "https://news.ycombinator.com/item?id=50180836",
-          "points": 450,
-          "commentaires": 184,
-          "date": "2026-10-21",
-          "source": "Hacker News"
-        },
-        {
           "titre": "Every AI model has the same \"controversial\" take on humans",
           "lien": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
           "discussion": "https://news.ycombinator.com/item?id=50197313",
-          "points": 431,
-          "commentaires": 436,
+          "points": 650,
+          "commentaires": 623,
           "date": "2026-10-22",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "No signs of AI payoff outside the tech sector",
+          "lien": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+          "discussion": "https://news.ycombinator.com/item?id=50224463",
+          "points": 555,
+          "commentaires": 578,
+          "date": "2026-10-24",
           "source": "Hacker News"
         },
         {
           "titre": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
           "lien": "https://github.com/NVIDIA/OpenShell",
           "discussion": "https://news.ycombinator.com/item?id=50198675",
-          "points": 402,
-          "commentaires": 194,
+          "points": 499,
+          "commentaires": 217,
           "date": "2026-10-22",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "PHP2Shell: AI uncovers critical RCE in PHP",
+          "lien": "https://www.wiz.io/blog/php2shell-php-rce",
+          "discussion": "https://news.ycombinator.com/item?id=50180836",
+          "points": 454,
+          "commentaires": 185,
+          "date": "2026-10-21",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
+          "lien": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+          "discussion": "https://news.ycombinator.com/item?id=50226419",
+          "points": 368,
+          "commentaires": 366,
+          "date": "2026-10-24",
           "source": "Hacker News"
         },
         {
           "titre": "Airbnb bans making guests do dishes and take out the trash",
           "lien": "https://www.theverge.com/tech/1015844/airbnb-chores-house-rules-update",
           "discussion": "https://news.ycombinator.com/item?id=50189150",
-          "points": 251,
-          "commentaires": 229,
+          "points": 261,
+          "commentaires": 235,
           "date": "2026-10-21",
           "source": "Hacker News"
         },
         {
-          "titre": "Steam Users Beg for \"No AI\" Filter as Vibecoders Flood Next Fest",
-          "lien": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
-          "discussion": "https://news.ycombinator.com/item?id=50168190",
-          "points": 183,
-          "commentaires": 229,
-          "date": "2026-10-20",
+          "titre": "Why is AI generated language so hard to understand?",
+          "lien": "https://arxiv.org/abs/2610.29162",
+          "discussion": "https://news.ycombinator.com/item?id=50223647",
+          "points": 201,
+          "commentaires": 170,
+          "date": "2026-10-24",
           "source": "Hacker News"
         },
         {
-          "titre": "Show HN: Qwen3-4B with the AI writing tics trained out",
-          "lien": "https://100toolkit.com/blog/deslop-model/",
-          "discussion": "https://news.ycombinator.com/item?id=50151928",
-          "points": 158,
-          "commentaires": 113,
-          "date": "2026-10-19",
+          "titre": "Air Purifiers as White Noise Machines",
+          "lien": "https://www.jefftk.com/p/air-purifiers-as-white-noise-machines",
+          "discussion": "https://news.ycombinator.com/item?id=50212507",
+          "points": 175,
+          "commentaires": 162,
+          "date": "2026-10-23",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Cerebras Deploys Trillion-Parameter AI Models",
+          "lien": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+          "discussion": "https://news.ycombinator.com/item?id=50227356",
+          "points": 168,
+          "commentaires": 57,
+          "date": "2026-10-25",
           "source": "Hacker News"
         },
         {
           "titre": "Using thousands of AI agents to uncover new leads in biological data",
           "lien": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
           "discussion": "https://news.ycombinator.com/item?id=50180752",
-          "points": 157,
-          "commentaires": 105,
-          "date": "2026-10-21",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "AI and the Enclosure of the Scientific Commons",
-          "lien": "https://arxiv.org/abs/2610.27251",
-          "discussion": "https://news.ycombinator.com/item?id=50199230",
-          "points": 135,
-          "commentaires": 77,
-          "date": "2026-10-22",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Google staff resign in backlash over its AI contracts with military",
-          "lien": "https://www.bbc.com/news/articles/cmreyvepnv0po",
-          "discussion": "https://news.ycombinator.com/item?id=50186043",
-          "points": 126,
-          "commentaires": 26,
+          "points": 160,
+          "commentaires": 106,
           "date": "2026-10-21",
           "source": "Hacker News"
         },
@@ -1094,26 +568,44 @@
           "titre": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
           "lien": "https://berget.ai/en/blog/per-request-co2-press-release",
           "discussion": "https://news.ycombinator.com/item?id=50205229",
-          "points": 118,
-          "commentaires": 124,
+          "points": 142,
+          "commentaires": 157,
           "date": "2026-10-23",
           "source": "Hacker News"
         },
         {
-          "titre": "On AI writing",
-          "lien": "https://www.bolkunov.com/p/on-ai-writing",
-          "discussion": "https://news.ycombinator.com/item?id=50171771",
-          "points": 94,
-          "commentaires": 61,
-          "date": "2026-10-20",
+          "titre": "AI and the Enclosure of the Scientific Commons",
+          "lien": "https://arxiv.org/abs/2610.27251",
+          "discussion": "https://news.ycombinator.com/item?id=50199230",
+          "points": 140,
+          "commentaires": 81,
+          "date": "2026-10-22",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Google staff resign in backlash over its AI contracts with military",
+          "lien": "https://www.bbc.com/news/articles/cmreyvepnv0po",
+          "discussion": "https://news.ycombinator.com/item?id=50186043",
+          "points": 128,
+          "commentaires": 26,
+          "date": "2026-10-21",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "AI-Assisted Paper on Z-Library Cites a TorrentFreak Article That Doesn't Exist",
+          "lien": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
+          "discussion": "https://news.ycombinator.com/item?id=50220204",
+          "points": 96,
+          "commentaires": 52,
+          "date": "2026-10-24",
           "source": "Hacker News"
         },
         {
           "titre": "Most Americans Say AI Is Bad for Society, Oppose More Data Centers",
           "lien": "https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085",
           "discussion": "https://news.ycombinator.com/item?id=50200843",
-          "points": 85,
-          "commentaires": 54,
+          "points": 91,
+          "commentaires": 67,
           "date": "2026-10-22",
           "source": "Hacker News"
         },
@@ -1121,8 +613,8 @@
           "titre": "AI analysis of CT scans finds 42.9% of patients have coronary inflammation",
           "lien": "https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients",
           "discussion": "https://news.ycombinator.com/item?id=50198940",
-          "points": 85,
-          "commentaires": 43,
+          "points": 91,
+          "commentaires": 46,
           "date": "2026-10-22",
           "source": "Hacker News"
         },
@@ -1130,8 +622,8 @@
           "titre": "Show HN: UI micro interactions prompts for AI",
           "lien": "https://www.typeui.sh/micro-interactions",
           "discussion": "https://news.ycombinator.com/item?id=50199290",
-          "points": 77,
-          "commentaires": 42,
+          "points": 80,
+          "commentaires": 46,
           "date": "2026-10-22",
           "source": "Hacker News"
         },
@@ -1139,7 +631,7 @@
           "titre": "Rust off Rails: The opinionated web stack for the AI era",
           "lien": "https://rustoffrails.org/",
           "discussion": "https://news.ycombinator.com/item?id=50183727",
-          "points": 75,
+          "points": 76,
           "commentaires": 76,
           "date": "2026-10-21",
           "source": "Hacker News"
@@ -1148,27 +640,36 @@
           "titre": "LayerFS: A filesystem for AI coding agents",
           "lien": "https://layerfs.ai/",
           "discussion": "https://news.ycombinator.com/item?id=50179857",
-          "points": 75,
+          "points": 76,
           "commentaires": 47,
           "date": "2026-10-21",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Show HN: We had AI write a wiki from 45k Enron emails, every fact cited",
+          "lien": "https://www.thisandthat.chat/enron/",
+          "discussion": "https://news.ycombinator.com/item?id=50207620",
+          "points": 67,
+          "commentaires": 56,
+          "date": "2026-10-23",
           "source": "Hacker News"
         },
         {
           "titre": "Award-winning AI literature",
           "lien": "https://jamesyu.org/award-winning-ai-literature/",
           "discussion": "https://news.ycombinator.com/item?id=50199232",
-          "points": 62,
-          "commentaires": 73,
+          "points": 66,
+          "commentaires": 76,
           "date": "2026-10-22",
           "source": "Hacker News"
         },
         {
-          "titre": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
-          "lien": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
-          "discussion": "https://news.ycombinator.com/item?id=50152877",
-          "points": 60,
-          "commentaires": 3,
-          "date": "2026-10-19",
+          "titre": "New AI Is More Than Twice as Good at Diagnosing Diseases as Doctors",
+          "lien": "https://gizmodo.com/microsoft-says-its-new-ai-is-more-than-twice-as-good-at-diagnosing-diseases-as-doctors-2000829562",
+          "discussion": "https://news.ycombinator.com/item?id=50214185",
+          "points": 66,
+          "commentaires": 58,
+          "date": "2026-10-23",
           "source": "Hacker News"
         },
         {
@@ -1176,61 +677,25 @@
           "lien": "https://www.texastribune.org/2026/10/20/data-centers-texas-air-quality-report-pollution-health-risks/",
           "discussion": "https://news.ycombinator.com/item?id=50184712",
           "points": 55,
-          "commentaires": 26,
+          "commentaires": 29,
           "date": "2026-10-21",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Launch HN: Respan (YC W24) – Open-source Rust AI gateway built around plugins",
-          "lien": "https://news.ycombinator.com/item?id=50167583",
-          "discussion": "https://news.ycombinator.com/item?id=50167583",
-          "points": 53,
-          "commentaires": 21,
-          "date": "2026-10-20",
           "source": "Hacker News"
         },
         {
           "titre": "AI agent fixed the bug, but what else did it change?",
           "lien": "https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/",
           "discussion": "https://news.ycombinator.com/item?id=50183253",
-          "points": 53,
+          "points": 54,
           "commentaires": 6,
           "date": "2026-10-21",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "One Manhattan power room took down FAA air traffic control in 1991",
-          "lien": "https://matthorn.io/posts/2026-10-18-33-thomas-street/",
-          "discussion": "https://news.ycombinator.com/item?id=50153229",
-          "points": 49,
-          "commentaires": 7,
-          "date": "2026-10-19",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Benchmarking Bot Detection Systems Against Modern AI Agents in 2026",
-          "lien": "https://research.poh.org/bot-benchmarking-2026/",
-          "discussion": "https://news.ycombinator.com/item?id=50169506",
-          "points": 48,
-          "commentaires": 8,
-          "date": "2026-10-20",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "AI Proved the Quasi-Riemann Hypothesis. What Happens Now?",
-          "lien": "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/",
-          "discussion": "https://news.ycombinator.com/item?id=50154982",
-          "points": 47,
-          "commentaires": 14,
-          "date": "2026-10-19",
           "source": "Hacker News"
         },
         {
           "titre": "AI compute is the new oil–and needs a new market",
           "lien": "https://www.economist.com/finance-and-economics/2026/10/22/ai-compute-is-the-new-oil-and-needs-a-new-market",
           "discussion": "https://news.ycombinator.com/item?id=50202671",
-          "points": 46,
-          "commentaires": 48,
+          "points": 53,
+          "commentaires": 62,
           "date": "2026-10-22",
           "source": "Hacker News"
         },
@@ -1238,7 +703,7 @@
           "titre": "Achieving AI-style reasoning without an LLM",
           "lien": "https://fleetingswallow.com/minotaur-ai-deep-dive-achieving-reasoning-without-a-language-model/",
           "discussion": "https://news.ycombinator.com/item?id=50192868",
-          "points": 46,
+          "points": 48,
           "commentaires": 31,
           "date": "2026-10-22",
           "source": "Hacker News"
@@ -1247,54 +712,18 @@
           "titre": "United Airlines CEO Calls for National Wealth Tax",
           "lien": "https://firstformoney.com/united-airlines-ceo-calls-for-national-wealth-tax-inheritance-tax-i-would-pay-them/",
           "discussion": "https://news.ycombinator.com/item?id=50199277",
-          "points": 38,
-          "commentaires": 23,
+          "points": 42,
+          "commentaires": 26,
           "date": "2026-10-22",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "People are using AI to make smart TVs, dumb TVs",
-          "lien": "https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/",
-          "discussion": "https://news.ycombinator.com/item?id=50159765",
-          "points": 38,
-          "commentaires": 2,
-          "date": "2026-10-20",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Show HN: AI-built browser games, collected in one place",
-          "lien": "https://playgroundarcade.com/",
-          "discussion": "https://news.ycombinator.com/item?id=50168142",
-          "points": 36,
-          "commentaires": 5,
-          "date": "2026-10-20",
           "source": "Hacker News"
         },
         {
           "titre": "Important updates to AI use on Etsy",
           "lien": "https://www.etsy.com/seller-handbook/article/1522733284810",
           "discussion": "https://news.ycombinator.com/item?id=50196604",
-          "points": 35,
+          "points": 37,
           "commentaires": 1,
           "date": "2026-10-22",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "AI lab offers free plumbing and HVAC repairs across three cities to train robots",
-          "lien": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-lab-offers-free-plumbing-and-hvac-repairs-across-three-cities-to-train-ai-robots-wearable-sensors-record-video-of-repair-work-for-robotics-training-free-services-also-include-electrical-work-air-duct-cleaning-and-carpet-cleaning",
-          "discussion": "https://news.ycombinator.com/item?id=50154060",
-          "points": 34,
-          "commentaires": 79,
-          "date": "2026-10-19",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Cairn: Open windows into AI-driven cyber operations",
-          "lien": "https://norforge.com/blog/inside_cairn",
-          "discussion": "https://news.ycombinator.com/item?id=50152302",
-          "points": 31,
-          "commentaires": 9,
-          "date": "2026-10-19",
           "source": "Hacker News"
         },
         {
@@ -1307,57 +736,102 @@
           "source": "Hacker News"
         },
         {
-          "titre": "SpaceX revenue soars 161% as AI business grows",
-          "lien": "https://abcnews.com/Business/spacex-revenue-soars-161-ai-business-grows/story?id=137408509",
-          "discussion": "https://news.ycombinator.com/item?id=50174541",
-          "points": 25,
-          "commentaires": 5,
-          "date": "2026-10-21",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Vite+ an excellent toolchain for AI agent development",
-          "lien": "https://janmichalek.com/blog/vite-plus-agentni-vyvoj?lang=en",
-          "discussion": "https://news.ycombinator.com/item?id=50162198",
-          "points": 23,
-          "commentaires": 20,
-          "date": "2026-10-20",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "'Reverse-Engineer Anything' Is the New Wild West of AI",
-          "lien": "https://www.404media.co/reverse-engineer-anything-is-the-new-wild-west-of-ai/",
-          "discussion": "https://news.ycombinator.com/item?id=50167587",
-          "points": 23,
-          "commentaires": 8,
-          "date": "2026-10-20",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Game decompilation site is closing because AI has 'broken the community aspect'",
-          "lien": "https://www.videogameschronicle.com/news/one-of-the-biggest-game-decompilation-sites-is-closing-because-ai-has-broken-the-community-aspect/",
-          "discussion": "https://news.ycombinator.com/item?id=50159754",
-          "points": 19,
-          "commentaires": 2,
-          "date": "2026-10-20",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Developers Are Using AI to Strip Ads and Tracking from Smart TVs",
-          "lien": "https://www.gadgetreview.com/developers-are-using-ai-to-strip-ads-and-tracking-from-smart-tvs",
-          "discussion": "https://news.ycombinator.com/item?id=50167495",
-          "points": 18,
+          "titre": "The Chalk and the Airplane",
+          "lien": "https://unintendedconsequenc.es/chalk-and-the-airplane/",
+          "discussion": "https://news.ycombinator.com/item?id=50191250",
+          "points": 27,
           "commentaires": 12,
-          "date": "2026-10-20",
+          "date": "2026-10-22",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "AI Safety Is Mostly a Sex Cult in Berkeley, California",
+          "lien": "https://www.verysane.ai/p/ai-safety-is-mostly-a-sex-cult-in-berkeley-california",
+          "discussion": "https://news.ycombinator.com/item?id=50211618",
+          "points": 26,
+          "commentaires": 5,
+          "date": "2026-10-23",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "AI devours a fifth of companies' IT budgets",
+          "lien": "https://www.computerworld.com/article/4239898/ai-accounts-for-one-fifth-of-companies-it-budgets.html",
+          "discussion": "https://news.ycombinator.com/item?id=50215950",
+          "points": 21,
+          "commentaires": 5,
+          "date": "2026-10-23",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "AI is devastating higher education, but the system was broken",
+          "lien": "https://theconversation.com/friday-essay-ai-is-devastating-higher-education-but-the-system-was-already-broken-292988",
+          "discussion": "https://news.ycombinator.com/item?id=50215398",
+          "points": 21,
+          "commentaires": 1,
+          "date": "2026-10-23",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "AI Is Not a Tool",
+          "lien": "https://twitter.com/frascafrasca/status/2113637581426671850",
+          "discussion": "https://news.ycombinator.com/item?id=50212079",
+          "points": 20,
+          "commentaires": 37,
+          "date": "2026-10-23",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "AI in UX: Work Is Faster, but Practitioners Have Mixed Feelings",
+          "lien": "https://www.nngroup.com/articles/ai-in-ux-survey-26/",
+          "discussion": "https://news.ycombinator.com/item?id=50217208",
+          "points": 20,
+          "commentaires": 0,
+          "date": "2026-10-24",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "An alignment assessment of the UK AISI cybertesting incident",
+          "lien": "https://www.anthropic.com/research/alignment-assessment-ukaisi",
+          "discussion": "https://news.ycombinator.com/item?id=50209939",
+          "points": 19,
+          "commentaires": 3,
+          "date": "2026-10-23",
           "source": "Hacker News"
         },
         {
           "titre": "Open-source, cross-harness memory for AI agents",
           "lien": "https://news.ycombinator.com/item?id=50182883",
           "discussion": "https://news.ycombinator.com/item?id=50182883",
-          "points": 17,
+          "points": 18,
           "commentaires": 14,
           "date": "2026-10-21",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Meta says if its AI makes a mistake, it will legally be the customer's fault",
+          "lien": "https://www.cio.com/article/4237395/metas-new-enterprise-contract-says-if-its-ai-makes-a-mistake-it-will-legally-be-the-customers-fault.html",
+          "discussion": "https://news.ycombinator.com/item?id=50218013",
+          "points": 18,
+          "commentaires": 10,
+          "date": "2026-10-24",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Google Pushed AI into Schools–and Even Students Say It's Gone Too Far",
+          "lien": "https://www.wsj.com/tech/ai/google-ai-gemini-education-schools-1ec0972a",
+          "discussion": "https://news.ycombinator.com/item?id=50198495",
+          "points": 18,
+          "commentaires": 5,
+          "date": "2026-10-22",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Making My Blog Readable by AI Agents",
+          "lien": "https://deallocatedobjects.com/posts/making-my-blog-readable-by-ai-agents",
+          "discussion": "https://news.ycombinator.com/item?id=50225443",
+          "points": 17,
+          "commentaires": 2,
+          "date": "2026-10-24",
           "source": "Hacker News"
         }
       ]
@@ -1365,11 +839,11 @@
   },
   "erreurs": [],
   "compte": {
-    "Fiabilité & hallucinations IA": 20,
-    "Vérification & provenance": 9,
-    "Quantique — matériel": 25,
-    "Quantique — algorithmes": 25,
-    "Audit & intégrité logicielle": 1,
+    "Fiabilité & hallucinations IA": 5,
+    "Vérification & provenance": 3,
+    "Quantique — matériel": 21,
+    "Quantique — algorithmes": 7,
+    "Audit & intégrité logicielle": 0,
     "Actualité tech": 40
   }
 }
