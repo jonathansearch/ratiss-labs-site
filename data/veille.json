@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-10-31T11:11:35",
+  "genere_le": "2026-11-01T12:00:00",
   "fenetre_jours": 4,
   "sources": [
     "arXiv API (export.arxiv.org)",
@@ -44,45 +44,6 @@
             "Kevin Chege",
             "Nick Mumero Mwangi",
             "Samuel Chege Maina"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "What Hallucinations Have We Measured? Semantic Illusion, Confabulation, and Expressed Uncertainty",
-          "resume": "Hallucination remains one of the most critical challenges in deploying large language models (LLMs) reliably and safely. Yet the term is used inconsistently across the research community. We argue for a strict definition of hallucinations in LLMs. First, hallucinations should be confident incorrectness, kept separate f",
-          "date": "2026-10-28",
-          "lien": "http://arxiv.org/abs/2610.38520v1",
-          "auteurs": [
-            "Hazel H. Kim",
-            "Jakub Binkowski",
-            "Ekaterina Fadeeva",
-            "Juan David Guerra"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "CHORD: Cross-Model Hallucination Detection via Relational Graph Discrimination",
-          "resume": "Hallucination detection is critical for deploying large language models (LLMs) in real-world applications. Due to strong empirical performance, internal representation-based methods have emerged as the prevailing direction for detecting hallucinations, yet they remain largely model-specific and often fail to generalize",
-          "date": "2026-10-28",
-          "lien": "http://arxiv.org/abs/2610.38314v1",
-          "auteurs": [
-            "Yongxin Deng",
-            "Zhen Fang",
-            "Guansong Pang",
-            "Sharon Li"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "From Natural Language to Real Schematics: An Automated Workflow for Power Electronics Schematic Synthesis",
-          "resume": "Designing power electronics converters traditionally requires intensive human expertise across topology sizing, commercial component selection, circuit simulation verification, and schematic drafting. While Large Language Models (LLMs) show promise in electronic design automation (EDA), applying standalone LLMs directl",
-          "date": "2026-10-28",
-          "lien": "http://arxiv.org/abs/2610.38201v1",
-          "auteurs": [
-            "Bowen Su",
-            "Huan Chen",
-            "Jiahua Ying",
-            "Ran Ou"
           ],
           "source": "arXiv"
         }
@@ -184,32 +145,6 @@
             "Ali Alfatemi",
             "Kaiqi Xiong",
             "Mohammed Aledhari"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Enhanced image forensics through partial C2PA-based provenance information",
-          "resume": "Cryptographically verifiable C2PA-based Content Credentials (CCs) can be attached to freshly acquired or generated digital images but also to already existing ones with no previous provenance information, for instance after processing through trusted C2PA-enabled software tools. The latter case leads to images with so-",
-          "date": "2026-10-28",
-          "lien": "http://arxiv.org/abs/2610.38639v1",
-          "auteurs": [
-            "Riccardo Ziglio",
-            "Eleonora Marchesini",
-            "Andrea Montibeller",
-            "Giulia Boato"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Session-Bound Behavioral Watermarking for Autonomous LLM Agents",
-          "resume": "Large Language Model (LLM) agents are increasingly acting through Web interfaces and external tools. They produce trajectories. Those trajectories may pass through several intermediaries. They can store, modify, or dispute those trajectories. In Web-based agent deployments, trajectories may pass through APIs, marketpla",
-          "date": "2026-10-28",
-          "lien": "http://arxiv.org/abs/2610.38579v1",
-          "auteurs": [
-            "Md Facklasur Rahaman",
-            "Yong Xiang",
-            "Md Palash Uddin",
-            "Shang Gao"
           ],
           "source": "arXiv"
         }
@@ -860,18 +795,9 @@
           "titre": "AI isn't replacing SREs, it's deskilling them",
           "lien": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
           "discussion": "https://news.ycombinator.com/item?id=50305693",
-          "points": 601,
-          "commentaires": 452,
+          "points": 655,
+          "commentaires": 476,
           "date": "2026-10-30",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Survival LLM: AI assistant and emergency library that runs on your own computer",
-          "lien": "https://www.brangus.io/survival-llm",
-          "discussion": "https://news.ycombinator.com/item?id=50264853",
-          "points": 541,
-          "commentaires": 203,
-          "date": "2026-10-27",
           "source": "Hacker News"
         },
         {
@@ -879,7 +805,7 @@
           "lien": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
           "discussion": "https://news.ycombinator.com/item?id=50273396",
           "points": 491,
-          "commentaires": 546,
+          "commentaires": 549,
           "date": "2026-10-28",
           "source": "Hacker News"
         },
@@ -887,35 +813,35 @@
           "titre": "We ran AI agent swarms in Minecraft and Mindustry",
           "lien": "https://labs.ycombinator.com/projects/games/index.html",
           "discussion": "https://news.ycombinator.com/item?id=50296486",
-          "points": 402,
-          "commentaires": 166,
+          "points": 412,
+          "commentaires": 169,
           "date": "2026-10-29",
           "source": "Hacker News"
         },
         {
-          "titre": "Police are using AI to pull over drivers for 'suspicious' behavior",
-          "lien": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
-          "discussion": "https://news.ycombinator.com/item?id=50261819",
-          "points": 398,
-          "commentaires": 313,
-          "date": "2026-10-27",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Amazon Is Gutting Its AI Division After Sustained Failure",
-          "lien": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-          "discussion": "https://news.ycombinator.com/item?id=50261589",
-          "points": 386,
-          "commentaires": 293,
-          "date": "2026-10-27",
+          "titre": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
+          "lien": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+          "discussion": "https://news.ycombinator.com/item?id=50304122",
+          "points": 306,
+          "commentaires": 381,
+          "date": "2026-10-30",
           "source": "Hacker News"
         },
         {
           "titre": "Proton's CEO Cancels AI 'Re-Interviews'",
           "lien": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
           "discussion": "https://news.ycombinator.com/item?id=50307183",
-          "points": 275,
-          "commentaires": 231,
+          "points": 291,
+          "commentaires": 250,
+          "date": "2026-10-30",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "US tech stocks see sharp falls over AI cost fears",
+          "lien": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
+          "discussion": "https://news.ycombinator.com/item?id=50306008",
+          "points": 267,
+          "commentaires": 296,
           "date": "2026-10-30",
           "source": "Hacker News"
         },
@@ -929,38 +855,38 @@
           "source": "Hacker News"
         },
         {
-          "titre": "US tech stocks see sharp falls over AI cost fears",
-          "lien": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
-          "discussion": "https://news.ycombinator.com/item?id=50306008",
-          "points": 255,
-          "commentaires": 283,
-          "date": "2026-10-30",
-          "source": "Hacker News"
-        },
-        {
           "titre": "Manifestos, Fear, and 'Loser Thinking': Inside Proton's AI Reckoning",
           "lien": "https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/",
           "discussion": "https://news.ycombinator.com/item?id=50289692",
-          "points": 228,
-          "commentaires": 81,
+          "points": 235,
+          "commentaires": 89,
           "date": "2026-10-29",
           "source": "Hacker News"
         },
         {
-          "titre": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
-          "lien": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
-          "discussion": "https://news.ycombinator.com/item?id=50304122",
-          "points": 204,
-          "commentaires": 234,
-          "date": "2026-10-30",
+          "titre": "AI, Lean, and the Future of Formal Verification, with Lean Creator Leo de Moura",
+          "lien": "https://thedataexchange.media/leo-de-moura-lean-aws/",
+          "discussion": "https://news.ycombinator.com/item?id=50290652",
+          "points": 208,
+          "commentaires": 50,
+          "date": "2026-10-29",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Building an AI-native engineering org",
+          "lien": "https://twitter.com/sgondala2/status/2115832070274723875",
+          "discussion": "https://news.ycombinator.com/item?id=50296730",
+          "points": 187,
+          "commentaires": 196,
+          "date": "2026-10-29",
           "source": "Hacker News"
         },
         {
           "titre": "Zombie stats: Where the numbers AI quotes come from",
           "lien": "https://trakkr.ai/trakkr-research/zombie-stats",
           "discussion": "https://news.ycombinator.com/item?id=50290283",
-          "points": 178,
-          "commentaires": 72,
+          "points": 180,
+          "commentaires": 73,
           "date": "2026-10-29",
           "source": "Hacker News"
         },
@@ -974,20 +900,11 @@
           "source": "Hacker News"
         },
         {
-          "titre": "Building an AI-native engineering org",
-          "lien": "https://twitter.com/sgondala2/status/2115832070274723875",
-          "discussion": "https://news.ycombinator.com/item?id=50296730",
-          "points": 159,
-          "commentaires": 181,
-          "date": "2026-10-29",
-          "source": "Hacker News"
-        },
-        {
           "titre": "Ask HN: Are you tired too in this AI era?",
           "lien": "https://news.ycombinator.com/item?id=50301479",
           "discussion": "https://news.ycombinator.com/item?id=50301479",
-          "points": 144,
-          "commentaires": 139,
+          "points": 148,
+          "commentaires": 141,
           "date": "2026-10-30",
           "source": "Hacker News"
         },
@@ -995,9 +912,27 @@
           "titre": "Proton goes all in on using AI",
           "lien": "https://convo.casa/@b/117525936178835007",
           "discussion": "https://news.ycombinator.com/item?id=50296602",
-          "points": 117,
-          "commentaires": 114,
+          "points": 120,
+          "commentaires": 117,
           "date": "2026-10-29",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "The AI cost of JavaScript frameworks",
+          "lien": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+          "discussion": "https://news.ycombinator.com/item?id=50323088",
+          "points": 108,
+          "commentaires": 56,
+          "date": "2026-11-01",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Leaking Secrets from Air-Gap Computers by Spelling Radio Signals from RAM (2024)",
+          "lien": "https://arxiv.org/abs/2409.02292",
+          "discussion": "https://news.ycombinator.com/item?id=50322022",
+          "points": 95,
+          "commentaires": 51,
+          "date": "2026-11-01",
           "source": "Hacker News"
         },
         {
@@ -1013,9 +948,18 @@
           "titre": "Google value plunges by $500B as AI fears rattle Wall Street",
           "lien": "https://www.bbc.com/news/articles/cm9qzdqpxy48o",
           "discussion": "https://news.ycombinator.com/item?id=50297037",
-          "points": 77,
+          "points": 79,
           "commentaires": 35,
           "date": "2026-10-29",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "The Impact of Generative AI on Critical Thinking: Self-Reported (2025)",
+          "lien": "https://dl.acm.org/doi/full/10.1145/3706598.3713778",
+          "discussion": "https://news.ycombinator.com/item?id=50318401",
+          "points": 78,
+          "commentaires": 53,
+          "date": "2026-10-31",
           "source": "Hacker News"
         },
         {
@@ -1023,17 +967,26 @@
           "lien": "https://news.ycombinator.com/item?id=50291116",
           "discussion": "https://news.ycombinator.com/item?id=50291116",
           "points": 77,
-          "commentaires": 34,
+          "commentaires": 36,
           "date": "2026-10-29",
           "source": "Hacker News"
         },
         {
-          "titre": "Microsoft and Epic Games Suddenly Agree That AI Is Theft",
-          "lien": "https://kotaku.com/now-that-the-shoe-is-on-the-other-foot-microsoft-and-epic-games-suddenly-agree-that-ai-is-theft-2000749316",
-          "discussion": "https://news.ycombinator.com/item?id=50271271",
-          "points": 70,
-          "commentaires": 40,
-          "date": "2026-10-28",
+          "titre": "AI startup hacks Anthropic, gains access to employee details, internal messages",
+          "lien": "https://www.indiatoday.in/technology/news/story/ai-startup-hacks-anthropic-in-12-hours-gains-access-to-employee-details-and-internal-messages-3025452-2026-10-26",
+          "discussion": "https://news.ycombinator.com/item?id=50315990",
+          "points": 74,
+          "commentaires": 18,
+          "date": "2026-10-31",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
+          "lien": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked",
+          "discussion": "https://news.ycombinator.com/item?id=50315987",
+          "points": 71,
+          "commentaires": 42,
+          "date": "2026-10-31",
           "source": "Hacker News"
         },
         {
@@ -1046,6 +999,15 @@
           "source": "Hacker News"
         },
         {
+          "titre": "Wall Street closes sharply lower as AI cash burn fears spark tech selloff",
+          "lien": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+          "discussion": "https://news.ycombinator.com/item?id=50310431",
+          "points": 69,
+          "commentaires": 15,
+          "date": "2026-10-30",
+          "source": "Hacker News"
+        },
+        {
           "titre": "Valve Responds to Developers Fearing AI Slop and Clones",
           "lien": "https://www.invenglobal.com/articles/27761/valve-responds-to-developers-fearing-ai-slop-and-clones",
           "discussion": "https://news.ycombinator.com/item?id=50273192",
@@ -1055,11 +1017,11 @@
           "source": "Hacker News"
         },
         {
-          "titre": "Wall Street closes sharply lower as AI cash burn fears spark tech selloff",
-          "lien": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
-          "discussion": "https://news.ycombinator.com/item?id=50310431",
-          "points": 59,
-          "commentaires": 12,
+          "titre": "Some Thing is Happening A note from the AI companies",
+          "lien": "https://alanbellows.com/some-thing-is-happening/",
+          "discussion": "https://news.ycombinator.com/item?id=50305724",
+          "points": 67,
+          "commentaires": 19,
           "date": "2026-10-30",
           "source": "Hacker News"
         },
@@ -1067,8 +1029,8 @@
           "titre": "New York Times adds more AI features to its Cooking app. Users aren't thrilled",
           "lien": "https://www.niemanlab.org/2026/10/the-new-york-times-is-adding-more-ai-features-to-its-cooking-app-and-users-arent-thrilled/",
           "discussion": "https://news.ycombinator.com/item?id=50282766",
-          "points": 57,
-          "commentaires": 111,
+          "points": 59,
+          "commentaires": 112,
           "date": "2026-10-29",
           "source": "Hacker News"
         },
@@ -1077,17 +1039,35 @@
           "lien": "https://github.com/ZigEmbeddedGroup/microzig/blob/main/CODE_OF_CONDUCT.md",
           "discussion": "https://news.ycombinator.com/item?id=50282865",
           "points": 57,
-          "commentaires": 80,
+          "commentaires": 81,
           "date": "2026-10-29",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "AI text watermarking and quality loss",
+          "lien": "https://blog.keyvan.net/p/ai-text-watermarking-and-quality",
+          "discussion": "https://news.ycombinator.com/item?id=50320599",
+          "points": 56,
+          "commentaires": 8,
+          "date": "2026-10-31",
           "source": "Hacker News"
         },
         {
           "titre": "Neal Stephenson on AI and What Comes Next [video]",
           "lien": "https://www.youtube.com/watch?v=Ii-aeW5pHPQ",
           "discussion": "https://news.ycombinator.com/item?id=50304280",
-          "points": 53,
+          "points": 55,
           "commentaires": 24,
           "date": "2026-10-30",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "No AI, 52 min. Build all Linux Files utils in C by Hand [video]",
+          "lien": "https://www.youtube.com/watch?v=gQRmSlcTq9c",
+          "discussion": "https://news.ycombinator.com/item?id=50290480",
+          "points": 51,
+          "commentaires": 42,
+          "date": "2026-10-29",
           "source": "Hacker News"
         },
         {
@@ -1100,15 +1080,6 @@
           "source": "Hacker News"
         },
         {
-          "titre": "Some Thing is Happening A note from the AI companies",
-          "lien": "https://alanbellows.com/some-thing-is-happening/",
-          "discussion": "https://news.ycombinator.com/item?id=50305724",
-          "points": 48,
-          "commentaires": 12,
-          "date": "2026-10-30",
-          "source": "Hacker News"
-        },
-        {
           "titre": "MIT professor says AI is taking over your brain",
           "lien": "https://www.bostonglobe.com/2026/10/23/opinion/ai-impact-cognitive-ability-eric-so/",
           "discussion": "https://news.ycombinator.com/item?id=50290324",
@@ -1118,30 +1089,12 @@
           "source": "Hacker News"
         },
         {
-          "titre": "AI, Lean, and the Future of Formal Verification, with Lean Creator Leo de Moura",
-          "lien": "https://thedataexchange.media/leo-de-moura-lean-aws/",
-          "discussion": "https://news.ycombinator.com/item?id=50290652",
-          "points": 42,
-          "commentaires": 5,
-          "date": "2026-10-29",
-          "source": "Hacker News"
-        },
-        {
           "titre": "Fiber lasts decades, GPUs last three years: the AI boom isn't the dot-com boom [video]",
           "lien": "https://www.youtube.com/watch?v=MENoB3Rex28",
           "discussion": "https://news.ycombinator.com/item?id=50302407",
-          "points": 41,
-          "commentaires": 53,
+          "points": 42,
+          "commentaires": 54,
           "date": "2026-10-30",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Police Are Pulling People over Because AI Deems Their Driving \"Suspicious\"",
-          "lien": "https://www.aclu.org/news/privacy-technology/ai-driven-police-stops",
-          "discussion": "https://news.ycombinator.com/item?id=50263325",
-          "points": 39,
-          "commentaires": 10,
-          "date": "2026-10-27",
           "source": "Hacker News"
         },
         {
@@ -1163,57 +1116,39 @@
           "source": "Hacker News"
         },
         {
-          "titre": "Outrage after airport self-service checkout asks for 18% tip",
-          "lien": "https://www.the-independent.com/life-style/self-service-airport-tipping-culture-b3075115.html",
-          "discussion": "https://news.ycombinator.com/item?id=50282094",
+          "titre": "Anthropic orders AI tool Claude to stop remaking video games",
+          "lien": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games",
+          "discussion": "https://news.ycombinator.com/item?id=50316635",
+          "points": 29,
+          "commentaires": 16,
+          "date": "2026-10-31",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Computer Science Programs Lose Students as AI Replaces Jobs",
+          "lien": "https://www.bloomberg.com/news/articles/2026-10-29/computer-science-degree-programs-lose-students-as-ai-takes-jobs",
+          "discussion": "https://news.ycombinator.com/item?id=50321065",
+          "points": 26,
+          "commentaires": 16,
+          "date": "2026-10-31",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Amazon sends chills through its workforce with mixed message memo about AI use",
+          "lien": "https://www.theregister.com/ai-and-ml/2026/10/31/amazon-sends-chills-through-its-workforce-with-mixed-message-memo-about-ai-use-corey-quinn/5306804",
+          "discussion": "https://news.ycombinator.com/item?id=50318063",
           "points": 23,
-          "commentaires": 6,
-          "date": "2026-10-28",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "A Defense Contractor Gave Their AI Agent Access to a Secure Pentagon System",
-          "lien": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
-          "discussion": "https://news.ycombinator.com/item?id=50293979",
-          "points": 21,
-          "commentaires": 6,
-          "date": "2026-10-29",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Ask HN: What do you believe or not believe about AI?",
-          "lien": "https://news.ycombinator.com/item?id=50271004",
-          "discussion": "https://news.ycombinator.com/item?id=50271004",
-          "points": 20,
-          "commentaires": 41,
-          "date": "2026-10-28",
+          "commentaires": 11,
+          "date": "2026-10-31",
           "source": "Hacker News"
         },
         {
           "titre": "AI Made Me Homeless",
           "lien": "https://medium.com/effortless-programming/ai-made-me-homeless-a7266d716e59",
           "discussion": "https://news.ycombinator.com/item?id=50295248",
-          "points": 20,
+          "points": 23,
           "commentaires": 9,
           "date": "2026-10-29",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Embraer's Atech aims to double in size by 2030 with drone traffic control",
-          "lien": "https://www.bloomberglinea.com.br/negocios/atech-da-embraer-quer-dobrar-de-tamanho-ate-2030-com-controle-de-trafego-de-drones/",
-          "discussion": "https://news.ycombinator.com/item?id=50309573",
-          "points": 19,
-          "commentaires": 2,
-          "date": "2026-10-30",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "New Records Obtained by EFF Expose More Problems with Medicare's AI Experiment",
-          "lien": "https://www.eff.org/deeplinks/2026/10/new-records-obtained-eff-expose-more-problems-medicares-ai-experiment",
-          "discussion": "https://news.ycombinator.com/item?id=50266764",
-          "points": 19,
-          "commentaires": 2,
-          "date": "2026-10-27",
           "source": "Hacker News"
         }
       ]
@@ -1221,8 +1156,8 @@
   },
   "erreurs": [],
   "compte": {
-    "Fiabilité & hallucinations IA": 6,
-    "Vérification & provenance": 10,
+    "Fiabilité & hallucinations IA": 3,
+    "Vérification & provenance": 8,
     "Quantique — matériel": 25,
     "Quantique — algorithmes": 25,
     "Audit & intégrité logicielle": 1,
