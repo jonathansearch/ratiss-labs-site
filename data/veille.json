@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-11-13T13:24:24",
+  "genere_le": "2026-11-15T12:56:20",
   "fenetre_jours": 4,
   "sources": [
     "arXiv API (export.arxiv.org)",
@@ -45,94 +45,6 @@
             "Abhishek Phadke"
           ],
           "source": "arXiv"
-        },
-        {
-          "titre": "Fine-Grained Generative Hallucination Detection and Correction for Aerial Image Captioning",
-          "resume": "Aerial imagery captured by unmanned aerial vehicles (UAVs) plays a vital role in applications such as surveillance, disaster response, and large-scale environmental monitoring. Automatic generation of textual descriptions for such imagery is essential for reducing manual inspection overhead and enabling better downstre",
-          "date": "2026-11-11",
-          "lien": "http://arxiv.org/abs/2611.15809v1",
-          "auteurs": [
-            "Debolena Basak",
-            "Somsubhra De",
-            "Maunendra Sankar Desarkar"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Faithful in Steps: Improving Generalization and Citation in RAG via Query Decomposition",
-          "resume": "Retrieval-augment generation is a prevalent strategy to mitigate hallucinations of LLMs. The attributable RAG (RAGQ) generates quotes for its answers. The quotes indicate which input contexts support the RAG to derive the answers, enhancing the answer's verifiability and trustworthiness. However, existing RAGQs exhibit",
-          "date": "2026-11-11",
-          "lien": "http://arxiv.org/abs/2611.15538v1",
-          "auteurs": [
-            "Yue Liu",
-            "Zhongying Ru",
-            "Shimin Di",
-            "Jipeng Zhang"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "MAGIC: Modality-Aware Gini Inspection for Clinical Hallucination Detection in LMMs",
-          "resume": "Recent advances in medical large multimodal models (LMMs) have brought promising progress to clinical decision support, yet hallucination, the generation of confident but clinically unverifiable outputs, poses a critical threat to the reliability demanded in high-stakes medical settings. Existing hallucination detectio",
-          "date": "2026-11-11",
-          "lien": "http://arxiv.org/abs/2611.15530v1",
-          "auteurs": [
-            "Sachin Acharya",
-            "Niyoj Oli",
-            "Shishir Adhikari",
-            "Aminu Lawal"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Towards Robust Vision-Language Reasoning: A Multi-Stage Optimization Pipeline with Masked Diffusion Model",
-          "resume": "Discrete diffusion generation is emerging as a competitive alternative to autoregressive generation by denoising the entire token sequence through iterative refinement. Its global planning and progressive correction capabilities are particularly well suited to autonomous driving. However, transferring this generation p",
-          "date": "2026-11-11",
-          "lien": "http://arxiv.org/abs/2611.15238v1",
-          "auteurs": [
-            "Shunming Liu",
-            "Pei Huang",
-            "Yajing Sun",
-            "Huaxiao Liu"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Cognitive Mapping of Learning by Thinking Mechanisms in Large Language Models",
-          "resume": "Large language models (LLMs) increasingly exhibit capabilities that resemble human Learning by Thinking (LbT), the acquisition of new insight through internal processes such as explanation and reasoning, without new external input. A systematic account of the cognitive mechanisms behind these capabilities, and of their",
-          "date": "2026-11-10",
-          "lien": "http://arxiv.org/abs/2611.14382v1",
-          "auteurs": [
-            "Dong Han",
-            "Jin Zhang",
-            "Kunyue Yang"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Sckwoky at SHROOM-Visions: Character-Level Hallucination-Span Detection in Image-Conditioned VLMs via Dual-Prompted LoRA Decoders",
-          "resume": "We present our system for the SHROOM-visions 2026 shared task on character-level hallucination span detection in image-conditioned vision-language model (VLM) responses, evaluated across English, French, Italian, and Chinese. The detector is built on a frozen Gemma-4-12B-it backbone with trainable LoRA adapters (approx",
-          "date": "2026-11-10",
-          "lien": "http://arxiv.org/abs/2611.14100v1",
-          "auteurs": [
-            "Mikhail Kulakov",
-            "Ruslan Solikhov",
-            "Ivan Bondarenko"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "Controlled Knowledge Engineering for Taxonomy Induction with Tool-Grounded LLM Agents and Runtime-Adaptive Policies",
-          "resume": "Taxonomies are structured knowledge representations that support semantic search, recommendation, product catalog organization, and retrieval-augmented generation. Their automated construction from a fixed set of candidate entities requires more than plausible text generation: the resulting hierarchy must be complete, ",
-          "date": "2026-11-10",
-          "lien": "http://arxiv.org/abs/2611.13966v1",
-          "auteurs": [
-            "Jonas Limniatis",
-            "Bennet Schaarmann",
-            "Georg Reuber",
-            "Robert Stahlbock"
-          ],
-          "source": "arXiv"
         }
       ]
     },
@@ -172,42 +84,6 @@
             "Wuzheng Tan",
             "Zixin Zhang",
             "Xujun Fang"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "VRMaaS: Verifiable Reward-Model-as-a-Service for Trustworthy LLM Alignment",
-          "resume": "Reward models (RMs) are increasingly deployed as service components in LLM alignment pipelines, where payment, audit, moderation, and governance workflows act on the scores they return. An inference proof alone does not show whether a score belongs to the intended request, model checkpoint, numerical configuration, and",
-          "date": "2026-11-11",
-          "lien": "http://arxiv.org/abs/2611.14984v1",
-          "auteurs": [
-            "Guofu Liao",
-            "Hailang Xi",
-            "Taotao Wang",
-            "Shengli Zhang"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "When Safety Becomes an Attack Surface: Manipulating Abstention in Tool-Using AI Agents",
-          "resume": "An AI agent's decision not to act can itself become an attack surface. We study warning-induced over-abstention, an availability attack in which adversaries place fabricated risk warnings in low-trust content to prevent legitimate task completion. Our central premise is that safe abstention requires evaluating both the",
-          "date": "2026-11-11",
-          "lien": "http://arxiv.org/abs/2611.14864v1",
-          "auteurs": [
-            "Charles Xiao"
-          ],
-          "source": "arXiv"
-        },
-        {
-          "titre": "From Attack Surface to Defense Architecture: Compositional Security for Agentic Coding Harnesses",
-          "resume": "AI coding harnesses couple language models to shells, filesystems, and network sockets, turning the harness into an automated Living-off-the-Land (LotL) platform: once an adversary injects instructions into retrieved content, dual-use binaries such as bash, curl, and find become the payload. We argue that security in a",
-          "date": "2026-11-10",
-          "lien": "http://arxiv.org/abs/2611.13960v1",
-          "auteurs": [
-            "Simon Hegelich",
-            "Bardh Prenkaj",
-            "Habiba Sarhan",
-            "Morteza Shahrezaye"
           ],
           "source": "arXiv"
         }
@@ -835,56 +711,74 @@
       "source": "Hacker News",
       "entrees": [
         {
-          "titre": "My AI agents found an unmapped Maya site?",
-          "lien": "https://pietromiotti.com/latest/maya-site",
-          "discussion": "https://news.ycombinator.com/item?id=50452455",
-          "points": 1032,
-          "commentaires": 391,
-          "date": "2026-11-11",
+          "titre": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+          "lien": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+          "discussion": "https://news.ycombinator.com/item?id=50493251",
+          "points": 1077,
+          "commentaires": 642,
+          "date": "2026-11-14",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Reverse engineering my Coway air purifier to ditch the cloud",
+          "lien": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+          "discussion": "https://news.ycombinator.com/item?id=50474959",
+          "points": 792,
+          "commentaires": 222,
+          "date": "2026-11-12",
           "source": "Hacker News"
         },
         {
           "titre": "United Airlines bans AI agents from booking flights on behalf of travelers",
           "lien": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
           "discussion": "https://news.ycombinator.com/item?id=50458900",
-          "points": 674,
-          "commentaires": 697,
+          "points": 680,
+          "commentaires": 707,
           "date": "2026-11-11",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "AI usage generates a fragile codebase",
-          "lien": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
-          "discussion": "https://news.ycombinator.com/item?id=50438318",
-          "points": 640,
-          "commentaires": 625,
-          "date": "2026-11-10",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Apple has new Mac app coming to make running local AI models easy",
-          "lien": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
-          "discussion": "https://news.ycombinator.com/item?id=50446520",
-          "points": 557,
-          "commentaires": 554,
-          "date": "2026-11-10",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
-          "lien": "https://unemploymentlabs.com/checkpoint-forensics",
-          "discussion": "https://news.ycombinator.com/item?id=50474883",
-          "points": 315,
-          "commentaires": 119,
-          "date": "2026-11-12",
           "source": "Hacker News"
         },
         {
           "titre": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
           "lien": "https://status.claude.com/incidents/nn11wk485zfn",
           "discussion": "https://news.ycombinator.com/item?id=50481187",
-          "points": 297,
-          "commentaires": 243,
+          "points": 493,
+          "commentaires": 389,
+          "date": "2026-11-13",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+          "lien": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+          "discussion": "https://news.ycombinator.com/item?id=50484658",
+          "points": 471,
+          "commentaires": 708,
+          "date": "2026-11-13",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+          "lien": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+          "discussion": "https://news.ycombinator.com/item?id=50486748",
+          "points": 430,
+          "commentaires": 110,
+          "date": "2026-11-13",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+          "lien": "https://unemploymentlabs.com/checkpoint-forensics",
+          "discussion": "https://news.ycombinator.com/item?id=50474883",
+          "points": 403,
+          "commentaires": 176,
+          "date": "2026-11-12",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "AI is destroying the trust between writers and readers",
+          "lien": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
+          "discussion": "https://news.ycombinator.com/item?id=50481870",
+          "points": 367,
+          "commentaires": 232,
           "date": "2026-11-13",
           "source": "Hacker News"
         },
@@ -892,36 +786,54 @@
           "titre": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
           "lien": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
           "discussion": "https://news.ycombinator.com/item?id=50475713",
-          "points": 285,
-          "commentaires": 83,
+          "points": 353,
+          "commentaires": 105,
           "date": "2026-11-12",
           "source": "Hacker News"
         },
         {
-          "titre": "CoreWeave bond yield tops 16% as AI credit stress rises",
-          "lien": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-          "discussion": "https://news.ycombinator.com/item?id=50435660",
-          "points": 196,
-          "commentaires": 193,
-          "date": "2026-11-10",
+          "titre": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+          "lien": "https://orcasairband.com/",
+          "discussion": "https://news.ycombinator.com/item?id=50490593",
+          "points": 292,
+          "commentaires": 70,
+          "date": "2026-11-13",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "No AI Slop: A Manifesto",
+          "lien": "https://www.slopmanifesto.com/",
+          "discussion": "https://news.ycombinator.com/item?id=50488769",
+          "points": 220,
+          "commentaires": 132,
+          "date": "2026-11-13",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "All US airports are currently ground stopped",
+          "lien": "https://twitter.com/flightradar24/status/2121347654714077605",
+          "discussion": "https://news.ycombinator.com/item?id=50489652",
+          "points": 212,
+          "commentaires": 44,
+          "date": "2026-11-13",
           "source": "Hacker News"
         },
         {
           "titre": "AI is turning Apple's app review process into a nightmare for synth developers",
           "lien": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
           "discussion": "https://news.ycombinator.com/item?id=50474311",
-          "points": 184,
-          "commentaires": 206,
+          "points": 198,
+          "commentaires": 233,
           "date": "2026-11-12",
           "source": "Hacker News"
         },
         {
-          "titre": "Fireworks AI security breach impacts Notion and their customers",
-          "lien": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
-          "discussion": "https://news.ycombinator.com/item?id=50437106",
-          "points": 166,
-          "commentaires": 66,
-          "date": "2026-11-10",
+          "titre": "Why is Google cutting off Search from AI-free schools? Here are some theories",
+          "lien": "https://text.npr.org/nx-s1-6029408",
+          "discussion": "https://news.ycombinator.com/item?id=50484960",
+          "points": 194,
+          "commentaires": 194,
+          "date": "2026-11-13",
           "source": "Hacker News"
         },
         {
@@ -929,125 +841,125 @@
           "lien": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/",
           "discussion": "https://news.ycombinator.com/item?id=50457164",
           "points": 165,
-          "commentaires": 195,
+          "commentaires": 198,
           "date": "2026-11-11",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "A year after the 100% AI mandate nobody understands our code",
-          "lien": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/",
-          "discussion": "https://news.ycombinator.com/item?id=50433079",
-          "points": 162,
-          "commentaires": 200,
-          "date": "2026-11-09",
           "source": "Hacker News"
         },
         {
           "titre": "AI, activity, and outcomes in software engineering",
           "lien": "https://cabird.com/talks/shipping-faster/",
           "discussion": "https://news.ycombinator.com/item?id=50455332",
-          "points": 128,
+          "points": 130,
           "commentaires": 112,
           "date": "2026-11-11",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Show HN: STE80 Humanizer – de-AI text by writing 80% of the way to ASD-STE100",
-          "lien": "https://github.com/Dodaios/ste80-humanizer",
-          "discussion": "https://news.ycombinator.com/item?id=50429144",
-          "points": 112,
-          "commentaires": 43,
-          "date": "2026-11-09",
           "source": "Hacker News"
         },
         {
           "titre": "Why You Should Expect an AI Crash",
           "lien": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
           "discussion": "https://news.ycombinator.com/item?id=50475735",
-          "points": 97,
-          "commentaires": 81,
+          "points": 103,
+          "commentaires": 84,
           "date": "2026-11-12",
           "source": "Hacker News"
         },
         {
-          "titre": "Show HN: Aircad – Professional drafting and 3D modeling in the browser",
-          "lien": "https://aircad.com",
-          "discussion": "https://news.ycombinator.com/item?id=50441350",
-          "points": 91,
-          "commentaires": 42,
-          "date": "2026-11-10",
+          "titre": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
+          "lien": "https://claude.com/resources/articles/projects-redesigned",
+          "discussion": "https://news.ycombinator.com/item?id=50492141",
+          "points": 99,
+          "commentaires": 93,
+          "date": "2026-11-14",
           "source": "Hacker News"
         },
         {
           "titre": "Chicago schools to Google – we'd rather lose Search than be forced to accept AI",
           "lien": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
           "discussion": "https://news.ycombinator.com/item?id=50476586",
-          "points": 81,
-          "commentaires": 24,
+          "points": 90,
+          "commentaires": 30,
           "date": "2026-11-13",
           "source": "Hacker News"
         },
         {
-          "titre": "Meet the Sad Wives of AI",
-          "lien": "https://www.wired.com/story/meet-the-sad-wives-of-ai/",
-          "discussion": "https://news.ycombinator.com/item?id=50438429",
-          "points": 79,
-          "commentaires": 71,
-          "date": "2026-11-10",
+          "titre": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
+          "lien": "https://news.ycombinator.com/item?id=50494696",
+          "discussion": "https://news.ycombinator.com/item?id=50494696",
+          "points": 86,
+          "commentaires": 51,
+          "date": "2026-11-14",
           "source": "Hacker News"
         },
         {
-          "titre": "AI Users have workdays up to 90 min longer than non-users",
-          "lien": "https://www.activtrak.com/news/productivity-lab-ai-users-longer-workdays/",
-          "discussion": "https://news.ycombinator.com/item?id=50439686",
-          "points": 66,
-          "commentaires": 27,
-          "date": "2026-11-10",
+          "titre": "The avalanche that hit math is coming for AI development",
+          "lien": "https://www.dwarkesh.com/p/rsi",
+          "discussion": "https://news.ycombinator.com/item?id=50487854",
+          "points": 67,
+          "commentaires": 113,
+          "date": "2026-11-13",
           "source": "Hacker News"
         },
         {
-          "titre": "OSS projects banning AI-generated contributions",
-          "lien": "https://osssaysno.com",
-          "discussion": "https://news.ycombinator.com/item?id=50451102",
+          "titre": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
+          "lien": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
+          "discussion": "https://news.ycombinator.com/item?id=50503588",
           "points": 65,
-          "commentaires": 114,
-          "date": "2026-11-11",
+          "commentaires": 39,
+          "date": "2026-11-15",
           "source": "Hacker News"
         },
         {
-          "titre": "AI is becoming an information gateway. Audiences still don’t want it making news",
-          "lien": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
-          "discussion": "https://news.ycombinator.com/item?id=50448174",
+          "titre": "Are we just going to ignore that books are destroyed for AI?",
+          "lien": "https://www.forbes.com/sites/maryroeloffs/2026/08/17/ai-companies-are-buying-and-destroying-antique-books-heres-why/",
+          "discussion": "https://news.ycombinator.com/item?id=50487469",
           "points": 59,
-          "commentaires": 88,
-          "date": "2026-11-11",
+          "commentaires": 70,
+          "date": "2026-11-13",
           "source": "Hacker News"
         },
         {
-          "titre": "Work at the Frontier: AI's effect on freelance work",
-          "lien": "https://openai.com/index/ai-effect-on-freelance-work",
-          "discussion": "https://news.ycombinator.com/item?id=50443838",
-          "points": 43,
-          "commentaires": 21,
-          "date": "2026-11-10",
+          "titre": "Smuggling of 1.5M AI GPUs could be the cause of Huang's departure",
+          "lien": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
+          "discussion": "https://news.ycombinator.com/item?id=50498051",
+          "points": 59,
+          "commentaires": 39,
+          "date": "2026-11-14",
           "source": "Hacker News"
         },
         {
-          "titre": "Research Finds Outright Grants of Cash Are Effective Form of Aid to the Poor",
-          "lien": "https://news.columbia.edu/news/research-finds-outright-grants-cash-are-surprisingly-effective-form-aid-poor",
-          "discussion": "https://news.ycombinator.com/item?id=50438268",
-          "points": 42,
-          "commentaires": 9,
-          "date": "2026-11-10",
+          "titre": "Israeli airstrike on Nasser hospital in Gaza killed surgeon and others",
+          "lien": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
+          "discussion": "https://news.ycombinator.com/item?id=50494303",
+          "points": 50,
+          "commentaires": 16,
+          "date": "2026-11-14",
           "source": "Hacker News"
         },
         {
           "titre": "Show HN: AI Red Lines – write down what would make you act on AI",
           "lien": "https://yourairedlines.com",
           "discussion": "https://news.ycombinator.com/item?id=50467880",
-          "points": 37,
-          "commentaires": 30,
+          "points": 39,
+          "commentaires": 34,
           "date": "2026-11-12",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Is there a 'right amount' of AI?",
+          "lien": "https://coyotetracks.org/blog/right-amount-of-ai/",
+          "discussion": "https://news.ycombinator.com/item?id=50480659",
+          "points": 38,
+          "commentaires": 64,
+          "date": "2026-11-13",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Amodei Says AI Will Cure Cancer in a Decade. Doctors Are Skeptical",
+          "lien": "https://www.businessinsider.com/dario-amodei-anthropic-cancer-cure-ipo-roadshow-backlash-doctors-2026-11",
+          "discussion": "https://news.ycombinator.com/item?id=50484110",
+          "points": 34,
+          "commentaires": 74,
+          "date": "2026-11-13",
           "source": "Hacker News"
         },
         {
@@ -1055,71 +967,35 @@
           "lien": "https://www.tomshardware.com/tech-industry/drones/3-500-ai-laser-robots-patrol-norwegian-salmon-farms-killing-sea-lice-parasites-get-zapped-by-high-tech-alternative-to-harsh-chemical-baths",
           "discussion": "https://news.ycombinator.com/item?id=50456926",
           "points": 34,
-          "commentaires": 10,
+          "commentaires": 11,
           "date": "2026-11-11",
           "source": "Hacker News"
         },
         {
-          "titre": "Indie Game Development with AI",
-          "lien": "https://www.sandromaglione.com/articles/indie-game-development-with-ai",
-          "discussion": "https://news.ycombinator.com/item?id=50432523",
-          "points": 31,
-          "commentaires": 43,
-          "date": "2026-11-09",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Wake me up when AI can...",
-          "lien": "https://stoppels.ch/2026/10/03/wake-me-up-when-ai-can.html",
-          "discussion": "https://news.ycombinator.com/item?id=50440657",
-          "points": 29,
-          "commentaires": 12,
-          "date": "2026-11-10",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "The Race to Build a \"Find My\" for AI Chips",
-          "lien": "https://spectrum.ieee.org/find-my-ai-chip",
-          "discussion": "https://news.ycombinator.com/item?id=50425847",
-          "points": 25,
-          "commentaires": 13,
-          "date": "2026-11-09",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Ask HN: How do you evaluate the skills your AI agents use?",
-          "lien": "https://news.ycombinator.com/item?id=50426070",
-          "discussion": "https://news.ycombinator.com/item?id=50426070",
-          "points": 25,
-          "commentaires": 6,
-          "date": "2026-11-09",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Why Is AI Slop So Frustrating to Read?",
-          "lien": "https://zonderlabs.com/slop",
-          "discussion": "https://news.ycombinator.com/item?id=50433799",
-          "points": 25,
-          "commentaires": 5,
-          "date": "2026-11-09",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Sleep wearables are training AI on your brainwaves without explicit consent",
-          "lien": "https://www.tomshardware.com/peripherals/wearable-tech/wearable-sleep-trackers-are-using-your-brainwaves-to-train-ai-models-without-explicit-user-consent-tens-of-millions-of-hours-of-eeg-data-harvested",
-          "discussion": "https://news.ycombinator.com/item?id=50429502",
-          "points": 25,
-          "commentaires": 1,
-          "date": "2026-11-09",
+          "titre": "Ask HN: Can anyone name anything new that AI has done?",
+          "lien": "https://news.ycombinator.com/item?id=50484426",
+          "discussion": "https://news.ycombinator.com/item?id=50484426",
+          "points": 30,
+          "commentaires": 52,
+          "date": "2026-11-13",
           "source": "Hacker News"
         },
         {
           "titre": "Claude AI Is Down",
           "lien": "https://news.ycombinator.com/item?id=50480941",
           "discussion": "https://news.ycombinator.com/item?id=50480941",
-          "points": 24,
-          "commentaires": 6,
+          "points": 28,
+          "commentaires": 7,
           "date": "2026-11-13",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Open-source AI without Jensen",
+          "lien": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
+          "discussion": "https://news.ycombinator.com/item?id=50496590",
+          "points": 26,
+          "commentaires": 7,
+          "date": "2026-11-14",
           "source": "Hacker News"
         },
         {
@@ -1141,21 +1017,30 @@
           "source": "Hacker News"
         },
         {
-          "titre": "Is there a 'right amount' of AI?",
-          "lien": "https://coyotetracks.org/blog/right-amount-of-ai/",
-          "discussion": "https://news.ycombinator.com/item?id=50480659",
-          "points": 20,
-          "commentaires": 24,
+          "titre": "Why platform teams fail (and AI makes it worse)",
+          "lien": "https://willdady.com/why-platform-teams-fail",
+          "discussion": "https://news.ycombinator.com/item?id=50496525",
+          "points": 19,
+          "commentaires": 6,
+          "date": "2026-11-14",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "FAA tees up $875M AI tool to help manage air traffic congestion",
+          "lien": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion/",
+          "discussion": "https://news.ycombinator.com/item?id=50491384",
+          "points": 19,
+          "commentaires": 4,
           "date": "2026-11-13",
           "source": "Hacker News"
         },
         {
-          "titre": "Tell HN: Notion AI chat sessions have been exposed via Fireworks AI hack",
-          "lien": "https://news.ycombinator.com/item?id=50436636",
-          "discussion": "https://news.ycombinator.com/item?id=50436636",
-          "points": 19,
-          "commentaires": 1,
-          "date": "2026-11-10",
+          "titre": "FAA expands AI advice to manage air traffic congestion across US airspace",
+          "lien": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+          "discussion": "https://news.ycombinator.com/item?id=50491067",
+          "points": 18,
+          "commentaires": 2,
+          "date": "2026-11-13",
           "source": "Hacker News"
         },
         {
@@ -1184,23 +1069,14 @@
           "commentaires": 12,
           "date": "2026-11-12",
           "source": "Hacker News"
-        },
-        {
-          "titre": "Anthropic says a key AI safety alarm has been triggered, days before its IPO",
-          "lien": "https://finance.yahoo.com/markets/article/anthropic-says-a-key-ai-safety-alarm-has-been-triggered-days-before-its-ipo-171519615.html",
-          "discussion": "https://news.ycombinator.com/item?id=50456668",
-          "points": 15,
-          "commentaires": 12,
-          "date": "2026-11-11",
-          "source": "Hacker News"
         }
       ]
     }
   },
   "erreurs": [],
   "compte": {
-    "Fiabilité & hallucinations IA": 10,
-    "Vérification & provenance": 6,
+    "Fiabilité & hallucinations IA": 3,
+    "Vérification & provenance": 3,
     "Quantique — matériel": 25,
     "Quantique — algorithmes": 25,
     "Audit & intégrité logicielle": 0,
