@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-11-15T12:56:20",
+  "genere_le": "2026-11-17T14:51:30",
   "fenetre_jours": 4,
   "sources": [
     "arXiv API (export.arxiv.org)",
@@ -12,37 +12,178 @@
       "requete": "abs:\"hallucination\" AND (cat:cs.CL OR cat:cs.AI)",
       "entrees": [
         {
-          "titre": "Al-Ghasali: A Computational Framework for Simulating Islamic Jurisprudential Rulings via Finite State Automata and Large Language Models",
-          "resume": "This paper presents Al Ghasali, a computational framework designed to formalize and simulate Islamic jurisprudential (Fiqh) rulings. Building upon recent set theoretic formalizations of al sabr wa al Taqsim that extract minimal operational rules as simple Horn clause logical programs, this work proves that the semantic",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17235v1",
+          "titre": "Rubric-Based AES with LLM Ensembles: Scoring of Student Responses in Critical Online Reasoning Using Ensembles of LLMs",
+          "resume": "Grading student responses is costly and time-consuming. Moreover, human annotators are prone to bias, fatigue, and rater drift, which further limits grading reliability. Various methods have been employed to develop automated essay scoring (AES) systems to reduce these costs and address bias-related issues. These metho",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21422v1",
           "auteurs": [
-            "Elnaserledinellah Mahmoud Abdelwahab"
+            "Daniel Baumartz",
+            "Alexander Mehler",
+            "Patrick Schrottenbacher",
+            "Leon Hammerla"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Evaluating Video LLMs' Understanding of Corner Cases in Autonomous Driving",
-          "resume": "Natural language explanations promised by modern Video Large Language Models (Video LLMs) offer autonomous driving systems a path toward detailed scene description and interpretable decision making on the road. While recent benchmarks have begun assessing these models on driving scenes, they mainly target routine traff",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16767v1",
+          "titre": "Stability-Compensated Threshold Calibration for Selection-Conditioned Risk Control in Large Language Models",
+          "resume": "Large language models often produce hallucinated answers, motivating selective prediction policies that abstain on uncertain queries. However, heuristic uncertainty thresholds alone do not provide statistical control of errors among accepted predictions. Linear Expectation Constraints (LEC) reduce selection-conditioned",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21384v1",
           "auteurs": [
-            "Gabriel Manalu",
-            "Minh Son Hoang",
-            "Hyeontaek Hwang",
-            "Jaesung Lee"
+            "Zhiyuan Wang",
+            "Yuanchang Ye",
+            "Jiahao Yuan",
+            "Jinhao Duan"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "SAGE-QA: Semantic-Aware, Grounded Evaluation for Closed-Context Question Answering on SQuAD 2.0",
-          "resume": "Closed-context question answering (QA) requires a system to generate an answer strictly supported by a supplied passage, or to abstain when the passage lacks adequate evidence. SQuAD 2.0 is a widely used benchmark for this setting, scored by Exact Match (EM) i.e., character-level agreement with human reference spans af",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16300v1",
+          "titre": "System 1 agents: a method for local, reliable and fast agentic AI",
+          "resume": "Agentic artificial intelligence could automate analyses of sensitive clinical data, but current agents depend on large language models (LLMs). Cloud LLMs expose patient data. Local LLMs hallucinate, and an invented value in a tool call propagates through every later step. Here we present a method to build System 1 agen",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21053v1",
           "auteurs": [
-            "Chandra N Sekharan",
-            "Vishakan Umapathy",
-            "Abhishek Phadke"
+            "Eleftherios Tzanis",
+            "Michail E. Klontzas"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Language Models Meet Vibration Testing for LEO Constellation Satellites with Calibrated Response Prediction from Few-show Sweeps",
+          "resume": "Large language models (LLMs) increasingly drive engineering analysis end to end, turning textual records into the inputs of numerical programs, but a plausible and wrong value can pass silently into a decision. We propose deterministic validation gates for LLM-driven engineering analysis, a general paradigm in which a ",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20579v1",
+          "auteurs": [
+            "Jun Wu",
+            "Deming Li",
+            "Zhenming Zheng",
+            "Honghao Yue"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Beyond Seeing: Fine-Grained Preference Validation and Severity-Aware Alignment for Mitigating Visual Hallucinations in Vision-Language Models",
+          "resume": "Large vision-language models can produce fluent responses containing objects, attributes, or relations unsupported by the image. We study an implemented alignment pipeline that normalizes released fine-grained hallucination supervision, validates chosen-rejected preference pairs with vision-language judges, repairs rej",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20478v1",
+          "auteurs": [
+            "Abdulaziz Alqahtani",
+            "Alwaleed Alharthi",
+            "Muzammil Behzad"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "GEM-MM: Reducing VLM Hallucination with Entropy-Guided Preference Alignment",
+          "resume": "Vision-language models (VLMs) are routinely aligned with offline pairwise RLHF objectives, but multimodal preference data is scarce and treats every response token as equally informative. Under a small preference budget, pair construction becomes nearly irrelevant: standard DPO-style, image-conditional, and self-improv",
+          "date": "2026-11-15",
+          "lien": "http://arxiv.org/abs/2611.20016v1",
+          "auteurs": [
+            "Yuanshan Chua",
+            "Xuejiao Zhao"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "HalluProbe: Exploiting VLM Hallucinations for Backdoor Detection",
+          "resume": "Vision-Language Models (VLMs) are vulnerable to backdoor attacks introduced through data poisoning, making effective backdoor detection a critical security challenge. In this paper, we uncover a novel connection between VLM hallucinations and backdoor behaviors and exploit this connection for backdoor detection. Our ke",
+          "date": "2026-11-15",
+          "lien": "http://arxiv.org/abs/2611.19868v1",
+          "auteurs": [
+            "Ji Guo",
+            "Xiaolong Qin",
+            "Jin Jiang",
+            "Yijing Liu"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Objectify, Don't Delete: Complaint-Derived Evaluation of Ambient Clinical Notes",
+          "resume": "Evaluating the quality of AI-generated clinical notes is hard: standard metrics like ROUGE measure lexical similarity to reference notes, while expert checklists encode what committees believe matters. Neither captures what clinicians actually complain about. Recent work has shown that evaluation criteria can be mined ",
+          "date": "2026-11-14",
+          "lien": "http://arxiv.org/abs/2611.19525v1",
+          "auteurs": [
+            "Nikita Gupta",
+            "Narayanan Unny Edakunni",
+            "Vikram Okaly",
+            "Suranjana Datta"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "SARGO: Agreement-Gated Reinforcement and Suppression via On-Policy Self-Guidance for Visual Hallucination Mitigation",
+          "resume": "Vision-language models remain susceptible to visual hallucinations, often mixing grounded information with unsupported claims in the same response. Response-level reinforcement learning assigns a shared advantage to all tokens in a response, causing negative updates to suppress correct information alongside unsupported",
+          "date": "2026-11-14",
+          "lien": "http://arxiv.org/abs/2611.19388v1",
+          "auteurs": [
+            "Jinyu Li",
+            "Zhiming Zhang",
+            "Hao Fang",
+            "Hongyao Yu"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "SAR-TopoGuard: Training-Free, Speckle-Aware Topological Verification for Structure-Preserving SAR-to-Optical Translation",
+          "resume": "SAR-to-optical translators often synthesize detail that the radar measurement does not support, and pixel metrics alone cannot reveal it. We propose SAR-TopoGuard, a training-free inference-time layer for frozen generators: a stochastic sampler draws K candidates (Monte Carlo dropout for GANs, seed variance for diffusi",
+          "date": "2026-11-14",
+          "lien": "http://arxiv.org/abs/2611.19316v1",
+          "auteurs": [
+            "Satabarto Sarkar",
+            "Debojyoti Ghosh",
+            "Subhranil Biswas",
+            "Kaustav Mandal"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Model Maps: A Documentation Framework for Tracing Foundation Model Ancestry and Understanding AI Entanglement",
+          "resume": "The development of foundation models incorporates pre-existing AI artifacts like models, datasets, and benchmarks. These relationships, as part of the broader AI supply chain, produce \"entangled\" webs in which properties of artifacts upstream can influence the outputs of a foundation model downstream - a phenomenon kno",
+          "date": "2026-11-13",
+          "lien": "http://arxiv.org/abs/2611.18998v1",
+          "auteurs": [
+            "Rachel Hong",
+            "Madeleine Grunde-McLaughlin",
+            "Sarah Cen",
+            "Jevan Hutson"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Three Invisible Failure Modes in Speech-Based Age Estimation for Child Safety",
+          "resume": "Child safety in AI depends on the accurate identification of minor users. Young children tend to talk rather than type when interacting with AI, so in practice this identification requires predicting age from speech. We evaluated whether three audio-capable large language models can predict a child's age from their spe",
+          "date": "2026-11-13",
+          "lien": "http://arxiv.org/abs/2611.18971v1",
+          "auteurs": [
+            "Christopher M. Stewart",
+            "Kelsey Kraus",
+            "J. Elliott Casal",
+            "Geoffrey L. Brown"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Effects of Conventional, Adaptive, and AI-Powered Upscaling on the Legibility of License Plates",
+          "resume": "Small details in digital images -- a face, a street sign, a license plate -- are routinely upscaled in hopes of making them interpretable. Upscaling options now range from conventional interpolation, whose operations are spatially invariant and fully explainable, to AI-powered methods that synthesize detail potentially",
+          "date": "2026-11-13",
+          "lien": "http://arxiv.org/abs/2611.18949v1",
+          "auteurs": [
+            "Hany Farid",
+            "Joshua D. Bucci",
+            "Emily A. Cooper"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Ask Precisely, Assume Wisely: Interactive Evaluation of Ambiguity Resolution in Large Language Models",
+          "resume": "Ambiguity is a core challenge in human--AI interaction, where models must decide when to make assumptions and when to seek clarification. Existing approaches to ambiguity evaluation largely focus on coverage over multiple interpretations using static metrics, offering limited insight into how efficiently a model conver",
+          "date": "2026-11-13",
+          "lien": "http://arxiv.org/abs/2611.18905v1",
+          "auteurs": [
+            "Avik Dutta",
+            "Aayush Kumar",
+            "Zahra Ashktorab",
+            "Hosein Hasanbeig"
           ],
           "source": "arXiv"
         }
@@ -53,37 +194,129 @@
       "requete": "(abs:\"provenance\" OR abs:\"watermark\" OR abs:\"attestation\") AND cat:cs.CR",
       "entrees": [
         {
-          "titre": "Prevalence Bounds for Edited Watermarked Text: Power Envelopes and Calibration Sensitivity",
-          "resume": "Watermark detectors decide whether one document came from a watermarked language model. Auditors often need a different number: the share of a corpus that did. We study this share for Gumbel-max and green-list (KGW) watermarks when every document may have been edited by an unknown amount. Without restrictions on the ed",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17035v1",
+          "titre": "The Provenance-Privacy Paradox: Can Private Cloud Compute (PCC) Prove That Apple Reference Images Are Not Used for Learning?",
+          "resume": "Apple Reference Image (ARI) combines camera-sensor signatures, Secure Enclave attestation (SEP), cryptographic timestamp bounds, Private Cloud Compute (PCC), and a final post-quantum signature to establish photographic provenance. PCC is central to this process because it validates the secure digital negative and devel",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21590v1",
           "auteurs": [
-            "Kuancheng Ye"
+            "Mohammad I. Husain",
+            "Viet Nguyen"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Look It Up: Multi-bit LLM Watermarking via Codebook Search",
-          "resume": "Attributing short LLM-generated texts to a specific source remains challenging for existing multi-bit watermarking methods, which often require long generations or costly decoding to recover payloads reliably. We propose a codebook-based watermarking scheme that maps an $n$-bit payload to a longer $u$-bit codeword and ",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16890v1",
+          "titre": "Detection-Efficient Watermarking for Vision--Language Agents via Risk-Constrained Strength Allocation",
+          "resume": "Vision--language agents generate descriptions, decisions, and instructions that may be reused by users, downstream agents, and automated workflows, creating a need for provenance mechanisms that support content authenticity and post-deployment auditing without unnecessarily degrading response quality. We present a risk",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21488v1",
           "auteurs": [
-            "Jarosław Janas",
-            "Paweł Morawiecki",
-            "Josef Pieprzyk"
+            "Dumindu Samaraweera",
+            "Prashant Shekhar"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "ReliaGuard: Reconstruction-Aware Watermarking for Source Attribution and Blind Edit Localization",
-          "resume": "Generative image editing facilitates content creation but complicates source attribution and edit verification. Existing watermarking methods combine copyright protection with tamper localization, yet background reconstruction can weaken spatial evidence even when source identifiers remain recoverable. We propose Relia",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16368v1",
+          "titre": "Expertise capture in workplace AI",
+          "resume": "AI assistants are becoming part of how knowledge workers think and perform, accumulating the prompts, exemplars, memory and interaction histories that encode a worker's professional judgment. This infrastructure typically runs under employer or platform control. We name the resulting process expertise capture, the abso",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21456v1",
           "auteurs": [
-            "Hailong Wang",
-            "Wuzheng Tan",
-            "Zixin Zhang",
-            "Xujun Fang"
+            "Andreas Ekelhart",
+            "Ahmad Mohsin",
+            "Iqbal H. Sarker",
+            "Helge Janicke"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Beyond Semantic Prompts: Unified Watermarking and Access Control for Text-to-Image Diffusion Models",
+          "resume": "Text-to-image diffusion services require both traceability of generated content and differentiated access to generation capabilities. However, existing watermarking methods commonly expose watermark control through mechanisms beyond the text-prompt interface, while credential-based access control does not inherently en",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20470v1",
+          "auteurs": [
+            "Fangming Shi",
+            "Li Li",
+            "Guorui Feng",
+            "Xinpeng Zhang"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "KVMARK: Fragile Watermarking for KV-Cache Integrity in Latent Multi-Agent Systems",
+          "resume": "Latent multi-agent communication directly transfers Key-Value (KV) cache tensors between transformer-based agents, bypassing text serialization entirely. While computationally efficient and reasoning accurate, this communication channel is opaque and vulnerable to man-in-the-middle tampering, a threat vector unaddresse",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20454v1",
+          "auteurs": [
+            "Marjan Beheshti",
+            "Ronghua Xu"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Sequential Semantic-Non-Semantic Watermarking: Robustness Against UnMarker Attacks",
+          "resume": "Advancements in artificial intelligence (AI) have accelerated digital content generation and intensified concerns around fraud, misuse, counterfeiting, and content provenance. Defensive image watermarking provides a practical mechanism for identifying and tracing digital content, but recent watermark-removal attacks ch",
+          "date": "2026-11-15",
+          "lien": "http://arxiv.org/abs/2611.20115v1",
+          "auteurs": [
+            "Md Ifraham Iqbal"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Security of Deep Research Agents: Attack Surface, Defenses, Benchmarks, and Agenda Seeding against Research Planning",
+          "resume": "Deep research and agentic search agents autonomously retrieve content from the open web and generate reports with citations, and their outputs are often taken directly as research conclusions. This paper systematizes security research in this area along four stages, namely retrieval, planning, evidence integration, and",
+          "date": "2026-11-15",
+          "lien": "http://arxiv.org/abs/2611.20045v1",
+          "auteurs": [
+            "Yang Luo",
+            "Guangpu Chen",
+            "Yichen Liu",
+            "Zhaoyu Chen"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Compositional Exploits in Autonomous Coding Agents: Attack Mechanics and Ephemeral Defense",
+          "resume": "Autonomous coding agents (such as Antigravity, Claude Code, Cursor, and OpenHands) rely on third-party tools to inspect files, run commands, and call external APIs. Today's security auditors evaluate these tools almost entirely in isolation: static linters and AST checkers verify that each individual tool contains no m",
+          "date": "2026-11-15",
+          "lien": "http://arxiv.org/abs/2611.19764v1",
+          "auteurs": [
+            "Deep Shah",
+            "Nehal Kathrotia"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Agent Authenticator: Passkey-Grade, Hardware-Bound Authentication for AI Agents",
+          "resume": "AI coding agents now push code, publish packages, call model APIs and operate cloud resources on behalf of developers. They authenticate to these services with the same bearer secrets humans use, personal access tokens, API keys and package-registry tokens, stored where the model, its subprocesses and any co-resident m",
+          "date": "2026-11-14",
+          "lien": "http://arxiv.org/abs/2611.19536v1",
+          "auteurs": [
+            "Harish Santhanalakshmi Ganesan"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Fundamental Limits of Statistical Watermarking for LLMs with Fixed and Optimizable Common Randomness",
+          "resume": "Watermarking has emerged as an important technique for distinguishing AI-generated text from human-written text. However, most existing work is primarily empirical, relies on ad hoc watermarking designs, and lacks a fundamental understanding of the performance limits. In this paper, we propose a unified theoretical fra",
+          "date": "2026-11-14",
+          "lien": "http://arxiv.org/abs/2611.19305v1",
+          "auteurs": [
+            "Haiyun He",
+            "Yepeng Liu",
+            "Zhuoer Shen",
+            "Ziqiao Wang"
+          ],
+          "source": "arXiv"
+        },
+        {
+          "titre": "Agent-ZTA: A chain-Aware Zero Trust Model for Bidirectional Security-State Propagation and Runtime Containment in Multi-Agent Delegation",
+          "resume": "Multi-agent systems increasingly delegate tasks and permissions across chains of autonomous agents that invoke protected tools. Although agent identities and delegated credentials may remain valid throughout a workflow, the security condition of any agent along the chain can deteriorate during runtime execution-either ",
+          "date": "2026-11-13",
+          "lien": "http://arxiv.org/abs/2611.18999v1",
+          "auteurs": [
+            "Asadullah Abdullah Khan",
+            "Toqeer Ali Syed"
           ],
           "source": "arXiv"
         }
@@ -94,300 +327,306 @@
       "requete": "cat:quant-ph AND (abs:\"qubit\" OR abs:\"photonic\")",
       "entrees": [
         {
-          "titre": "Ensemble phase transitions in measurement-unitary hybrid quantum circuits",
-          "resume": "The universal properties of state ensembles generated by quantum dynamics provide a refined lens into Hilbert-space ergodicity and deep thermalisation, or lack thereof. We investigate deep-ergodicity breaking transitions of an ancillary qubit entangled with a system undergoing dynamics via hybrid quantum circuits, wher",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17322v1",
+          "titre": "Resolving and Suppressing Temporally Correlated Noise in Quantum Error Correction",
+          "resume": "Scaling fault-tolerant quantum error correction (QEC) requires suppressing errors in both space and time, yet standard logical memory experiments primarily probe spatial faults. Here, we use a 105-qubit Willow superconducting quantum processor to realize and scale the surface code stability experiment, which is alterna",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21578v1",
           "auteurs": [
-            "Saptarshi Mandal",
-            "Sthitadhi Roy"
+            "Alec Eickbusch",
+            "Nick Noll",
+            "Michael Newman",
+            "Matt McEwen"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Traces of Vacuum Squeezing: A Superconducting Transmission-Line Analogue of Cosmological Particle Creation",
-          "resume": "Particle creation in time-dependent quantum fields is a central phenomenon in early-universe cosmology, yet it remains experimentally inaccessible in its original context. We show theoretically that superconducting circuits based on a waveguide-like transmission line loaded with dc-SQUIDs can provide a direct analogue ",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17295v1",
+          "titre": "Optimal Quantum Sensing Algorithms for Discrete-Frequency Spectroscopy",
+          "resume": "Spectroscopy is a versatile tool that drives scientific discovery and underpins modern technologies. Quantum sensing offers promising opportunities to advance spectroscopy through enhanced sensitivity and spectral and spatial resolution. However, existing approaches largely focus on improving general measurement capabi",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21560v1",
           "auteurs": [
-            "Paula I. Villar",
-            "Federico Guglielmucci Nazar",
-            "Elián Urtubey",
-            "Fernando C. Lombardo"
+            "Yu-Jie Liu",
+            "Richard R. Allen",
+            "Ruohan Shen",
+            "Bingtian Ye"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Observation of Genuine Multi-Time Quantum Memory",
-          "resume": "Memory effects in open quantum systems do not by themselves imply quantum memory, since non-Markovian dynamics can often be reproduced by classical-memory models. Known criteria certify the presence of quantum memory in the environment by comparing the evolution of the system at two different times. We show that quantu",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17268v1",
+          "titre": "Exponential Quantum Memory Advantage for Late-Graph Smoothness and Spectral Estimation",
+          "resume": "Graph signal processing tests how smoothly the decisions of next-generation massive sensor networks with $N$ nodes vary over their neighbour graph. Memory becomes the bottleneck when the neighbour graph arrives only after data erasure, a late-graph setting motivated by dispersed sensor networks and telemetry. We analys",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21500v1",
           "auteurs": [
-            "Konstantin Beyer",
-            "Valentin Link",
-            "Surihan Sean Borjigin",
-            "Qian Cao"
+            "Burhan Gülbahar"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "A deployed four-city entanglement-based QKD network with real-time key delivery, benchmarked against finite-key security bounds",
-          "resume": "Quantum key distribution (QKD) generates shared secret keys whose security rests on the laws of physics rather than on computational assumptions. We report the entanglement-based segment of the Slovak national quantum communication infrastructure, connecting four cities in western Slovakia over deployed telecommunicati",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17265v1",
+          "titre": "Entanglement distillation, nonlocal magic, and state sharing in an isospectral non-Hermitian bipartite model",
+          "resume": "An invertible nonunitary similarity deformation leaves a two-qubit Hamiltonian's spectrum unchanged while varying a selected normalized right eigenstate in the fixed physical inner product. We embed this state in a two-parameter maximally correlated family that includes local dephasing and noisy circuit preparation. Ha",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21490v1",
           "auteurs": [
-            "Gilberto Borges",
-            "Saeid Salari",
-            "Ekta Panwar",
-            "Samgeeth Puliyil"
+            "Chenhuan Wu"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Scalable Pauli propagation through $\\mathbb{F}_2$-linear partitioning",
-          "resume": "Pauli propagation simulates quantum circuits and many-body dynamics by evolving observables in the Heisenberg picture as sparse sums of Pauli strings. As Pauli-string operations reduce to bit manipulations, its performance is limited by memory bandwidth and capacity rather than computational throughput. Pooling the mem",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17262v1",
+          "titre": "Quantum Networks with Realistic Photonic Memories",
+          "resume": "Ensemble based photonic memories paired with photon pair sources are the essential ingredient for many quantum networking protocols. Most protocols and theoretical analyses focus on networks of identical nodes, however, realistic networks consist of nodes that may vary from device to device. We investigate a network of",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21481v1",
           "auteurs": [
-            "Alev Orfi",
-            "Andrew Kille",
-            "J. Clayton Peacock",
-            "Jack Dunham"
+            "Benedikt Tissot",
+            "Sophia Carmen Simon",
+            "Anders Søndberg Sørensen"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Explicit Absolutely Maximally Entangled states in dimensions twice a prime power",
-          "resume": "Absolutely maximally entangled (AME) states are pure multipartite states with maximally mixed reductions on every set of at most half the parties. We construct explicit families in local dimension $2q$, twice an odd prime power $q$, using an established coupling of qubits and $q$-level systems. The $q$-level states rem",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17216v1",
+          "titre": "Experimental simulation of a Hilbert-space inner-product change",
+          "resume": "We simulate an effective change in a single qubit's inner product (IP) by implementing the channel $\\mathcal{F}^η$ on a superconducting quantum processor. Whereas previous experiments simulated parity-time (PT)-symmetric dynamics with a fixed IP, this experiment implements the IP-change channel itself for metrics assoc",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21450v1",
           "auteurs": [
-            "Palash Pandya"
+            "Vinh San Dinh",
+            "Salini Karuvade",
+            "Abhijeet Alase",
+            "Silvia Zorzetti"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Noise robust super-Heisenberg scaling in time-dependent quantum sensing by subspace-twirled dynamical decoupling",
-          "resume": "In quantum parameter estimation, time-dependent Hamiltonians can enable ultraprecise estimates of a physical parameter beyond the standard Heisenberg limit, also called the super-Heisenberg limit. However, achieving optimal scaling of the measurement precision typically requires an adaptive quantum control scheme which",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17056v1",
+          "titre": "Quantitative measurement of microwave power at millikelvin temperatures: Comparison between dispersively and directly coupled superconducting qubits",
+          "resume": "The Rabi frequency of a two-level system is directly proportional to the electric field amplitude being incident on this system. Taking advantage of this relationship, it is possible to use two-level systems as quantitative sensors of electric fields. Here, we apply this concept to superconducting qubits and use them f",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21397v1",
           "auteurs": [
-            "Bakmou Lahcen",
-            "Ke Zeng",
-            "Tianyu Yang",
-            "Yu Jiang"
+            "Asen L. Georgiev",
+            "Christoph Kissling",
+            "Fabian Kaap",
+            "Victor Gaydamachenko"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Communication Supremacy of a Qubit in Holevo Frenkel Weiner Scenario",
-          "resume": "The prevailing wisdom asserts that in the Holevo Frenkel Weiner (HFW) framework of communication tasks, a qubit offers no advantage over a c bit unless additional quantum resources are supplied or the classical shared randomness (SR) is restricted. In contrast, we establish the supremacy of qubit communication in the H",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16940v1",
+          "titre": "Sequential strategy for depolarizing strength estimation",
+          "resume": "We study the advantages of applying a sequential strategy for enhancing the precision in estimating the strength $p$ of a depolarizing channel, using qudit and two-qubit probes. The sequential strategy requires that the same depolarizing channel is repeatedly applied $M$ times to the quantum probe. From the analysis of",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21360v1",
           "auteurs": [
-            "Partha Patra",
-            "Sumit Mukherjee",
-            "A. K. Pan"
+            "Yasir Mehmood",
+            "Enrico Trombetti",
+            "Marco Pezzutto",
+            "Stefano Gherardini"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "When can local unitaries generate a complete orthogonal basis?",
-          "resume": "The question of local encodability asks: can a given, multipartite pure quantum state be completed to an orthonormal basis using only local unitary rotations? If any such state in a given system has this property, it is called universally locally encodable (ULE), a feature, which has applications in quantum information",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16921v1",
+          "titre": "SCOPE: A Physical Execution Latency-Guided Quantum Circuit Compilation Framework",
+          "resume": "Quantum computing requires compilers to translate algorithms represented in the quantum circuit model into unitary operations supported by physical devices. Limited coherence time makes physical execution latency an important compilation objective. Gate fusion can shorten pulses, but gate count and depth do not capture",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21270v1",
           "auteurs": [
-            "Julian Eisfeld",
-            "Hermann Kampermann",
-            "Nikolai Wyderka"
+            "Bolin Zhang",
+            "Zhiyuan Zhang",
+            "Yongguang Lv",
+            "Ruiqing He"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Hong$-$Ou$-$Mandel-like interference between two independent narrowband thermal states",
-          "resume": "Narrowband photonic sources are promising candidates in quantum networks for a direct interface with atomic quantum memories. However, building a large-scale quantum network requires many indistinguishable sources, and matching the frequencies of independent narrowband sources is generally challenging. Here, we propose",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16794v1",
+          "titre": "Specifying & Verifying Quantum Error-Correcting Codes",
+          "resume": "Building quantum computers is challenging due to the noise that affects qubits. Quantum error correction tackles noise by encoding information in quantum error-correcting (QEC) codes. These codes are often complex, increasingly found by computational search, presented in diverse formalisms with informal arguments, and ",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21236v1",
           "auteurs": [
-            "Sheng-Hsuan Huang",
-            "Thomas Dirmeier",
-            "Andrea Aiello",
-            "Kaisa Laiho"
+            "Stavan Jain",
+            "Nithin Raveendran",
+            "Aws Albarghouthi"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Inter-city 18.9 km free-space QKD over a dense urban corridor",
-          "resume": "Terrestrial free-space quantum key distribution (QKD) provides a flexible complement to fiber-based networks, but its deployment over long horizontal paths in dense metropolitan environments remains challenging, as atmospheric turbulence, demanding pointing and tracking requirements, and operational constraints can sub",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16774v1",
+          "titre": "Deterministic nonlinear domain engineering algorithm with variable sub-coherence-length domains",
+          "resume": "We present a new and improved deterministic algorithm that calculates the poling domains for the implementation of arbitrary phase-matching functions (PMF) in quasi-phase-matched nonlinear crystals for parametric down-conversion photon sources. In contrast to previous work, the algorithm presented here makes full use o",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21156v1",
           "auteurs": [
-            "Ignacio H. López Grande",
-            "Nicolas Linale",
-            "Giacomo Paganini",
-            "Achraf El Bouazzaoui"
+            "Michael Schlosser",
+            "Tommaso Faleo",
+            "Gregor Weihs",
+            "Robert Keil"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Reduced filtering using classical control hierarchy with linear optimality for continuous quantum error correction",
-          "resume": "Continuous quantum error correction promises reduced thresholds and hardware overhead compared to the digital paradigm, but its complex model estimation has greatly reduced its practicality. We recast this problem as a classical control-theoretic state hierarchy made of an exact bilinear reduced model, an exact conditi",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16751v1",
+          "titre": "Stabilizer-Restricted Antidistinguishability in Quantum Computation with Magic States",
+          "resume": "An antidistinguishing measurement for a family of preparations excludes at least one preparation for every possible outcome, constraining 'classical' representations of these processes, known as ontological models. We develop this connection within quantum computing with magic states (QCM), a universal model of quantum",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21123v1",
           "auteurs": [
-            "Manuel Guatto",
-            "F. A. Cárdenas-López",
-            "Felix Motzoi"
+            "Selman Ipek"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Probabilistic distillation of superposition",
-          "resume": "How well a superposition of nonorthogonal states, such as an optical cat state, serves as a resource depends on how its components interfere. Here we determine the optimal probability of converting one such superposition into another by superposition-free operations. These operations cannot make the components of a sup",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16719v1",
+          "titre": "Reversal of dynamical backaction and cooling below the quantum backaction limit in Floquet-driven multimode optomechanical resonators",
+          "resume": "Dynamical backaction describes how a driven cavity field responds with delay to mechanical motion, and can be used to cool that motion toward its quantum ground state or amplify it into self-oscillation. Control over this interaction underpins laser cooling, high-fidelity state preparation, quantum transduction, and ph",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21110v1",
           "auteurs": [
-            "Gökhan Torun"
+            "Menno H. Jansen",
+            "Roel Burgwal",
+            "Ewold Verhagen"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Reply to the Comment by Hradil and Řeháček",
-          "resume": "Hradil and Řeháček argue that the quantum metrological advantage demonstrated in our squeezed-vacuum phase-sensing experiment disappears, when measurement repetitions and total photon resources are properly accounted for. We show that this conclusion is mathematically unfounded and that neither resource accounting nor ",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16716v1",
+          "titre": "Closing the loop on memory: accurate, shallow and transferable decoding of quantum LDPC codes",
+          "resume": "Quantum low-density parity-check (qLDPC) codes have attracted interest for fault-tolerant quantum computing because their high-rate constructions offer a route to reduced qubit overhead. Realizing this potential requires reliable decoding. Belief propagation (BP) forms the basis of many qLDPC decoders, but can fail to ",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21086v1",
           "auteurs": [
-            "Jens Arnbak Holbøll Nielsen",
-            "Jonas S. Neergaard-Nielsen",
-            "Tobias Gehring",
-            "Ulrik L. Andersen"
+            "Zhou You",
+            "Ying Li",
+            "Xiao Yuan",
+            "Yuan Yao"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Beauty and charm jet identification with end-to-end training on a superconducting quantum processor",
-          "resume": "The identification of heavy-flavor jets, i.e. collimated streams of particles originating from the fragmentation of beauty and charm quarks produced in proton-proton collisions, represents one of the most challenging classification tasks in measurements at Large Hadron Collider experiments. In recent years, advanced ma",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16607v1",
+          "titre": "Subwavelength confinement of optical and acoustic waves for enhancing Brillouin gain in a planar waveguide structure",
+          "resume": "We propose a planar waveguide structure consisting of two layers separated by a gap that provides subwavelength confinement of optical and acoustic modes and a large overlap integral between them. This, in turn, leads to an increase in Brillouin gain. Using the structure of two Si$_3$N$_4$ layers with a subwavelength g",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21082v1",
           "auteurs": [
-            "Lucio Anderlini",
-            "Pietro Asinari",
-            "Gianluca Bertaina",
-            "Davide Calonico"
+            "A. R. Mukhamedyanov",
+            "E. A. Tereshchenkov",
+            "E. S. Andrianov",
+            "A. A. Zyablovsky"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Gatemon qubits based on in-situ ternary InAsSb/Al nanowire Josephson junctions",
-          "resume": "Ternary InAsSb/Al nanowires combine compositionally engineerable semiconductor properties with epitaxial proximity superconductivity, making them attractive for hybrid quantum circuits and mesoscopic superconductivity. Here, we realize gatemon qubits based on shadow-defined in-situ InAsSb/Al Josephson junctions in a si",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16595v1",
+          "titre": "Success Probability of Block-Encoding Methods",
+          "resume": "Block-encoding methods apply nonunitary functions $f(\\widetilde H)$ of a normalized Hermitian operator on a quantum computer, but only upon a successful postselection, which introduces a shot overhead rarely included in resource estimates. We analyze the success probability $p^{(f)}_{\\mathrm{success}}=\\sum_n w_n|f(\\til",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21080v1",
           "auteurs": [
-            "Zhenhai Sun",
-            "David Feldstein-Bofill",
-            "Sangeeth Kallatt",
-            "Sabbir A. Khan"
+            "Oumaya Ladhari",
+            "Matthieu Saubanère",
+            "Jérémie Messud"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Asymptotic Attainability of the Channel RLD Fisher-Information Bound",
-          "resume": "The channel right-logarithmic-derivative (RLD) Fisher information is a computable upper bound on the optimal asymptotic symmetric-logarithmic-derivative (SLD) Fisher information per channel use over causally ordered, parameter-independent strategies. The bound is not always attained, even if the Choi matrix is positive",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16578v1",
+          "titre": "How many events does entanglement-based positronium imaging need? Information limits of Compton polarimetry with CZT detectors",
+          "resume": "The degree of polarisation correlation of the two annihilation photons, measured by Compton polarimetry, has been proposed as a PET biomarker of tissue microstructure, but the statistics it requires have not been quantified. We parameterise the measurement by the linear-polarisation correlation coefficient $κ$ ($κ=1$ m",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21022v1",
           "auteurs": [
-            "Masahito Hayashi"
+            "Haitao Zhou",
+            "Ruonan Wang",
+            "Jianyong Hu",
+            "Zhifang Wu"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Noise-Protected Superconducting Qudits from Higher-Harmonic Josephson Junctions",
-          "resume": "Qudits, which generalize qubits to $d$ levels, store more information per circuit element than qubits. As with qubits, however, their sensitivity to noise must be overcome before they can be used for fault-tolerant quantum computing. Here we show that, by exploiting the second harmonic of the current--phase relation, a",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16563v1",
+          "titre": "Metrological Channels Induced by Encrypted Quantum Cloning: Optimal-Probe Fisher-Information Broadcasting and Single-Use Operational Recovery",
+          "resume": "Encrypted quantum cloning creates multiple individually inaccessible signal systems from which an unknown input state can be recovered by combining any selected signal with a shared quantum key. Here we study parameter estimation when a local sensing transformation is applied after encrypted cloning and before decrypti",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20945v1",
           "auteurs": [
-            "Hamed Vakili"
+            "Nalan Kandirmaz"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Effect of atomic interactions on quantum communication protocols",
-          "resume": "We develop a first-principles framework for analyzing photonic quantum communication in an atomic medium. Starting from a real-space quantization of the electromagnetic field coupled to an ensemble of two-level atoms, we derive an effective model for polarization-encoded single-photon states. We apply this framework to",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16519v1",
+          "titre": "Variational Corrections to Strong-Disorder Renormalization in the Two-Dimensional Random Transverse Field Ising Model on Quantum Hardware",
+          "resume": "Strong-disorder renormalization-group (SDRG) methods provide an effective description of disordered quantum many-body systems by identifying the dominant couplings for the low energy physics. However, the resulting renormalization-group flow is approximate and neglects correlations beyond the RG description. Here, we i",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20932v1",
           "auteurs": [
-            "Zixian Hong",
-            "John C. Schotland"
+            "Alina Joch",
+            "Benedikt Fauseweh"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Quantum Mpemba effect from logical-information exposure in monitored circuits",
-          "resume": "In the Mpemba effect, a state initially farther from stationarity overtakes one that starts closer. After one cycle in a monitored Clifford chain, an unencoded Bell-pair state has lower mean entanglement entropy than a scrambled reference prepared from fewer pairs. The gap grows linearly with chain length. This reversa",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16479v1",
+          "titre": "Near-synchronous multiphoton quantum interference",
+          "resume": "Nonclassical multiphoton interference is an important resource for optical quantum information processing, and its output statistics depend on the distinguishability of the input photons. In this paper, using time delay as a tunable parameter, we theoretically analyze the interference behavior of independent pure-state",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20667v1",
           "auteurs": [
-            "Bochen Huang",
-            "D. L. Zhou",
-            "Chenfeng Cao"
+            "Xiangshuai Dong",
+            "Tingzeng Wu"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Learning Sparse Graph States with Local Pauli Measurements: Tight Nonadaptive Bounds and an Adaptive Separation",
-          "resume": "We study how many copies of an unknown $n$-qubit graph state are needed to identify its graph when every qubit is measured in the $X$, $Y$ or $Z$ basis. Ouyang and Tomamichel showed that $O(d^2\\log n)$ copies suffice for $d$-regular graphs, while any measurement needs $Ω(d\\log n)$, and asked whether the quadratic depen",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16456v1",
+          "titre": "Relaxation Critical Dynamics of Strong-to-Weak Spontaneous Symmetry Breaking",
+          "resume": "Strong-to-weak spontaneous symmetry breaking (SW-SSB) is unique to mixed states: strong symmetry is broken while weak symmetry is preserved, requiring two order parameters. We study the critical relaxation of both order parameters in a monitored $\\mathbb{Z}_2$ circuit, which maps exactly onto two nested bond-percolatio",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20581v1",
           "auteurs": [
-            "Matteo De Francesco"
+            "Jiaqiang Li",
+            "Xianquan Yan",
+            "Han-Ze Li",
+            "Shuai Yin"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Circuit-Level Analysis of Quantum Error Correction in Second-Generation Quantum Repeaters",
-          "resume": "We present a circuit-level simulation of second-generation quantum repeaters with stabilizer-based quantum error correction. We model a two-segment repeater link including encoding, syndrome extraction, decoding, and entanglement swapping, and compare the performance of the single-error-correcting Steane and five-qubit",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16435v1",
+          "titre": "Rate-1/2 Quantum LDPC Codes for Multi-tier Superconducting Hardware",
+          "resume": "Quantum error correction is essential for scalable quantum computing, while its resource overhead is governed in large part by the encoding rate, namely the number of logical qubits encoded per physical data qubit. Recent quantum low-density parity-check (qLDPC) constructions have entered the ultra-high-rate regime wit",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20410v1",
           "auteurs": [
-            "Suraj Vishwanath",
-            "Jonas Hawellek",
-            "Roberto Ferrara",
-            "Christian Deppe"
+            "Jiaxuan Zhang",
+            "Zhao-Yun Chen",
+            "Jia-Ning Li",
+            "Tian-Hao Wei"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Loss of the quadratic speedup in Grover search under local and coherent noise",
-          "resume": "Grover's algorithm searches an unstructured database with a number of oracle queries that grows only as the square root of its size. Noise erodes this advantage, and we ask, analytically, how quickly. When a depolarizing channel acts on the whole register after every gate layer, it commutes with the gates, and the nois",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16398v1",
+          "titre": "Collective coupling of over 100 individually trapped atoms to a single cavity mode",
+          "resume": "Coupling optical tweezer arrays to high-finesse cavities provides a shared optical interface for neutral-atom registers. Scaling this interface to large tweezer arrays requires placing many traps within the coupling region of a single cavity mode while maintaining uniform trapping and site-resolved detection. Here we m",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20393v1",
           "auteurs": [
-            "Imama Tul Birrah Khan",
-            "Muhammad Faryad"
+            "Shijun Guan",
+            "Guansheng Teng",
+            "Zhiguo Huang",
+            "Zhihui Wang"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Training quantum neural networks one job at a time",
-          "resume": "When a quantum processor is reached through a cloud queue, a variational algorithm pays for every round trip, and a single round trip can carry many circuits. The classical optimizer therefore decides how much is learned per job, not only per shot. We study this for a quantum neural network classifier. We compare optim",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16365v1",
+          "titre": "Response-Threshold Framework for First-Peak Preservation in Noisy Grover Search",
+          "resume": "Grover search is executed only after integer iterations, so noise can alter the stopping decision even when a continuous first peak remains visible. We develop a response-threshold framework separating continuous peak motion, stroboscopic geometry, and the discrete sampled-success argmax. For a Drude-Lorentz environmen",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20339v1",
           "auteurs": [
-            "Muhammad Faryad",
-            "Rabab Alomairy"
+            "Ge Zhong",
+            "Charith Jayasekara",
+            "Nisal De Silva",
+            "Chetan Arora"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Collective information backflow from a local population record: Identifiability and learning",
-          "resume": "Information backflow in a composite quantum system is defined through pairs of evolving states, whereas an experiment may provide only a restricted population record. We study this mismatch for two identical qubits coupled collectively to a vacuum reservoir with an exponential correlation function. An ideal bright-stat",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16334v1",
+          "titre": "Generalized Rotating-Wave Approximations Hierarchy for the Interacting Two-Qubit Rabi Model",
+          "resume": "We investigate the two-qubit quantum Rabi model for identical qubits symmetrically coupled to a single bosonic mode and interacting with each other through transverse and longitudinal couplings. We extend the adiabatic, generalized rotating-wave (GRWA), and squeezed generalized rotating-wave (SGRWA) approximations to i",
+          "date": "2026-11-15",
+          "lien": "http://arxiv.org/abs/2611.20313v1",
           "auteurs": [
-            "Yifan Shi",
-            "Pengju Chen",
-            "Duan Wang",
-            "Quanzhen Ding"
+            "Ricardo Herrera Romero",
+            "Carlos Andrés González-Gutiérrez",
+            "Miguel Angel Bastarrachea-Magnani"
           ],
           "source": "arXiv"
         }
@@ -398,305 +637,303 @@
       "requete": "cat:quant-ph AND (abs:\"algorithm\" OR abs:\"simulation\")",
       "entrees": [
         {
-          "titre": "Discrete Time Crystals from Anti-Unitary Floquet Driving and Dynamical Freezing",
-          "resume": "We show anti-unitary periodic drive paves a direct path for stabilizing a Discrete Time-Crystal by Dynamical Freezing (DF). The magnetization appears as an emergent conserved operator, and an exact pairing of two-cycle quasi-energies pins the subharmonic response. DF keeps the effective Hamiltonian $\\textit{quasi-local",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17333v1",
+          "titre": "Optimal Quantum Sensing Algorithms for Discrete-Frequency Spectroscopy",
+          "resume": "Spectroscopy is a versatile tool that drives scientific discovery and underpins modern technologies. Quantum sensing offers promising opportunities to advance spectroscopy through enhanced sensitivity and spectral and spatial resolution. However, existing approaches largely focus on improving general measurement capabi",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21560v1",
           "auteurs": [
-            "Anirban Das",
-            "Asmi Haldar",
-            "Arnab Das"
+            "Yu-Jie Liu",
+            "Richard R. Allen",
+            "Ruohan Shen",
+            "Bingtian Ye"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "A deployed four-city entanglement-based QKD network with real-time key delivery, benchmarked against finite-key security bounds",
-          "resume": "Quantum key distribution (QKD) generates shared secret keys whose security rests on the laws of physics rather than on computational assumptions. We report the entanglement-based segment of the Slovak national quantum communication infrastructure, connecting four cities in western Slovakia over deployed telecommunicati",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17265v1",
+          "titre": "Exponential Quantum Memory Advantage for Late-Graph Smoothness and Spectral Estimation",
+          "resume": "Graph signal processing tests how smoothly the decisions of next-generation massive sensor networks with $N$ nodes vary over their neighbour graph. Memory becomes the bottleneck when the neighbour graph arrives only after data erasure, a late-graph setting motivated by dispersed sensor networks and telemetry. We analys",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21500v1",
           "auteurs": [
-            "Gilberto Borges",
-            "Saeid Salari",
-            "Ekta Panwar",
-            "Samgeeth Puliyil"
+            "Burhan Gülbahar"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Scalable Pauli propagation through $\\mathbb{F}_2$-linear partitioning",
-          "resume": "Pauli propagation simulates quantum circuits and many-body dynamics by evolving observables in the Heisenberg picture as sparse sums of Pauli strings. As Pauli-string operations reduce to bit manipulations, its performance is limited by memory bandwidth and capacity rather than computational throughput. Pooling the mem",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17262v1",
+          "titre": "Experimental simulation of a Hilbert-space inner-product change",
+          "resume": "We simulate an effective change in a single qubit's inner product (IP) by implementing the channel $\\mathcal{F}^η$ on a superconducting quantum processor. Whereas previous experiments simulated parity-time (PT)-symmetric dynamics with a fixed IP, this experiment implements the IP-change channel itself for metrics assoc",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21450v1",
           "auteurs": [
-            "Alev Orfi",
-            "Andrew Kille",
-            "J. Clayton Peacock",
-            "Jack Dunham"
+            "Vinh San Dinh",
+            "Salini Karuvade",
+            "Abhijeet Alase",
+            "Silvia Zorzetti"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Programming Quantum Circuit Parameters with Large Language Models",
-          "resume": "Large language models (LLMs) have recently demonstrated the ability to generate parameters for variational quantum circuits without conventional optimization. However, the conditions under which this approach is effective remain unclear. Here, we investigate a frozen, general-purpose LLM that generates complete circuit",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17246v1",
+          "titre": "TCBP-JOBS: GPU-Accelerated Quantum Error Correction Decoding and Noise Learning with Near-Optimal Accuracy",
+          "resume": "Achieving near-optimal quantum error correction (QEC) decoding accuracy often requires computationally expensive searches that limit both large-scale simulation and real-time operation. We introduce trajectory-calibrated belief propagation (TCBP), which learns calibrated fault probabilities from BP trajectories, and ji",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21321v1",
           "auteurs": [
-            "Tiago de Souza Farias",
-            "Caio Moraes Porto",
-            "Matheus da Silva Fonseca",
-            "Nicolas Armando Cabrera Carpi"
+            "Ben Howe",
+            "Satvik Maurya",
+            "Jan Olle",
+            "Ivan Basov"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Efficient computation of PEPS gradients for optimized quantum state preparation on 2D topologies",
-          "resume": "Quantum state preparation is a fundamental subroutine for quantum computation. For complex, entangled initial states it is, however, difficult to prepare shallow quantum circuits approximating the state with sufficient accuracy. Tensor networks provide a promising avenue of synthesis of such circuits, but most approach",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17158v1",
+          "titre": "SCOPE: A Physical Execution Latency-Guided Quantum Circuit Compilation Framework",
+          "resume": "Quantum computing requires compilers to translate algorithms represented in the quantum circuit model into unitary operations supported by physical devices. Limited coherence time makes physical execution latency an important compilation objective. Gate fusion can shorten pulses, but gate count and depth do not capture",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21270v1",
           "auteurs": [
-            "Illia Lukin",
-            "Vladyslav Bohun",
-            "Maciej Koch-Janusz"
+            "Bolin Zhang",
+            "Zhiyuan Zhang",
+            "Yongguang Lv",
+            "Ruiqing He"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Multi-particle quantum walk search on a two-dimensional lattice",
-          "resume": "In the present paper we study the formulation of a search problem and the efficiency of multi-particle quantum walk search algorithms. The discrete-time evolution of each particle in space is treated according to Grover's quantum walk evolution operator. We focus on the local interactions models, where the particles' s",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.17061v1",
+          "titre": "Quantum-Assisted D-FACTS Scheduling for Moving Target Defense under Switching Limits",
+          "resume": "Moving target defense with distributed flexible alternating-current transmission system (D-FACTS) devices re- quires activation decisions as operating points change. Switching limits couple these decisions, but period-by-period rankings can overlook combinations needed to complete low-activation schedules. This paper p",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21265v1",
           "auteurs": [
-            "Gonçalo Meneses",
-            "D. O. Oriekhov"
+            "Hongyu Wu",
+            "Yichen Liu",
+            "Bo Liu"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Improved Low-Cost Quantum Error Mitigation with Benchmarked-Noise Zero-Noise Extrapolation (bnZNE)",
-          "resume": "We theoretically extend and experimentally demonstrate benchmarked-noise zero-noise extrapolation (bnZNE), a simple and low-cost method for quantum error mitigation which aims to outperform the highly popular ZNE method for an equal total shot cost by improving the classical extrapolation step. We recently proposed bnZ",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16971v1",
+          "titre": "What kind of quantum advantage is this?",
+          "resume": "Quantum advantage encompasses fundamentally different claims, from resource reductions to exponential separations in sample complexity. Evaluating these claims requires distinguishing how an algorithm achieves an advantage from what is necessary for the separation and how strongly it is supported against classical alte",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21239v1",
           "auteurs": [
-            "Joseph Harris",
-            "Kevin Lively",
-            "Peter Ken Schuhmacher"
+            "Christophe Pere"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Higher-Group Statistics on Lattices",
-          "resume": "Crossing a domain wall can permute anyons, and intersecting strings can create a particle. These couplings between defects of various dimensions are specified by higher groups. We develop a lattice framework defining higher-group statistics as Berry phases of closed sequences of hopping operators, invariant under local",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16962v1",
+          "titre": "Specifying & Verifying Quantum Error-Correcting Codes",
+          "resume": "Building quantum computers is challenging due to the noise that affects qubits. Quantum error correction tackles noise by encoding information in quantum error-correcting (QEC) codes. These codes are often complex, increasingly found by computational search, presented in diverse formalisms with informal arguments, and ",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21236v1",
           "auteurs": [
-            "Chen Yang",
-            "Yu-An Chen"
+            "Stavan Jain",
+            "Nithin Raveendran",
+            "Aws Albarghouthi"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Unified master equation for driven multilevel quantum systems: Derivation, dynamics, and spectral signatures",
-          "resume": "Drive-modified dissipation in multilevel quantum systems is not, in general, accurately captured by conventional master equations. We derive a unified master equation using Lewis-Riesenfeld dynamical invariants, accommodating arbitrary driving within Born-Markov theory. We demonstrate the applicability of the unified m",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16952v1",
+          "titre": "Deterministic nonlinear domain engineering algorithm with variable sub-coherence-length domains",
+          "resume": "We present a new and improved deterministic algorithm that calculates the poling domains for the implementation of arbitrary phase-matching functions (PMF) in quasi-phase-matched nonlinear crystals for parametric down-conversion photon sources. In contrast to previous work, the algorithm presented here makes full use o",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21156v1",
           "auteurs": [
-            "Sagarika Basak",
-            "D. Blume"
+            "Michael Schlosser",
+            "Tommaso Faleo",
+            "Gregor Weihs",
+            "Robert Keil"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "When can local unitaries generate a complete orthogonal basis?",
-          "resume": "The question of local encodability asks: can a given, multipartite pure quantum state be completed to an orthonormal basis using only local unitary rotations? If any such state in a given system has this property, it is called universally locally encodable (ULE), a feature, which has applications in quantum information",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16921v1",
+          "titre": "Stabilizer-Restricted Antidistinguishability in Quantum Computation with Magic States",
+          "resume": "An antidistinguishing measurement for a family of preparations excludes at least one preparation for every possible outcome, constraining 'classical' representations of these processes, known as ontological models. We develop this connection within quantum computing with magic states (QCM), a universal model of quantum",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21123v1",
           "auteurs": [
-            "Julian Eisfeld",
-            "Hermann Kampermann",
-            "Nikolai Wyderka"
+            "Selman Ipek"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Symmetry-Controlled Criticality and Zeno Localization in a Monitored Quasiperiodic Superconductor",
-          "resume": "Measurement-induced transitions of free fermions depend strongly on symmetry, but their interplay with quasiperiodic localization and superconducting pairing remains largely unexplored. We study a continuously monitored model of free fermions with pairing, where quasiperiodicity both controls localization and changes t",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16912v1",
+          "titre": "Success Probability of Block-Encoding Methods",
+          "resume": "Block-encoding methods apply nonunitary functions $f(\\widetilde H)$ of a normalized Hermitian operator on a quantum computer, but only upon a successful postselection, which introduces a shot overhead rarely included in resource estimates. We analyze the success probability $p^{(f)}_{\\mathrm{success}}=\\sum_n w_n|f(\\til",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21080v1",
           "auteurs": [
-            "Pinaki Singha",
-            "Marcin Szyniszewski",
-            "Nilanjan Roy",
-            "Auditya Sharma"
+            "Oumaya Ladhari",
+            "Matthieu Saubanère",
+            "Jérémie Messud"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Non-Convex Optimization via Quantum Tunneling Search on a Photonic Chip",
-          "resume": "Non-convex optimization plays an important role in modern machine learning since plenty of real-world problems have objective functions or constraints with non-convex properties. The non-convex nature of landscapes gives rise to numerous local minima and saddle points, dramatically hindering the ability of gradient des",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16791v1",
+          "titre": "How many events does entanglement-based positronium imaging need? Information limits of Compton polarimetry with CZT detectors",
+          "resume": "The degree of polarisation correlation of the two annihilation photons, measured by Compton polarimetry, has been proposed as a PET biomarker of tissue microstructure, but the statistics it requires have not been quantified. We parameterise the measurement by the linear-polarisation correlation coefficient $κ$ ($κ=1$ m",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.21022v1",
           "auteurs": [
-            "Xi-Jun Yuan",
-            "Shuo Zhou",
-            "Yizhou Liu",
-            "Xuan Chen"
+            "Haitao Zhou",
+            "Ruonan Wang",
+            "Jianyong Hu",
+            "Zhifang Wu"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Key Relay and Secure Network Coding: One-Shot Equivalence and Separation on Undirected Networks",
-          "resume": "Motivated by quantum key distribution networks, we compare key relay protocols with secure network coding on the same undirected graph. In this comparison, we fix the finite field, terminal set, and wiretap family. Each edge supplies one independent uniform symbol to its endpoints for key relay, or carries one symbol o",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16776v1",
+          "titre": "Non-Hermitian edge accretion",
+          "resume": "Under the non-Hermitian skin effect (NHSE), it is generally taken for granted that the open boundary condition (OBC) spectrum is encircled by the periodic boundary condition (PBC) spectrum. Intuitively, this is because boundaries tend to block the directed NHSE amplification, thereby suppressing $\\operatorname{Im}(E)$.",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20881v1",
           "auteurs": [
-            "Yuji Ando",
-            "Edmund Chen",
-            "Go Kato",
-            "Toyohiro Tsurumaru"
+            "Wei Li",
+            "Ching Hua Lee",
+            "Fuxiang Li"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Persistent-mediator architecture for universal fault-tolerant quantum computation with color codes",
-          "resume": "Two-dimensional color codes provide transversal Clifford gates, whereas suitable three-dimensional codes provide a transversal $T$ gate. Representative cross-dimensional schemes either switch the computational encoding or consume a 3D encoded state. Reusing the same protected 3D block would remove repeated auxiliary-st",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16691v1",
+          "titre": "Observable Spectral Framework for Noisy Amplitude Amplification: Stopping Stability and Correction",
+          "resume": "Stopping rules for noisy amplitude amplification often rely on channel-specific success-probability formulas, limiting their transfer across noise mechanisms. We develop an observable spectral framework for stationary noisy standard amplitude amplification under explicit leading-mode, spectral-separation, and residual-",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20622v1",
           "auteurs": [
-            "Zhi-Cheng He",
-            "Jingbo Wang",
-            "Dong E. Liu"
+            "Ge Zhong",
+            "Charith Jayasekara",
+            "Nisal De Silva",
+            "Muhammad Usman"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "A Quantum Algorithm for Computing All Eigenvalues and Eigenstates of Sparse Hermitian Matrices",
-          "resume": "Computation of eigenvalues and eigenvectors of a sparse Hermitian matrix is a fundamental problem in algebra, arising both as a problem of independent interest and as a key subroutine in a wide range of computational and scientific applications. In this work, we develop a quantum algorithm that determines the spectrum ",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16610v1",
+          "titre": "Noise-Aware Testing of NISQ Quantum Programs: Self-Baseline Oracle with a Controlled False-Positive Rate",
+          "resume": "Testing quantum programs on Noisy Intermediate-Scale Quantum (NISQ) devices faces a test-oracle problem: hardware noise and finite-shot sampling make the runs of a correct program vary as much as those of a faulty one, so oracles with a fixed acceptance threshold produce false positives that depend on the program and t",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20613v1",
           "auteurs": [
-            "Krishnakanta Barik",
-            "Goutam Paul"
+            "Mir Mohammad Yousuf",
+            "Shabir Ahmad Sofi"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Beauty and charm jet identification with end-to-end training on a superconducting quantum processor",
-          "resume": "The identification of heavy-flavor jets, i.e. collimated streams of particles originating from the fragmentation of beauty and charm quarks produced in proton-proton collisions, represents one of the most challenging classification tasks in measurements at Large Hadron Collider experiments. In recent years, advanced ma",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16607v1",
+          "titre": "Relaxation Critical Dynamics of Strong-to-Weak Spontaneous Symmetry Breaking",
+          "resume": "Strong-to-weak spontaneous symmetry breaking (SW-SSB) is unique to mixed states: strong symmetry is broken while weak symmetry is preserved, requiring two order parameters. We study the critical relaxation of both order parameters in a monitored $\\mathbb{Z}_2$ circuit, which maps exactly onto two nested bond-percolatio",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20581v1",
           "auteurs": [
-            "Lucio Anderlini",
-            "Pietro Asinari",
-            "Gianluca Bertaina",
-            "Davide Calonico"
+            "Jiaqiang Li",
+            "Xianquan Yan",
+            "Han-Ze Li",
+            "Shuai Yin"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Circuit-Level Analysis of Quantum Error Correction in Second-Generation Quantum Repeaters",
-          "resume": "We present a circuit-level simulation of second-generation quantum repeaters with stabilizer-based quantum error correction. We model a two-segment repeater link including encoding, syndrome extraction, decoding, and entanglement swapping, and compare the performance of the single-error-correcting Steane and five-qubit",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16435v1",
+          "titre": "Rate-1/2 Quantum LDPC Codes for Multi-tier Superconducting Hardware",
+          "resume": "Quantum error correction is essential for scalable quantum computing, while its resource overhead is governed in large part by the encoding rate, namely the number of logical qubits encoded per physical data qubit. Recent quantum low-density parity-check (qLDPC) constructions have entered the ultra-high-rate regime wit",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20410v1",
           "auteurs": [
-            "Suraj Vishwanath",
-            "Jonas Hawellek",
-            "Roberto Ferrara",
-            "Christian Deppe"
+            "Jiaxuan Zhang",
+            "Zhao-Yun Chen",
+            "Jia-Ning Li",
+            "Tian-Hao Wei"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Engineering Bosonic Steady States through Fock-Space Currents",
-          "resume": "Fock states are valuable resources for quantum technologies, but intrinsic loss makes their stabilization challenging. Whereas existing stabilization schemes are typically formulated for specific microscopic processes, here we develop a unified Fock-space current-engineering framework for the autonomous stabilization o",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16431v1",
+          "titre": "Formally verified harness for Shor's order finding algorithm with $O(n^{2+ε})$ gate cost",
+          "resume": "It is commonly understood that factoring a general $n$-bit biprime via Shor's order finding algorithm requires $\\widetilde{O}(n^3)$ gates by leveraging schoolbook integer arithmetics for addition and multiplication. Recent developments in quantum arithmetic circuits leveraging recursive Toom-Cook schemes have improved ",
+          "date": "2026-11-16",
+          "lien": "http://arxiv.org/abs/2611.20342v1",
           "auteurs": [
-            "Yan Liu",
-            "Jiahua Li"
+            "Anirudh Suresh",
+            "Joshua M. Courtney",
+            "Runzhou Tao",
+            "Yudong Cao"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Exact Quantum Algorithms for Composed Boolean Functions",
-          "resume": "We study exact quantum algorithms for block compositions of total Boolean functions. For an outer function $f$ of degree $D$ and an inner function $g$ on $m$ bits, we prove $$ Q_E(f\\circ g)=O\\!\\left(mD+Q_E(f)Q_{1/(4D)}(g)\\right). $$ The algorithm combines approximate inner evaluations with a finite exact correction. It",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16412v1",
+          "titre": "Mixed-state topological transitions with hidden long-range correlations",
+          "resume": "We study a decoherence-driven transition from a one-dimensional symmetry-protected topological state to a trivial product state. The decoherence acts onsite while preserving the protecting symmetry on average. Although conventional local correlations remain short-ranged across the transition, we uncover hidden nondecay",
+          "date": "2026-11-15",
+          "lien": "http://arxiv.org/abs/2611.20159v1",
           "auteurs": [
-            "Gagan Chiruvella",
-            "Chandrima Kayal",
-            "Rajat Mittal",
-            "Manaswi Paraashar"
+            "Ze-Min Huang",
+            "Frank Pollmann",
+            "Sebastian Diehl"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Loss of the quadratic speedup in Grover search under local and coherent noise",
-          "resume": "Grover's algorithm searches an unstructured database with a number of oracle queries that grows only as the square root of its size. Noise erodes this advantage, and we ask, analytically, how quickly. When a depolarizing channel acts on the whole register after every gate layer, it commutes with the gates, and the nois",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16398v1",
+          "titre": "Generative Models using Multi-layer Quantum Extreme Learning Machines",
+          "resume": "Quantum reservoir computing (QRC) and the closely related quantum extreme learning machine (QELM) paradigm exploit the complex dynamics of an uncontrolled quantum system for machine learning, offering an alternative to variational quantum algorithms whose training is hindered by barren plateaus and costly circuit optim",
+          "date": "2026-11-15",
+          "lien": "http://arxiv.org/abs/2611.20139v1",
           "auteurs": [
-            "Imama Tul Birrah Khan",
-            "Muhammad Faryad"
+            "Amir Azzam",
+            "M. Pilar Casado",
+            "Michele Grossi",
+            "Arnau Riera"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Training quantum neural networks one job at a time",
-          "resume": "When a quantum processor is reached through a cloud queue, a variational algorithm pays for every round trip, and a single round trip can carry many circuits. The classical optimizer therefore decides how much is learned per job, not only per shot. We study this for a quantum neural network classifier. We compare optim",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16365v1",
+          "titre": "Hardware-Aware Realization of Deterministic Quantum-Walk Search on Complete Bipartite Graphs",
+          "resume": "Complete bipartite graphs offer a canonical platform for deterministic quantum search with quadratic speedup. We report the first experimental realization of deterministic discrete-time quantum-walk search over complete bipartite graphs, enabled by high-fidelity operations and a dynamical-phase compensation scheme, usi",
+          "date": "2026-11-15",
+          "lien": "http://arxiv.org/abs/2611.20053v1",
           "auteurs": [
-            "Muhammad Faryad",
-            "Rabab Alomairy"
+            "Tao Rong",
+            "Meng Li",
+            "Xin Tong",
+            "Jianbin Cai"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Scaling Pêlagos: Multi-GPU Orchestration for Relay Belief-Propagation Decoding",
-          "resume": "Fault-tolerant quantum computing requires quantum error-correction (QEC) decoders that achieve low logical error rates under real-time operating constraints. These constraints motivate heuristic decoding algorithms whose error-correction performance must be evaluated through large-scale simulation. High-throughput deco",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16285v1",
+          "titre": "Pulse-timing errors in exchange-only spin qubits: how one control imperfection propagates to VQE, QAOA and fault-tolerance primitives",
+          "resume": "In an exchange-only (EO) spin qubit every gate is a sequence of Heisenberg exchange pulses whose only continuous parameter is the pulse area. We ask how an error in that area propagates to an algorithm's result. On up to six encoded qubits we compile VQE for H$_2$ and LiH, QAOA MaxCut, Grover search, phase estimation a",
+          "date": "2026-11-15",
+          "lien": "http://arxiv.org/abs/2611.19986v1",
           "auteurs": [
-            "Xulong Tang",
-            "Dionysios Diamantopoulos",
-            "Tristan Müller",
-            "Apo Kayi"
+            "Yuichiro Minato"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Hierarchical Decoding for Quantum Error Correction",
-          "resume": "Fault-tolerant quantum computing requires classical decoders that can keep up with syndrome data streams and supply correction information and logical measurement outcomes to the quantum control system. Meeting these requirements at scale requires high throughput while controlling the end-to-end latency from readout to",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16271v1",
+          "titre": "Deterministic preparation of squeezed Schrödinger cat states with arbitrary size and squeezing",
+          "resume": "We introduce a scheme for the deterministic preparation of squeezed Schrödinger cat states based on reservoir engineering. Our proposal relies on the linear and quadratic coupling of an oscillator mode to an auxiliary mode that decays into a vacuum reservoir. For suitable couplings, we show that the system unconditiona",
+          "date": "2026-11-15",
+          "lien": "http://arxiv.org/abs/2611.19927v1",
           "auteurs": [
-            "Xulong Tang",
-            "Narges Alavisamani",
-            "Joan Camps",
-            "Matthew Cha"
+            "Oussama Houhou",
+            "Hamza Adnane"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Infinite or indefinite: the query cost of simulating the quantum switch",
-          "resume": "The quantum switch applies two operations in a coherent superposition of their causal orders and is a simple example of indefinite causal order. No quantum circuit that uses each operation once in a definite order can even describe it, yet photonic experiments have demonstrated its physical realization. We ask how many",
-          "date": "2026-11-12",
-          "lien": "http://arxiv.org/abs/2611.16229v1",
+          "titre": "Bowed-String-Mechanism-Inspired Quantum Dissociation Control of Molecules",
+          "resume": "Inspired by Guettler's mechanics of accelerating Helmholtz motion, we present a predictive laser pulse-shaping strategy to rapidly initiate the multiphoton dissociation of vibrationally excited diatomic molecules. In intense infrared fields, NO molecules often exhibit unpredictable control windows due to the chaotic fr",
+          "date": "2026-11-15",
+          "lien": "http://arxiv.org/abs/2611.19923v1",
           "auteurs": [
-            "Dantong Li"
+            "Julian Juhi-Lian Ting"
           ],
           "source": "arXiv"
         },
         {
-          "titre": "Testing Quantum Advantage in High-Frequency Trading with Market-Derived Nonlocal Games",
-          "resume": "Non-classical correlations enabled by entanglement could be exploited for distributed coordination tasks with communication constraints such as high-frequency trading in fragmented markets. However, previous studies have largely specified the game and its payoff structure theoretically, using toy market models without ",
-          "date": "2026-11-11",
-          "lien": "http://arxiv.org/abs/2611.16113v1",
+          "titre": "Record-proof optical communication enabled by a quantum receiver with lossless optical decryption",
+          "resume": "We propose record-proof physical-layer encryption (PLE) based on quantum-optimal reception. Unlike conventional symmetric-key encryption algorithms, the proposed scheme prevents decryption of recorded signals even if the secret key is disclosed after transmission. Existing PLE schemes rely on practical limitations of t",
+          "date": "2026-11-15",
+          "lien": "http://arxiv.org/abs/2611.19851v1",
           "auteurs": [
-            "Daiwei Zhu",
-            "Brendan Pankovich",
-            "Alireza Marefat Khah",
-            "Haakam Aujla"
+            "Ken Tanizawa",
+            "Takayuki Kurosu",
+            "Fumio Futami",
+            "Kenji Nakahira"
           ],
           "source": "arXiv"
         }
@@ -711,47 +948,29 @@
       "source": "Hacker News",
       "entrees": [
         {
+          "titre": "All AI-generated code should be Open Source",
+          "lien": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+          "discussion": "https://news.ycombinator.com/item?id=50507303",
+          "points": 1275,
+          "commentaires": 664,
+          "date": "2026-11-15",
+          "source": "Hacker News"
+        },
+        {
           "titre": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
           "lien": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
           "discussion": "https://news.ycombinator.com/item?id=50493251",
-          "points": 1077,
-          "commentaires": 642,
+          "points": 1113,
+          "commentaires": 649,
           "date": "2026-11-14",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Reverse engineering my Coway air purifier to ditch the cloud",
-          "lien": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
-          "discussion": "https://news.ycombinator.com/item?id=50474959",
-          "points": 792,
-          "commentaires": 222,
-          "date": "2026-11-12",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "United Airlines bans AI agents from booking flights on behalf of travelers",
-          "lien": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
-          "discussion": "https://news.ycombinator.com/item?id=50458900",
-          "points": 680,
-          "commentaires": 707,
-          "date": "2026-11-11",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-          "lien": "https://status.claude.com/incidents/nn11wk485zfn",
-          "discussion": "https://news.ycombinator.com/item?id=50481187",
-          "points": 493,
-          "commentaires": 389,
-          "date": "2026-11-13",
           "source": "Hacker News"
         },
         {
           "titre": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
           "lien": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
           "discussion": "https://news.ycombinator.com/item?id=50484658",
-          "points": 471,
-          "commentaires": 708,
+          "points": 493,
+          "commentaires": 742,
           "date": "2026-11-13",
           "source": "Hacker News"
         },
@@ -759,53 +978,35 @@
           "titre": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
           "lien": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
           "discussion": "https://news.ycombinator.com/item?id=50486748",
-          "points": 430,
-          "commentaires": 110,
+          "points": 443,
+          "commentaires": 111,
           "date": "2026-11-13",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
-          "lien": "https://unemploymentlabs.com/checkpoint-forensics",
-          "discussion": "https://news.ycombinator.com/item?id=50474883",
-          "points": 403,
-          "commentaires": 176,
-          "date": "2026-11-12",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "AI is destroying the trust between writers and readers",
-          "lien": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
-          "discussion": "https://news.ycombinator.com/item?id=50481870",
-          "points": 367,
-          "commentaires": 232,
-          "date": "2026-11-13",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
-          "lien": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
-          "discussion": "https://news.ycombinator.com/item?id=50475713",
-          "points": 353,
-          "commentaires": 105,
-          "date": "2026-11-12",
           "source": "Hacker News"
         },
         {
           "titre": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
           "lien": "https://orcasairband.com/",
           "discussion": "https://news.ycombinator.com/item?id=50490593",
-          "points": 292,
-          "commentaires": 70,
+          "points": 293,
+          "commentaires": 71,
           "date": "2026-11-13",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "United Airlines experiencing a widespread system outage, airline says",
+          "lien": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
+          "discussion": "https://news.ycombinator.com/item?id=50524165",
+          "points": 243,
+          "commentaires": 125,
+          "date": "2026-11-16",
           "source": "Hacker News"
         },
         {
           "titre": "No AI Slop: A Manifesto",
           "lien": "https://www.slopmanifesto.com/",
           "discussion": "https://news.ycombinator.com/item?id=50488769",
-          "points": 220,
-          "commentaires": 132,
+          "points": 230,
+          "commentaires": 133,
           "date": "2026-11-13",
           "source": "Hacker News"
         },
@@ -813,107 +1014,89 @@
           "titre": "All US airports are currently ground stopped",
           "lien": "https://twitter.com/flightradar24/status/2121347654714077605",
           "discussion": "https://news.ycombinator.com/item?id=50489652",
-          "points": 212,
+          "points": 213,
           "commentaires": 44,
           "date": "2026-11-13",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "AI is turning Apple's app review process into a nightmare for synth developers",
-          "lien": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
-          "discussion": "https://news.ycombinator.com/item?id=50474311",
-          "points": 198,
-          "commentaires": 233,
-          "date": "2026-11-12",
           "source": "Hacker News"
         },
         {
           "titre": "Why is Google cutting off Search from AI-free schools? Here are some theories",
           "lien": "https://text.npr.org/nx-s1-6029408",
           "discussion": "https://news.ycombinator.com/item?id=50484960",
-          "points": 194,
-          "commentaires": 194,
+          "points": 197,
+          "commentaires": 197,
           "date": "2026-11-13",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Retirement Savings Are Fueling the AI Bubble",
-          "lien": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/",
-          "discussion": "https://news.ycombinator.com/item?id=50457164",
-          "points": 165,
-          "commentaires": 198,
-          "date": "2026-11-11",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "AI, activity, and outcomes in software engineering",
-          "lien": "https://cabird.com/talks/shipping-faster/",
-          "discussion": "https://news.ycombinator.com/item?id=50455332",
-          "points": 130,
-          "commentaires": 112,
-          "date": "2026-11-11",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Why You Should Expect an AI Crash",
-          "lien": "https://www.economist.com/leaders/2026/11/12/why-you-should-expect-an-ai-crash",
-          "discussion": "https://news.ycombinator.com/item?id=50475735",
-          "points": 103,
-          "commentaires": 84,
-          "date": "2026-11-12",
           "source": "Hacker News"
         },
         {
           "titre": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
           "lien": "https://claude.com/resources/articles/projects-redesigned",
           "discussion": "https://news.ycombinator.com/item?id=50492141",
-          "points": 99,
-          "commentaires": 93,
+          "points": 100,
+          "commentaires": 97,
           "date": "2026-11-14",
           "source": "Hacker News"
         },
         {
-          "titre": "Chicago schools to Google – we'd rather lose Search than be forced to accept AI",
-          "lien": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
-          "discussion": "https://news.ycombinator.com/item?id=50476586",
-          "points": 90,
-          "commentaires": 30,
-          "date": "2026-11-13",
+          "titre": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
+          "lien": "https://www.hntrends.com/2026/november.html",
+          "discussion": "https://news.ycombinator.com/item?id=50512950",
+          "points": 94,
+          "commentaires": 86,
+          "date": "2026-11-16",
           "source": "Hacker News"
         },
         {
           "titre": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
           "lien": "https://news.ycombinator.com/item?id=50494696",
           "discussion": "https://news.ycombinator.com/item?id=50494696",
-          "points": 86,
-          "commentaires": 51,
+          "points": 92,
+          "commentaires": 53,
           "date": "2026-11-14",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "The avalanche that hit math is coming for AI development",
-          "lien": "https://www.dwarkesh.com/p/rsi",
-          "discussion": "https://news.ycombinator.com/item?id=50487854",
-          "points": 67,
-          "commentaires": 113,
-          "date": "2026-11-13",
           "source": "Hacker News"
         },
         {
           "titre": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
           "lien": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
           "discussion": "https://news.ycombinator.com/item?id=50503588",
-          "points": 65,
-          "commentaires": 39,
+          "points": 89,
+          "commentaires": 60,
           "date": "2026-11-15",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Ask HN: If AI tools are so good, why isn't your bug backlog empty?",
+          "lien": "https://news.ycombinator.com/item?id=50520076",
+          "discussion": "https://news.ycombinator.com/item?id=50520076",
+          "points": 73,
+          "commentaires": 96,
+          "date": "2026-11-16",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
+          "lien": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/",
+          "discussion": "https://news.ycombinator.com/item?id=50509953",
+          "points": 69,
+          "commentaires": 67,
+          "date": "2026-11-15",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "The avalanche that hit math is coming for AI development",
+          "lien": "https://www.dwarkesh.com/p/rsi",
+          "discussion": "https://news.ycombinator.com/item?id=50487854",
+          "points": 68,
+          "commentaires": 118,
+          "date": "2026-11-13",
           "source": "Hacker News"
         },
         {
           "titre": "Are we just going to ignore that books are destroyed for AI?",
           "lien": "https://www.forbes.com/sites/maryroeloffs/2026/08/17/ai-companies-are-buying-and-destroying-antique-books-heres-why/",
           "discussion": "https://news.ycombinator.com/item?id=50487469",
-          "points": 59,
-          "commentaires": 70,
+          "points": 61,
+          "commentaires": 75,
           "date": "2026-11-13",
           "source": "Hacker News"
         },
@@ -921,8 +1104,8 @@
           "titre": "Smuggling of 1.5M AI GPUs could be the cause of Huang's departure",
           "lien": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
           "discussion": "https://news.ycombinator.com/item?id=50498051",
-          "points": 59,
-          "commentaires": 39,
+          "points": 61,
+          "commentaires": 43,
           "date": "2026-11-14",
           "source": "Hacker News"
         },
@@ -930,45 +1113,63 @@
           "titre": "Israeli airstrike on Nasser hospital in Gaza killed surgeon and others",
           "lien": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
           "discussion": "https://news.ycombinator.com/item?id=50494303",
-          "points": 50,
-          "commentaires": 16,
+          "points": 55,
+          "commentaires": 37,
           "date": "2026-11-14",
           "source": "Hacker News"
         },
         {
-          "titre": "Show HN: AI Red Lines – write down what would make you act on AI",
-          "lien": "https://yourairedlines.com",
-          "discussion": "https://news.ycombinator.com/item?id=50467880",
-          "points": 39,
-          "commentaires": 34,
-          "date": "2026-11-12",
+          "titre": "Caltech professor no longer grades homework's because everyone uses AI",
+          "lien": "https://www.businessinsider.com/ai-math-class-university-homework-caltech-careers-2026-11",
+          "discussion": "https://news.ycombinator.com/item?id=50523022",
+          "points": 48,
+          "commentaires": 59,
+          "date": "2026-11-16",
           "source": "Hacker News"
         },
         {
-          "titre": "Is there a 'right amount' of AI?",
-          "lien": "https://coyotetracks.org/blog/right-amount-of-ai/",
-          "discussion": "https://news.ycombinator.com/item?id=50480659",
-          "points": 38,
-          "commentaires": 64,
-          "date": "2026-11-13",
+          "titre": "United Airlines has a widespread system outage",
+          "lien": "https://apnews.com/article/united-airlines-outage-5a5e5f75bb07f11ffb8750901f0076ff",
+          "discussion": "https://news.ycombinator.com/item?id=50524260",
+          "points": 48,
+          "commentaires": 12,
+          "date": "2026-11-16",
           "source": "Hacker News"
         },
         {
-          "titre": "Amodei Says AI Will Cure Cancer in a Decade. Doctors Are Skeptical",
-          "lien": "https://www.businessinsider.com/dario-amodei-anthropic-cancer-cure-ipo-roadshow-backlash-doctors-2026-11",
-          "discussion": "https://news.ycombinator.com/item?id=50484110",
-          "points": 34,
-          "commentaires": 74,
-          "date": "2026-11-13",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Laser-armed AI submarine robots patrol Norwegian salmon farms, killing sea lice",
-          "lien": "https://www.tomshardware.com/tech-industry/drones/3-500-ai-laser-robots-patrol-norwegian-salmon-farms-killing-sea-lice-parasites-get-zapped-by-high-tech-alternative-to-harsh-chemical-baths",
-          "discussion": "https://news.ycombinator.com/item?id=50456926",
-          "points": 34,
+          "titre": "FBI says Artex AI open-source hacking tool used to breach networks",
+          "lien": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
+          "discussion": "https://news.ycombinator.com/item?id=50520796",
+          "points": 47,
           "commentaires": 11,
-          "date": "2026-11-11",
+          "date": "2026-11-16",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS",
+          "lien": "https://github.com/db-branch/db-branch",
+          "discussion": "https://news.ycombinator.com/item?id=50506940",
+          "points": 45,
+          "commentaires": 16,
+          "date": "2026-11-15",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Generative AI Usage in the Games Industry",
+          "lien": "https://www.gameworkers.co.uk/ai-manifesto/",
+          "discussion": "https://news.ycombinator.com/item?id=50519043",
+          "points": 43,
+          "commentaires": 95,
+          "date": "2026-11-16",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Nvidia's Days as an Open Checkbook for the AI Economy Are Numbered",
+          "lien": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388",
+          "discussion": "https://news.ycombinator.com/item?id=50513876",
+          "points": 38,
+          "commentaires": 10,
+          "date": "2026-11-16",
           "source": "Hacker News"
         },
         {
@@ -976,53 +1177,62 @@
           "lien": "https://news.ycombinator.com/item?id=50484426",
           "discussion": "https://news.ycombinator.com/item?id=50484426",
           "points": 30,
-          "commentaires": 52,
+          "commentaires": 54,
           "date": "2026-11-13",
           "source": "Hacker News"
         },
         {
-          "titre": "Claude AI Is Down",
-          "lien": "https://news.ycombinator.com/item?id=50480941",
-          "discussion": "https://news.ycombinator.com/item?id=50480941",
-          "points": 28,
-          "commentaires": 7,
-          "date": "2026-11-13",
+          "titre": "U.S. tightens controls on remote access to AI technology amid Nvidia fallout",
+          "lien": "https://www.npr.org/2026/11/16/nx-s1-6042883/nvidia-jensen-huang-commerce-department",
+          "discussion": "https://news.ycombinator.com/item?id=50521575",
+          "points": 30,
+          "commentaires": 3,
+          "date": "2026-11-16",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "The Fed Is Worried AI Agents Could Trigger a Bank Run",
+          "lien": "https://gizmodo.com/the-fed-is-worried-ai-agents-could-trigger-a-bank-run-2000840566",
+          "discussion": "https://news.ycombinator.com/item?id=50523346",
+          "points": 27,
+          "commentaires": 14,
+          "date": "2026-11-16",
           "source": "Hacker News"
         },
         {
           "titre": "Open-source AI without Jensen",
           "lien": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
           "discussion": "https://news.ycombinator.com/item?id=50496590",
-          "points": 26,
+          "points": 27,
           "commentaires": 7,
           "date": "2026-11-14",
           "source": "Hacker News"
         },
         {
-          "titre": "AI Models Know What Women, Peace and Security Is. They Just Don't Bring It Up",
-          "lien": "https://blog.cip.org/p/ai-models-know-what-women-peace-and",
-          "discussion": "https://news.ycombinator.com/item?id=50470975",
-          "points": 23,
-          "commentaires": 32,
-          "date": "2026-11-12",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Hugging Face CEO vows to keep fighting for open-source AI",
-          "lien": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
-          "discussion": "https://news.ycombinator.com/item?id=50471673",
-          "points": 21,
-          "commentaires": 2,
-          "date": "2026-11-12",
+          "titre": "Kubernetes Is Strengthening Its Position as the AI Platform of Choice",
+          "lien": "https://cloudnativenow.com/features/kubernetes-is-strengthening-its-position-as-the-ai-platform-of-choice/",
+          "discussion": "https://news.ycombinator.com/item?id=50523037",
+          "points": 25,
+          "commentaires": 9,
+          "date": "2026-11-16",
           "source": "Hacker News"
         },
         {
           "titre": "Why platform teams fail (and AI makes it worse)",
           "lien": "https://willdady.com/why-platform-teams-fail",
           "discussion": "https://news.ycombinator.com/item?id=50496525",
-          "points": 19,
-          "commentaires": 6,
+          "points": 24,
+          "commentaires": 7,
           "date": "2026-11-14",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "No matter how you ask, more Americans are negative than positive about AI",
+          "lien": "https://ourworldindata.org/no-matter-how-you-ask-more-americans-are-negative-than-positive-about-ai",
+          "discussion": "https://news.ycombinator.com/item?id=50523955",
+          "points": 23,
+          "commentaires": 6,
+          "date": "2026-11-16",
           "source": "Hacker News"
         },
         {
@@ -1035,6 +1245,15 @@
           "source": "Hacker News"
         },
         {
+          "titre": "Reports of AI-related child sexual abuse material rise 8,400% in two years",
+          "lien": "https://www.theguardian.com/technology/2026/nov/16/ai-related-child-sexual-abuse-material-rise-exploitation-deepfakes",
+          "discussion": "https://news.ycombinator.com/item?id=50513713",
+          "points": 18,
+          "commentaires": 26,
+          "date": "2026-11-16",
+          "source": "Hacker News"
+        },
+        {
           "titre": "FAA expands AI advice to manage air traffic congestion across US airspace",
           "lien": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
           "discussion": "https://news.ycombinator.com/item?id=50491067",
@@ -1044,30 +1263,48 @@
           "source": "Hacker News"
         },
         {
-          "titre": "Tech Allies Rally Behind Jensen Huang, Calling Him Vital in AI Race (Gift Link)",
-          "lien": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-affair-nvidia-support.html",
-          "discussion": "https://news.ycombinator.com/item?id=50455721",
-          "points": 17,
-          "commentaires": 19,
-          "date": "2026-11-11",
-          "source": "Hacker News"
-        },
-        {
-          "titre": "Washing dishes at Denny's to rockstar of AI, the rise and fall of Jensen Huang",
-          "lien": "https://www.theguardian.com/technology/2026/nov/12/rise-and-fall-of-nvidia-ceo-jensen-huang-profile",
-          "discussion": "https://news.ycombinator.com/item?id=50471652",
+          "titre": "California sues OpenAI over AI models' cyberattacks on Hugging Face",
+          "lien": "https://www.reuters.com/business/california-sues-openai-over-ai-models-cyberattacks-hugging-face-other-companies-2026-11-16/",
+          "discussion": "https://news.ycombinator.com/item?id=50523838",
           "points": 16,
-          "commentaires": 0,
-          "date": "2026-11-12",
+          "commentaires": 2,
+          "date": "2026-11-16",
           "source": "Hacker News"
         },
         {
-          "titre": "AI makes it 'close to impossible' to assess university coursework,regulator says",
-          "lien": "https://www.theguardian.com/education/2026/nov/11/ai-close-to-impossible-assess-university-coursework-regulator",
-          "discussion": "https://news.ycombinator.com/item?id=50465844",
+          "titre": "Agentic AI Designs an Analog Synthesizer",
+          "lien": "https://cpldcpu.github.io/2026/11/14/touchsynth/",
+          "discussion": "https://news.ycombinator.com/item?id=50512933",
           "points": 15,
-          "commentaires": 12,
-          "date": "2026-11-12",
+          "commentaires": 5,
+          "date": "2026-11-16",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Transforming Ripgrep's Documentation with AI Automation and MkDocs",
+          "lien": "https://entropicdrift.com/blog/mkdocs-drift-automation/",
+          "discussion": "https://news.ycombinator.com/item?id=50494244",
+          "points": 14,
+          "commentaires": 4,
+          "date": "2026-11-14",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Reddit's traffic is down 13%, partly thanks to AI Overviews",
+          "lien": "https://www.businessinsider.com/reddit-traffic-down-13-percent-similarweb-google-ai-overviews-2026-11",
+          "discussion": "https://news.ycombinator.com/item?id=50512047",
+          "points": 14,
+          "commentaires": 3,
+          "date": "2026-11-15",
+          "source": "Hacker News"
+        },
+        {
+          "titre": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
+          "lien": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+          "discussion": "https://news.ycombinator.com/item?id=50531751",
+          "points": 14,
+          "commentaires": 1,
+          "date": "2026-11-17",
           "source": "Hacker News"
         }
       ]
@@ -1075,8 +1312,8 @@
   },
   "erreurs": [],
   "compte": {
-    "Fiabilité & hallucinations IA": 3,
-    "Vérification & provenance": 3,
+    "Fiabilité & hallucinations IA": 14,
+    "Vérification & provenance": 11,
     "Quantique — matériel": 25,
     "Quantique — algorithmes": 25,
     "Audit & intégrité logicielle": 0,
